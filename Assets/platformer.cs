@@ -17,11 +17,13 @@ public class platformer : MonoBehaviour
     float lastTimeGrounded;
     public int defaultAdditionalJumps = 1;
     int additionalJumps;
+    private SpriteRenderer renderer;
     
     // Start is called before the first frame update
     void Start()
     {
-        rb = rb = GetComponent<Rigidbody2D>(); 
+        rb = rb = GetComponent<Rigidbody2D>();
+        renderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -31,6 +33,14 @@ public class platformer : MonoBehaviour
          Jump();
          BetterJump();
          CheckIfGrounded();
+        if (Input.GetAxisRaw("Horizontal") > 0)
+        {
+            renderer.flipX = false;
+        }
+        else if (Input.GetAxisRaw("Horizontal") < 0)
+        {
+            renderer.flipX = true;
+        }
     }
     
     void Move(){
@@ -40,7 +50,7 @@ public class platformer : MonoBehaviour
     }
     
     void Jump(){
-    	if (Input.GetKeyDown(KeyCode.Space) && (isGrounded || Time.time - lastTimeGrounded <= rememberGroundedFor || additionalJumps > 0)){
+    	if (Input.GetKeyDown(KeyCode.Space) && (isGrounded || Time.time - lastTimeGrounded <= rememberGroundedFor || additionalJumps > 1)){
     	    rb.velocity = new Vector2(rb.velocity.x, jumpforce);
     	    additionalJumps--;
     	}
