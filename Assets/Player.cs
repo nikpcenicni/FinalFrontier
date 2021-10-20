@@ -25,9 +25,9 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rb = rb = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
         viewRender = GetComponent<SpriteRenderer>();
-        loadPlayer();
+        //loadPlayer();
     }
 
     // Update is called once per frame
