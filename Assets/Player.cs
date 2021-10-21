@@ -21,6 +21,8 @@ public class Player : MonoBehaviour
     public int defaultAdditionalJumps = 1;
     int additionalJumps;
     private SpriteRenderer viewRender;
+	public Animator animator;
+	public float moveBy;
     
     // Start is called before the first frame update
     void Start()
@@ -34,13 +36,14 @@ public class Player : MonoBehaviour
     void Update()
     {
          Move();
+		 animator.SetFloat("Speed", Mathf.Abs(moveBy));
          Jump();
          BetterJump();
          CheckIfGrounded();
          CheckDirection();
          SavePlayer();
     }
-
+    
     void CheckDirection(){
         if (Input.GetAxisRaw("Horizontal") > 0)
         {
@@ -54,7 +57,7 @@ public class Player : MonoBehaviour
     
     void Move(){
     	float x = Input.GetAxisRaw("Horizontal");
-    	float moveBy = x * speed;
+    	moveBy = x * speed;
     	rb.velocity = new Vector2(moveBy, rb.velocity.y);
     }
     
@@ -62,12 +65,14 @@ public class Player : MonoBehaviour
     	if (Input.GetKeyDown(KeyCode.Space) && (isGrounded || Time.time - lastTimeGrounded <= rememberGroundedFor || additionalJumps > 1)){
     	    rb.velocity = new Vector2(rb.velocity.x, jumpforce);
     	    additionalJumps--;
+            //animator.SetBool("isJumping", true);
     	}
     }
     
     void CheckIfGrounded() {
 	Collider2D collider = Physics2D.OverlapCircle( isGroundedChecker.position, checkGroundRadius, groundLayer );
 	if (collider != null) {
+        animator.SetBool("isJumping", false);
 	     isGrounded = true;
 	     additionalJumps = defaultAdditionalJumps;
 	} else {

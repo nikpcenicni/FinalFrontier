@@ -1477,6 +1477,9 @@ MonoBehaviour:
   lowJumpMultiplier: 2
   rememberGroundedFor: 0.2
   defaultAdditionalJumps: 2
+  animator: {fileID: 1962867531}
+  moveBy: 0
+  distToGround: 0
 --- !u!61 &1962867529
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1495,7 +1498,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1, y: 1}
-    newSize: {x: 0.64, y: 0.64}
+    newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -1588,10 +1591,10 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.64}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1962867533
