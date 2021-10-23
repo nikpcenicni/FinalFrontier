@@ -1479,7 +1479,6 @@ MonoBehaviour:
   defaultAdditionalJumps: 2
   animator: {fileID: 1962867531}
   moveBy: 0
-  distToGround: 0
 --- !u!61 &1962867529
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1709,9 +1708,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1962867533}
-  smoothTime: 5
-  posY: 1
-  minX: -4
-  maxX: 50
-  minY: 0
-  maxY: 0
+  damping: 1
+  lookAheadFactor: 3
+  lookAheadReturnSpeed: 0.5
+  lookAheadMoveThreshold: 0.1
