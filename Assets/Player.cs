@@ -29,6 +29,7 @@ public class Player : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         viewRender = GetComponent<SpriteRenderer>();
+        Time.timeScale = 1f;
         //loadPlayer();
     }
 
@@ -65,7 +66,7 @@ public class Player : MonoBehaviour
     	if (Input.GetKeyDown(KeyCode.Space) && (isGrounded || Time.time - lastTimeGrounded <= rememberGroundedFor || additionalJumps > 1)){
     	    rb.velocity = new Vector2(rb.velocity.x, jumpforce);
     	    additionalJumps--;
-            //animator.SetBool("isJumping", true);
+            animator.SetBool("isJumping", true);
     	}
     }
     
