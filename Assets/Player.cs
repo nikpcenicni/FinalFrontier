@@ -23,6 +23,7 @@ public class Player : MonoBehaviour
     private SpriteRenderer viewRender;
 	public Animator animator;
 	public float moveBy;
+    public bool fallen;
     
     // Start is called before the first frame update
     void Start()
@@ -43,6 +44,7 @@ public class Player : MonoBehaviour
          CheckIfGrounded();
          CheckDirection();
          SavePlayer();
+         CheckIfFall();
     }
 
     public Vector3 GetPosition() {
@@ -94,6 +96,12 @@ public class Player : MonoBehaviour
     	} else if (rb.velocity.y > 0 && !Input.GetKey(KeyCode.Space)) {
     	     rb.velocity += Vector2.up * Physics2D.gravity * (lowJumpMultiplier - 1) * Time.deltaTime;
     	}  
+    }
+
+    void CheckIfFall() {
+        if (rb.transform.position.y < -11) {
+            fallen = true;
+        }
     }
 
     public void SavePlayer() {

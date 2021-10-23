@@ -17,7 +17,7 @@ public class CoinCounter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        coinText.text = GameObject.Find("Player").GetComponent<Player>().coins.ToString();;
+        coinText.text = GameObject.Find("Player").GetComponent<Player>().coins.ToString();
         
    }
 }

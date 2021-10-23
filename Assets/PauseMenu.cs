@@ -7,6 +7,7 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false; 
     public GameObject pauseMenuUI;
+    public GameObject deadUI;
 
     // Update is called once per frame
     void Update() {
@@ -15,6 +16,9 @@ public class PauseMenu : MonoBehaviour
                 Resume();
             else
                 Pause();
+        }
+        if (GameObject.Find("Player").GetComponent<Player>().fallen){
+            Dead();
         }
             
     }
@@ -34,6 +38,11 @@ public class PauseMenu : MonoBehaviour
     public void LoadMenu() {
         SceneManager.LoadScene(0);
         GameIsPaused = false;
+    }
+
+    public void Dead() {
+        deadUI.SetActive(true);
+        Time.timeScale = 0f;
     }
 
     public void QuitGame() {
