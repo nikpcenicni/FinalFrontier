@@ -44,6 +44,10 @@ public class Player : MonoBehaviour
          CheckDirection();
          SavePlayer();
     }
+
+    public Vector3 GetPosition() {
+        return transform.position;
+    }
     
     void CheckDirection(){
         if (Input.GetAxisRaw("Horizontal") > 0)
