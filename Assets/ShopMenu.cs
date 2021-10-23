@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ShopMenu : MonoBehaviour
 {
-    public GameObject pauseMenuUI;
+    public GameObject shopMenuUI;
     Rigidbody2D rb;
     GameObject door1;
     GameObject door2;
