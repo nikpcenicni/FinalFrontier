@@ -1634,7 +1634,6 @@ GameObject:
   m_Component:
   - component: {fileID: 553198881}
   - component: {fileID: 553198883}
-  - component: {fileID: 553198882}
   - component: {fileID: 553198884}
   m_Layer: 5
   m_Name: coin
@@ -1662,36 +1661,6 @@ RectTransform:
   m_AnchoredPosition: {x: 1479.9, y: 878}
   m_SizeDelta: {x: 131.5594, y: 143.3764}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &553198882
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 553198880}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 7652866635146288848, guid: a5a6352f2d96fff4fa91c9df1fca00f8, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &553198883
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1710,7 +1679,7 @@ Animator:
   m_GameObject: {fileID: 553198880}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 20a5be7efdadb2341a978e1a90615eeb, type: 2}
+  m_Controller: {fileID: 9100000, guid: 20d5daefeae0f8c40857f065983ad58a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
