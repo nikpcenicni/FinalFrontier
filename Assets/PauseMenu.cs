@@ -11,13 +11,13 @@ public class PauseMenu : MonoBehaviour
 
     // Update is called once per frame
     void Update() {
-        if (Input.GetKeyDown(KeyCode.Escape) && !GameObject.Find("Player").GetComponent<Player>().fallen) {
+        if (Input.GetKeyDown(KeyCode.Escape) && !GameObject.Find("Player").GetComponent<Player>().fell) {
             if (GameIsPaused)
                 Resume();
             else
                 Pause();
         }
-        if (GameObject.Find("Player").GetComponent<Player>().fallen || GameObject.Find("Player").GetComponent<Player>().dead){
+        if (GameObject.Find("Player").GetComponent<Player>().fell || GameObject.Find("Player").GetComponent<Player>().dead){
             Dead();
         }
             
@@ -43,7 +43,7 @@ public class PauseMenu : MonoBehaviour
 
     public void LevelSelect() {
         GameObject.Find("Player").GetComponent<Player>().Restart();
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
         GameIsPaused = false;
     }
 
@@ -54,7 +54,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Restart() {
         deadUI.SetActive(false);
-        GameObject.Find("Player").GetComponent<Player>().fallen = false;
+        GameObject.Find("Player").GetComponent<Player>().fell = false;
         GameObject.Find("Player").GetComponent<Player>().Restart();
         Time.timeScale = 1f;
     }

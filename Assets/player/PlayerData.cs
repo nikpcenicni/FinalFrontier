@@ -8,7 +8,7 @@ public class PlayerData
     public int level;
     public int health;
     public int bank;
-    public float[] position;
+    public int[,,] items = new int[10,10,2];
 
     public PlayerData (Player Player) {
         level = Player.level;

@@ -16,5 +16,8 @@ public class ButtonInfo : MonoBehaviour
     {
         PriceTxt.text = ShopManager.GetComponent<ShopManager>().shopItems[2, ItemID].ToString();
         DmgText.text = "Dmg: " + ShopManager.GetComponent<ShopManager>().shopItems[3, ItemID].ToString();
+        
+        if (ItemID >= 4 && ItemID <= 7)
+            DmgText.text = "Qty: " + ShopManager.GetComponent<ShopManager>().shopItems[3, ItemID].ToString();
     }
 }

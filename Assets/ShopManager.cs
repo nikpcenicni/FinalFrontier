@@ -10,9 +10,11 @@ using TMPro;
 public class ShopManager : MonoBehaviour
 {
 
-    public int[,] shopItems = new int[10,10]; 
+    public int[,] shopItems = new int[4,10];
+    public int[] ownedGuns = new int[4];
 
     public Player player;
+    public GameObject weaponSwitch;
 
 
     // Start is called before the first frame update
@@ -36,9 +38,6 @@ public class ShopManager : MonoBehaviour
         shopItems[2 , 4] = 5;
         shopItems[2 , 5] = 30;
         shopItems[2 , 6] = 100;
-        shopItems[2 , 7] = 5;
-        shopItems[2 , 8] = 30;
-        shopItems[2 , 9] = 100;
 
         //damge
         shopItems[3 , 1] = 5;
@@ -50,6 +49,12 @@ public class ShopManager : MonoBehaviour
         shopItems[3 , 5] = 0;
         shopItems[3 , 6] = 0;
 
+        ownedGuns[0] = 0;
+        ownedGuns[1] = 0;
+        ownedGuns[2] = 0;
+        ownedGuns[3] = 0;
+
+
     }
 
     // Update is called once per frame
@@ -57,9 +62,34 @@ public class ShopManager : MonoBehaviour
     {
         GameObject ButtonRef = GameObject.FindGameObjectWithTag("Event").GetComponent<EventSystem>().currentSelectedGameObject;
 
+        
+        // if ( ButtonRef.GetComponent<ButtonInfo>().ItemID < 4 && ButtonRef.GetComponent<ButtonInfo>().ItemID > 0)
+        // {
+        //     if (ownedGuns[ButtonRef.GetComponent<ButtonInfo>().ItemID] != null){
+        //         if (ButtonRef.GetComponent<ButtonInfo>().ItemID == 1)
+        //             weaponSwitch.pistol();
+        //         else if (ButtonRef.GetComponent<ButtonInfo>().ItemID == 2)
+        //             weaponSwitch.pistol();
+        //         else if (ButtonRef.GetComponent<ButtonInfo>().ItemID == 3)
+        //             weaponSwitch.pistol();
+        //         else{
+        //             weaponSwitch.Fist();
+        //         }
+                    
+        //     }
+        // }
         if (player.coins >= shopItems[2, ButtonRef.GetComponent<ButtonInfo>().ItemID]){
 
             player.coins -= shopItems[2, ButtonRef.GetComponent<ButtonInfo>().ItemID];
+
+            if (ButtonRef.GetComponent<ButtonInfo>().ItemID > 0 && ButtonRef.GetComponent<ButtonInfo>().ItemID <= 3)
+                ownedGuns[ButtonRef.GetComponent<ButtonInfo>().ItemID] = 1;
+            if (ButtonRef.GetComponent<ButtonInfo>().ItemID >= 4 && ButtonRef.GetComponent<ButtonInfo>().ItemID <= 7)
+                shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID]++;
         }
     }
+
+    public void Owned(int itemNum, int quanity) {
+        ownedGuns[itemNum] = quanity;
+     }
 }

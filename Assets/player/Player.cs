@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     public int coins = 5;
     public int bank;
     public int health = 5;
-    Rigidbody2D rb;
+    
     public float speed;
     public float jumpforce;
     bool isGrounded = false;
@@ -22,13 +22,17 @@ public class Player : MonoBehaviour
     float lastTimeGrounded;
     public int defaultAdditionalJumps = 1;
     int additionalJumps;
-    private SpriteRenderer viewRender;
-	public Animator animator;
 	public float moveBy;
-    public bool fallen;
+
+    public bool fell;
     public bool dead;
+
     public TextMeshProUGUI textCoins;
-    private Vector3 originalPos;
+    public Animator animator;
+    private SpriteRenderer viewRender;
+    private Vector3 originalPos;    
+
+    Rigidbody2D rb;
     
     
     // Start is called before the first frame update
@@ -39,6 +43,7 @@ public class Player : MonoBehaviour
         Time.timeScale = 1f;
         originalPos = new Vector3(rb.transform.position.x, rb.transform.position.y, rb.transform.position.z);
         loadPlayer();
+        
     }
 
     // Update is called once per frame
@@ -56,20 +61,31 @@ public class Player : MonoBehaviour
          updateCoinText();
     }
 
-    public Vector3 GetPosition() {
-        return transform.position;
-    }
-
-    private void Heal() {
+    // Player Functions
+    void Heal() {
         if (Input.GetKeyDown(KeyCode.E)){
             TryTakeHealthPot();
         }
     }
 
-    private void TryTakeHealthPot() {
+    void TryTakeHealthPot() {
 
     }
-    
+
+    void Hurt(){
+        health--;
+        if (health <= 0){
+            dead = true;
+        }else {
+
+        }
+    }
+
+
+    // Movement
+    public Vector3 GetPosition() {
+        return transform.position;
+    }
     void CheckDirection(){
         if (Input.GetAxisRaw("Horizontal") > 0)
         {
@@ -98,7 +114,7 @@ public class Player : MonoBehaviour
     void CheckIfGrounded() {
 	Collider2D collider = Physics2D.OverlapCircle( isGroundedChecker.position, checkGroundRadius, groundLayer );
 	if (collider != null) {
-        animator.SetBool("isJumping", false);
+         animator.SetBool("isJumping", false);
 	     isGrounded = true;
 	     additionalJumps = defaultAdditionalJumps;
 	} else {
@@ -117,6 +133,14 @@ public class Player : MonoBehaviour
     	}  
     }
 
+    void CheckIfFall() {
+        if (rb.transform.position.y < -11) {
+            fell = true;
+            coins = 0;
+        }
+    }
+
+    // Player UI
 
     void updateCoinText() {
         if (coins < 10) 
@@ -125,6 +149,9 @@ public class Player : MonoBehaviour
             textCoins.text = "0" + coins.ToString();
         else
             textCoins.text = coins.ToString();
+    }
+    void updateHealtText() {
+
     }
     
     //moon rock collection
@@ -141,14 +168,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    void Hurt(){
-        health--;
-        if (health <= 0){
-            dead = true;
-        }else {
 
-        }
-    }
 
     // enemy damage detection
     void OnTriggerEnter2D(Collision2D collision){
@@ -158,12 +178,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    void CheckIfFall() {
-        if (rb.transform.position.y < -11) {
-            fallen = true;
-            coins = 0;
-        }
-    }
+
     public void levelCompleted() {
         bank = bank+coins;
     }
@@ -185,5 +200,20 @@ public class Player : MonoBehaviour
         health = data.health;
         bank = data.bank;
         coins = bank;
+    }
+
+
+    // weapons
+    public void pistol(){
+        //damage = shop.shopItems[3,1];
+    }
+
+    public void LaserRifle(){
+        //damage = shop.shopItems[3,2];
+    }
+
+    public void PlasmaRifle(){
+        //damage = shop.shopItems[3,3];
+
     }
 }
