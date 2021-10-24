@@ -24,6 +24,7 @@ public class Player : MonoBehaviour
 	public Animator animator;
 	public float moveBy;
     public bool fallen;
+    private Vector3 originalPos;
     
     // Start is called before the first frame update
     void Start()
@@ -31,6 +32,7 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         viewRender = GetComponent<SpriteRenderer>();
         Time.timeScale = 1f;
+        originalPos = new Vector3(rb.transform.position.x, rb.transform.position.y, rb.transform.position.z);
         //loadPlayer();
     }
 
@@ -102,6 +104,10 @@ public class Player : MonoBehaviour
         if (rb.transform.position.y < -11) {
             fallen = true;
         }
+    }
+
+    public void Restart(){
+        rb.transform.position = originalPos;
     }
 
     public void SavePlayer() {

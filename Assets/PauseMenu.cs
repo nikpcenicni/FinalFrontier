@@ -40,9 +40,21 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = false;
     }
 
+    public void LevelSelect() {
+        SceneManager.LoadScene(2);
+        GameIsPaused = false;
+    }
+
     public void Dead() {
         deadUI.SetActive(true);
         Time.timeScale = 0f;
+    }
+
+    public void Restart() {
+        deadUI.SetActive(false);
+        GameObject.Find("Player").GetComponent<Player>().fallen = false;
+        GameObject.Find("Player").GetComponent<Player>().Restart();
+        Time.timeScale = 1f;
     }
 
     public void QuitGame() {
