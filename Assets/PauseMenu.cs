@@ -17,7 +17,7 @@ public class PauseMenu : MonoBehaviour
             else
                 Pause();
         }
-        if (GameObject.Find("Player").GetComponent<Player>().fallen){
+        if (GameObject.Find("Player").GetComponent<Player>().fallen || GameObject.Find("Player").GetComponent<Player>().dead){
             Dead();
         }
             
@@ -36,11 +36,13 @@ public class PauseMenu : MonoBehaviour
     }
 
     public void LoadMenu() {
+        GameObject.Find("Player").GetComponent<Player>().Restart();
         SceneManager.LoadScene(0);
         GameIsPaused = false;
     }
 
     public void LevelSelect() {
+        GameObject.Find("Player").GetComponent<Player>().Restart();
         SceneManager.LoadScene(2);
         GameIsPaused = false;
     }

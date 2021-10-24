@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Player : MonoBehaviour
 {
-    public int level = 0;
-    public int coins = 0;
-    public int health = 1;
+    public static int level = 0;
+    public int coins = 5;
+    public int bank;
+    public int health = 5;
     Rigidbody2D rb;
     public float speed;
     public float jumpforce;
@@ -24,7 +26,10 @@ public class Player : MonoBehaviour
 	public Animator animator;
 	public float moveBy;
     public bool fallen;
+    public bool dead;
+    public TextMeshProUGUI textCoins;
     private Vector3 originalPos;
+    
     
     // Start is called before the first frame update
     void Start()
@@ -33,7 +38,7 @@ public class Player : MonoBehaviour
         viewRender = GetComponent<SpriteRenderer>();
         Time.timeScale = 1f;
         originalPos = new Vector3(rb.transform.position.x, rb.transform.position.y, rb.transform.position.z);
-        //loadPlayer();
+        loadPlayer();
     }
 
     // Update is called once per frame
@@ -47,10 +52,22 @@ public class Player : MonoBehaviour
          CheckDirection();
          SavePlayer();
          CheckIfFall();
+         Heal();
+         updateCoinText();
     }
 
     public Vector3 GetPosition() {
         return transform.position;
+    }
+
+    private void Heal() {
+        if (Input.GetKeyDown(KeyCode.E)){
+            TryTakeHealthPot();
+        }
+    }
+
+    private void TryTakeHealthPot() {
+
     }
     
     void CheckDirection(){
@@ -91,7 +108,7 @@ public class Player : MonoBehaviour
 	     isGrounded = false;
 	}
     }
-    
+
     void BetterJump() {
     	if (rb.velocity.y < 0) {
     	     rb.velocity += Vector2.up * Physics2D.gravity * (fallMultiplier - 1) * Time.deltaTime;
@@ -100,14 +117,61 @@ public class Player : MonoBehaviour
     	}  
     }
 
+
+    void updateCoinText() {
+        if (coins < 10) 
+            textCoins.text = "00" + coins.ToString();
+        else if (coins < 100 && coins >= 10) 
+            textCoins.text = "0" + coins.ToString();
+        else
+            textCoins.text = coins.ToString();
+    }
+    
+    //moon rock collection
+    void OnTriggerEnter2D(Collider2D other ){
+        if(other.transform.tag == "moonRock"){
+            coins ++;
+            if (coins < 10) 
+                textCoins.text = "00" + coins.ToString();
+            else if (coins < 100 && coins >= 10) 
+                textCoins.text = "0" + coins.ToString();
+            else
+                textCoins.text = coins.ToString();
+            Destroy(other.gameObject);
+        }
+    }
+
+    void Hurt(){
+        health--;
+        if (health <= 0){
+            dead = true;
+        }else {
+
+        }
+    }
+
+    // enemy damage detection
+    void OnTriggerEnter2D(Collision2D collision){
+        Enemy enemy = collision.collider.GetComponent<Enemy>();
+        if (enemy != null){
+            Hurt();
+        }
+    }
+
     void CheckIfFall() {
         if (rb.transform.position.y < -11) {
             fallen = true;
+            coins = 0;
         }
+    }
+    public void levelCompleted() {
+        bank = bank+coins;
     }
 
     public void Restart(){
         rb.transform.position = originalPos;
+        coins = 0;
+        textCoins.text = "000";
     }
 
     public void SavePlayer() {
@@ -119,12 +183,7 @@ public class Player : MonoBehaviour
 
         level = data.level;
         health = data.health;
-        coins = data.coins;
-
-        Vector3 position; 
-        position.x = data.position[0];
-        position.y = data.position[1];
-        position.z = data.position[2];
-        transform.position = position;
+        bank = data.bank;
+        coins = bank;
     }
 }
