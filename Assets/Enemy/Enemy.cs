@@ -7,23 +7,25 @@ public class Enemy : MonoBehaviour
     public int health = 10;
 
     public GameObject deathEffect;
+    public GameObject moonRock;
 
-    public Player player;
+    //public Player player = GameObject.FindGameObjectWithTag("Player");
     
     public void TakeDamage (int damage) {
         health -= damage;
 
         if (health <= 0) {
-            Die();
+            Die(); 
         }
     }
 
     void Die() {
         Instantiate(deathEffect, transform.position, Quaternion.identity);
+        Instantiate(moonRock, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 
     public void Hurt() {
-        player.health--;
+       // player.health--;
     }
 }

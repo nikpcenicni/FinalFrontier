@@ -61,7 +61,11 @@ public class Player : MonoBehaviour
          updateCoinText();
     }
 
+
     // Player Functions
+    public void addCoins(int amount){
+        coins += amount;
+    }
     void Heal() {
         if (Input.GetKeyDown(KeyCode.E)){
             TryTakeHealthPot();
@@ -136,7 +140,7 @@ public class Player : MonoBehaviour
     void CheckIfFall() {
         if (rb.transform.position.y < -11) {
             fell = true;
-            coins = 0;
+            bank = coins;
         }
     }
 
@@ -185,8 +189,7 @@ public class Player : MonoBehaviour
 
     public void Restart(){
         rb.transform.position = originalPos;
-        coins = 0;
-        textCoins.text = "000";
+        bank = coins;
     }
 
     public void SavePlayer() {

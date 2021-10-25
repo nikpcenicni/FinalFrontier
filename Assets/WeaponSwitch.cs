@@ -26,6 +26,25 @@ public class WeaponSwitch : MonoBehaviour
         currentWeaponIndex = 0;
     }
 
+    public void Update(){
+        if (Input.GetKeyDown(KeyCode.E)){
+            if (currentWeaponIndex < totalWeapons-1){
+                guns[currentWeaponIndex].SetActive(false);
+                currentWeaponIndex++;
+                currentGun = guns[currentWeaponIndex];
+                guns[currentWeaponIndex].SetActive(true);
+            }   
+        }
+        if (Input.GetKeyDown(KeyCode.Q)){
+            if (currentWeaponIndex > 0){
+                guns[currentWeaponIndex].SetActive(false);
+                currentWeaponIndex--;
+                currentGun = guns[currentWeaponIndex];
+                guns[currentWeaponIndex].SetActive(true);
+            }   
+        }
+    }
+
     public void fist(){
         for (int i = 0; i < totalWeapons; i++) {
             guns[i] = weaponHolder.transform.GetChild(i).gameObject;
