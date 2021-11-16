@@ -3789,6 +3789,18 @@ PrefabInstance:
       propertyPath: textCoins
       value: 
       objectReference: {fileID: 1205391427}
+    - target: {fileID: 1144568611750888844, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
+      propertyPath: lastGroundedChecked
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1144568611750888844, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
+      propertyPath: rememberGroundedFor
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1144568611750888844, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
+      propertyPath: defaultAdditionalJumps
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1144568611750888847, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
       propertyPath: m_Name
       value: Player

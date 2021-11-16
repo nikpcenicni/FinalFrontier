@@ -20,12 +20,14 @@ public class Player : MonoBehaviour
     public float lowJumpMultiplier = 2f;
     public float rememberGroundedFor;
     float lastTimeGrounded;
-    public int defaultAdditionalJumps = 1;
+    public int defaultAdditionalJumps;
     int additionalJumps;
 	public float moveBy;
 
     public bool fell;
     public bool dead;
+    public bool lastGroundedChecked;
+    public bool hasJumped;
 
     public TextMeshProUGUI textCoins;
     public Animator animator;
@@ -108,10 +110,13 @@ public class Player : MonoBehaviour
     }
     
     void Jump(){
-    	if (Input.GetKeyDown(KeyCode.Space) && (isGrounded || Time.time - lastTimeGrounded <= rememberGroundedFor || additionalJumps > 1)){
+        if (Input.GetKeyDown(KeyCode.Space) && (isGrounded || additionalJumps > 0)){
     	    rb.velocity = new Vector2(rb.velocity.x, jumpforce);
-    	    additionalJumps--;
+            if (hasJumped) {
+                additionalJumps--;
+            }
             animator.SetBool("isJumping", true);
+            hasJumped = true;
     	}
     }
     
@@ -121,11 +126,23 @@ public class Player : MonoBehaviour
          animator.SetBool("isJumping", false);
 	     isGrounded = true;
 	     additionalJumps = defaultAdditionalJumps;
-	} else {
-	     if (isGrounded) {
-	     	lastTimeGrounded = Time.time;
-	     }
-	     isGrounded = false;
+        if (lastGroundedChecked)
+        {
+            hasJumped = false;
+        }
+        lastGroundedChecked = false;
+    } else {
+	    if (isGrounded && !lastGroundedChecked) {
+	        lastTimeGrounded = Time.time;
+            lastGroundedChecked = true;
+        }
+        if (Time.time - lastTimeGrounded <= rememberGroundedFor && !hasJumped)
+        {
+            isGrounded = true;
+        }
+        else {
+            isGrounded = false;
+        }
 	}
     }
 
