@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System;
 
 public class Player : MonoBehaviour
 {
@@ -28,6 +29,9 @@ public class Player : MonoBehaviour
     public bool dead;
     public bool lastGroundedChecked;
     public bool hasJumped;
+
+    public bool[] achievementsUnlocked = new bool[7];
+    public float[] achievementsProgress = new float[7];
 
     public TextMeshProUGUI textCoins;
     public Animator animator;
@@ -61,6 +65,7 @@ public class Player : MonoBehaviour
          CheckIfFall();
          Heal();
          updateCoinText();
+         CheckAchievementProgress();
     }
 
 
@@ -106,6 +111,9 @@ public class Player : MonoBehaviour
     void Move(){
     	float x = Input.GetAxisRaw("Horizontal");
     	moveBy = x * speed;
+        if (!fell) {
+            achievementsProgress[6] += Math.Abs(moveBy);
+        }
     	rb.velocity = new Vector2(moveBy, rb.velocity.y);
     }
     
@@ -161,6 +169,11 @@ public class Player : MonoBehaviour
         }
     }
 
+    void CheckAchievementProgress() {
+        if (achievementsProgress[6] > 10850142 && !achievementsUnlocked[6]) {
+            achievementsUnlocked[6] = true;
+        }
+    }
     // Player UI
 
     void updateCoinText() {
@@ -220,6 +233,14 @@ public class Player : MonoBehaviour
         health = data.health;
         bank = data.bank;
         coins = bank;
+        for (int i = 0; i < achievementsUnlocked.Length; i++)
+        {
+            achievementsUnlocked[i] = data.achievementsUnlocked[i];
+        }
+        for (int i = 0; i < achievementsProgress.Length; i++)
+        {
+            achievementsProgress[i] = data.achievementsProgress[i];
+        }
     }
 
 
