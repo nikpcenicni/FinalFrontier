@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
     public int currentHealth;
 
     public healthBar healthBar;
-    
+
     public float speed;
     public float jumpforce;
     bool isGrounded = false;
@@ -71,7 +71,9 @@ public class Player : MonoBehaviour
          Heal();
          updateCoinText();
          CheckAchievementProgress();
+     
     }
+
 
 
     // Player Functions
@@ -218,9 +220,11 @@ public class Player : MonoBehaviour
 
 
     // enemy damage detection
-    void OnTriggerEnter2D(Collision2D collision){
-        Enemy enemy = collision.collider.GetComponent<Enemy>();
-        if (enemy != null){
+    void OnCollisionEnter(Collision collision)
+    {
+        Enemy other = collision.gameObject.GetComponent<Enemy>();
+        if (other.transform.tag == "Enemy")
+        {
             TakeDamage(1);
         }
     }
