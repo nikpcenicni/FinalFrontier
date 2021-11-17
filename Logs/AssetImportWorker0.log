@@ -1,126 +1,123 @@
 Using pre-set license
-Built from '2020.3/staging' branch; Version is '2020.3.19f1 (68f137dc9bbe) revision 6877495'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19043.1348; Version 2009; 64bit' Language: 'en' Physical Memory: 16333 MB
+Built from '2020.3/staging' branch; Version is '2020.3.21f1 (a38c86f6690f) revision 10718342'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19042.1348; Version 2009; 64bit' Language: 'en' Physical Memory: 12030 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2020.3.19f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2020.3.21f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/sport/Documents/GitHub/FinalFrontier
+C:/GitHub/FinalFrontier
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55999
-Successfully changed project path to: C:/Users/sport/Documents/GitHub/FinalFrontier
-C:/Users/sport/Documents/GitHub/FinalFrontier
+55931
+Successfully changed project path to: C:/GitHub/FinalFrontier
+C:/GitHub/FinalFrontier
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 52.25 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 95.33 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Initialize engine version: 2020.3.19f1 (68f137dc9bbe)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/sport/Documents/GitHub/FinalFrontier/Assets
+Initialize engine version: 2020.3.21f1 (a38c86f6690f)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/GitHub/FinalFrontier/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1650 SUPER (ID=0x2187)
+    Renderer: Intel(R) UHD Graphics (ID=0x8a56)
     Vendor:   
-    VRAM:     3955 MB
-    Driver:   30.0.14.7196
+    VRAM:     6015 MB
+    Driver:   27.20.100.8729
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56852
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56980
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003020 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002199 seconds.
 Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 53.11 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 74.86 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.259 seconds
+- Completed reload, in  1.895 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1260ms)
-		BeginReloadAssembly (64ms)
+	ReloadAssembly (1895ms)
+		BeginReloadAssembly (222ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (463ms)
-			LoadAssemblies (61ms)
+			CreateAndSetChildDomain (5ms)
+		EndReloadAssembly (635ms)
+			LoadAssemblies (139ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (169ms)
+			SetupTypeCache (174ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (186ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (297ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (53ms)
-				BeforeProcessingInitializeOnLoad (9ms)
-				ProcessInitializeOnLoadAttributes (88ms)
-				ProcessInitializeOnLoadMethodAttributes (31ms)
+				RefreshPlugins (75ms)
+				BeforeProcessingInitializeOnLoad (22ms)
+				ProcessInitializeOnLoadAttributes (142ms)
+				ProcessInitializeOnLoadMethodAttributes (52ms)
 				AfterProcessingInitializeOnLoad (0ms)
-				EditorAssembliesLoaded (0ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003425 seconds.
+Registered in 0.009306 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 49.78 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 45.95 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.233 seconds
+- Completed reload, in  1.064 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1234ms)
-		BeginReloadAssembly (155ms)
+	ReloadAssembly (1065ms)
+		BeginReloadAssembly (125ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (21ms)
-		EndReloadAssembly (1008ms)
-			LoadAssemblies (101ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (883ms)
+			LoadAssemblies (80ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (324ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (61ms)
-			SetupLoadedEditorAssemblies (389ms)
+			SetupTypeCache (267ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (352ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (50ms)
-				BeforeProcessingInitializeOnLoad (78ms)
-				ProcessInitializeOnLoadAttributes (232ms)
+				RefreshPlugins (46ms)
+				BeforeProcessingInitializeOnLoad (80ms)
+				ProcessInitializeOnLoadAttributes (201ms)
 				ProcessInitializeOnLoadMethodAttributes (16ms)
-				AfterProcessingInitializeOnLoad (8ms)
+				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
-Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2161 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 116.4 MB.
-System memory in use after: 116.5 MB.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 118.8 MB.
+System memory in use after: 119.0 MB.
 
-Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 2625.
-Total: 4.260800 ms (FindLiveObjects: 0.444300 ms CreateObjectMapping: 0.062500 ms MarkObjects: 3.710600 ms  DeleteObjects: 0.041300 ms)
+Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 2710.
+Total: 2.897300 ms (FindLiveObjects: 0.170100 ms CreateObjectMapping: 0.067900 ms MarkObjects: 2.633000 ms  DeleteObjects: 0.025300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -129,62 +126,70 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes/SpaceShip.unity
-  artifactKey: Guid(1e6384413c78007419bb5a525274cb7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SpaceShip.unity using Guid(1e6384413c78007419bb5a525274cb7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9a456b080357efadb5f2e7fafa4e896') in 0.014463 seconds 
-  Import took 0.018032 seconds .
+  path: Assets/Scenes/MainMenu.unity
+  artifactKey: Guid(93cbebbfdb218d2a88a7a5fc5073db8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainMenu.unity using Guid(93cbebbfdb218d2a88a7a5fc5073db8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59248ba1d972d64f7f56712e04a64cfb') in 0.015025 seconds 
+  Import took 0.018365 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Menu/MainMenu.cs
+  artifactKey: Guid(008a0747ea7e84749ac640df55a4070e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu/MainMenu.cs using Guid(008a0747ea7e84749ac640df55a4070e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9098084941af9829bf94879b3ccdb008') in 0.035832 seconds 
+  Import took 0.039941 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004024 seconds.
+Registered in 0.004194 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.87 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.136 seconds
+- Completed reload, in  1.187 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1136ms)
-		BeginReloadAssembly (138ms)
+	ReloadAssembly (1187ms)
+		BeginReloadAssembly (122ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (43ms)
-		EndReloadAssembly (921ms)
-			LoadAssemblies (110ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (1003ms)
+			LoadAssemblies (82ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (345ms)
+			SetupTypeCache (359ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (51ms)
-			SetupLoadedEditorAssemblies (311ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (390ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
+				InitializePlatformSupportModulesInManaged (18ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (68ms)
-				ProcessInitializeOnLoadAttributes (221ms)
-				ProcessInitializeOnLoadMethodAttributes (6ms)
+				BeforeProcessingInitializeOnLoad (109ms)
+				ProcessInitializeOnLoadAttributes (241ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
 				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.66 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2138 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 114.5 MB.
-System memory in use after: 114.6 MB.
+Unloading 2228 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 116.8 MB.
+System memory in use after: 116.9 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2628.
-Total: 3.093400 ms (FindLiveObjects: 0.262500 ms CreateObjectMapping: 0.053700 ms MarkObjects: 2.754500 ms  DeleteObjects: 0.021000 ms)
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2712.
+Total: 3.081800 ms (FindLiveObjects: 0.186500 ms CreateObjectMapping: 0.084600 ms MarkObjects: 2.780600 ms  DeleteObjects: 0.028500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -193,7 +198,2044 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 166.698702 seconds.
+  path: Assets/resource_default/box_a.png
+  artifactKey: Guid(ed3b4c75a68320349a9f4481bab4876c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/box_a.png using Guid(ed3b4c75a68320349a9f4481bab4876c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '941faf4b4ca4e16b4ead380c1d904af0') in 0.118504 seconds 
+  Import took 0.123180 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/resource_default/box_c_02.png
+  artifactKey: Guid(e8def83b1cf543e4a9513f7aaa7bd953) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/box_c_02.png using Guid(e8def83b1cf543e4a9513f7aaa7bd953) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '816dbc647e258dc5a0eb9e8795fbd9f4') in 0.013981 seconds 
+  Import took 0.017124 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/resource_default/box_b_02.png
+  artifactKey: Guid(4b1885f5416f3c741ac0815952921840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/box_b_02.png using Guid(4b1885f5416f3c741ac0815952921840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b827b602a5b1dec77915280c6dd09b61') in 0.012604 seconds 
+  Import took 0.016101 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/resource_default/checkbox_check.png
+  artifactKey: Guid(43e17fb59bccf0748b04cccfc220a522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/checkbox_check.png using Guid(43e17fb59bccf0748b04cccfc220a522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35890e35c58b8b1f8b3112d351403885') in 0.013288 seconds 
+  Import took 0.016372 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/resource_default/divider_a.png
+  artifactKey: Guid(e460759783bc11a40b0b706688151e1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/divider_a.png using Guid(e460759783bc11a40b0b706688151e1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddc7b5ef14199512a00680792cefe171') in 0.012354 seconds 
+  Import took 0.015420 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/resource_default/box_b_04.png
+  artifactKey: Guid(47b0b6ed20592d74ba2a6d517e877ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/box_b_04.png using Guid(47b0b6ed20592d74ba2a6d517e877ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c43ad2c229c82ae76bd1024c9eb69cce') in 0.012257 seconds 
+  Import took 0.015492 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/resource_default/box_a_01.png
+  artifactKey: Guid(f7420318a046742439fc1f7e0fb33dc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/box_a_01.png using Guid(f7420318a046742439fc1f7e0fb33dc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb6df80be0a3c802bbcaaf79e426fbe7') in 0.012523 seconds 
+  Import took 0.016426 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/resource_default/box_b_01.png
+  artifactKey: Guid(a4b88956494e64a4a896b1e2e09d76aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/box_b_01.png using Guid(a4b88956494e64a4a896b1e2e09d76aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '766e8cd8770eab4030a47de1494f9763') in 0.021833 seconds 
+  Import took 0.026772 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000631 seconds.
+  path: Assets/resource_default/box_a_03.png
+  artifactKey: Guid(7cd59d7fb38a77f4ca92099e8d101b73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/box_a_03.png using Guid(7cd59d7fb38a77f4ca92099e8d101b73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae6100cbadedba548baecfdcbc5ffe2e') in 0.017875 seconds 
+  Import took 0.022053 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000563 seconds.
+  path: Assets/resource_default/btn_c_red.png
+  artifactKey: Guid(dfe0f8b3b8f11c54d94569c6e1326583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/btn_c_red.png using Guid(dfe0f8b3b8f11c54d94569c6e1326583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5abe8509d2bf767c504a49ad9a3d69c8') in 0.022223 seconds 
+  Import took 0.027095 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/resource_default/gage_a_empty.png
+  artifactKey: Guid(2a7229b8854f44e468f330c2cfe50c8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/gage_a_empty.png using Guid(2a7229b8854f44e468f330c2cfe50c8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9221810aaad7d28bea4685965b344da') in 0.025189 seconds 
+  Import took 0.029608 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/resource_default/btn_b_red.png
+  artifactKey: Guid(0a1a18af546cb004db55d57b6559928b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/btn_b_red.png using Guid(0a1a18af546cb004db55d57b6559928b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d43556479fb0f20704bbf127b920cbc') in 0.026480 seconds 
+  Import took 0.030258 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/resource_default/btn_c_emerald.png
+  artifactKey: Guid(7017830725262a140b5d8a3d39a0b11a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/btn_c_emerald.png using Guid(7017830725262a140b5d8a3d39a0b11a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1409450d50dfe93249d0cc8ac86040cc') in 0.014944 seconds 
+  Import took 0.018444 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/resource_default/btn_c_beige.png
+  artifactKey: Guid(9c0068a62e7a92d40824e0b03460035a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/btn_c_beige.png using Guid(9c0068a62e7a92d40824e0b03460035a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32c8d45cce96a8362ae2a994a67ab6b1') in 0.013297 seconds 
+  Import took 0.016453 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/resource_default/box_a_04.png
+  artifactKey: Guid(0b216ed8876b73945ad75ea6feaba010) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/box_a_04.png using Guid(0b216ed8876b73945ad75ea6feaba010) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95de4a6d4a08bca4844d8352f9c358ef') in 0.012244 seconds 
+  Import took 0.015382 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/resource_default/btn_b_grey.png
+  artifactKey: Guid(d7d480a22b9c1f64bb6d748bf353e45b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/btn_b_grey.png using Guid(d7d480a22b9c1f64bb6d748bf353e45b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b890bd704cfa9bd87669f6930e3c2dd') in 0.012125 seconds 
+  Import took 0.015307 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/resource_default/box_b.png
+  artifactKey: Guid(7ff78b329f164464ea5df9a3227b3f0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/box_b.png using Guid(7ff78b329f164464ea5df9a3227b3f0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d2d58415539eb1da431298df6febf3b') in 0.012049 seconds 
+  Import took 0.015222 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/resource_default/box_c_01.png
+  artifactKey: Guid(2416bf88655c40c40adc903253fb2ba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/box_c_01.png using Guid(2416bf88655c40c40adc903253fb2ba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '124a2c3d94f75e5cbdbc6e2fd9fafe50') in 0.012769 seconds 
+  Import took 0.016965 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/resource_default/btn_a_red.png
+  artifactKey: Guid(74976faeb568f074d9f1a4df7ca78d18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/btn_a_red.png using Guid(74976faeb568f074d9f1a4df7ca78d18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c66bcb64e3747eeb6289e7b918a989a3') in 0.022845 seconds 
+  Import took 0.028448 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/resource_default/btn_c_grey.png
+  artifactKey: Guid(6e66bb159c14d844580544244bf0d9d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/btn_c_grey.png using Guid(6e66bb159c14d844580544244bf0d9d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd48ad6118fa7b166c12c1b04efa1becf') in 0.020732 seconds 
+  Import took 0.025575 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/resource_default/btn_b_emerald.png
+  artifactKey: Guid(e6d0e297e4512fe4b8e8fe357714a52f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/btn_b_emerald.png using Guid(e6d0e297e4512fe4b8e8fe357714a52f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a543f774403df732251b437791d6cee3') in 0.024359 seconds 
+  Import took 0.029543 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/resource_default/gage_b_fill01.png
+  artifactKey: Guid(9df81246e4df1154cb8d7410d2af7e84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/gage_b_fill01.png using Guid(9df81246e4df1154cb8d7410d2af7e84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e13f7f34df899f38180b7a3b1c75b15f') in 0.018160 seconds 
+  Import took 0.022415 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000335 seconds.
+  path: Assets/resource_default/box_b_03.png
+  artifactKey: Guid(cd5efc45d507a414c81bd895a5528a0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/box_b_03.png using Guid(cd5efc45d507a414c81bd895a5528a0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '086d341af86494f3ca93c5ac36c4bd2d') in 0.013008 seconds 
+  Import took 0.016637 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/resource_default/btn_b_beige.png
+  artifactKey: Guid(57910dcde21e44c48b55d6eb96005e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/btn_b_beige.png using Guid(57910dcde21e44c48b55d6eb96005e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cadf16a05e0236ec2daca2098900434') in 0.012780 seconds 
+  Import took 0.015997 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/resource_default/gage_b_empty.png
+  artifactKey: Guid(f6c1dea84b7a31e4b81d0f719c477e2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/gage_b_empty.png using Guid(f6c1dea84b7a31e4b81d0f719c477e2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf4ddf0e08115d4eb51acaf72b826432') in 0.012228 seconds 
+  Import took 0.015267 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/resource_default/btn_a_emerald.png
+  artifactKey: Guid(e87e973aa97e2cf41885259822725eb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/btn_a_emerald.png using Guid(e87e973aa97e2cf41885259822725eb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1818080eb59f9c16bc60bd6516322734') in 0.012526 seconds 
+  Import took 0.015712 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/resource_default/btn_a_grey.png
+  artifactKey: Guid(e0b63f1cfe110994ba2ad2de0e5292de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/btn_a_grey.png using Guid(e0b63f1cfe110994ba2ad2de0e5292de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99a12d4047e74b5bcd4b993f98ed2b54') in 0.012332 seconds 
+  Import took 0.015408 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/resource_default/box_c_03.png
+  artifactKey: Guid(4acc179c0277ddf4fa72e6d397096d84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/box_c_03.png using Guid(4acc179c0277ddf4fa72e6d397096d84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cafc7a64a0eaecb60bd80245f130a60') in 0.011704 seconds 
+  Import took 0.014838 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/resource_default/box_a_02.png
+  artifactKey: Guid(cdcc1931095dc8544b4ab733bf2b3fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/box_a_02.png using Guid(cdcc1931095dc8544b4ab733bf2b3fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aee9a83bf1621dd59093bbcba4dfd06a') in 0.018493 seconds 
+  Import took 0.022362 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/resource_default/checkbox_blank.png
+  artifactKey: Guid(32f25fd44c295474483ad5f89d5863fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/checkbox_blank.png using Guid(32f25fd44c295474483ad5f89d5863fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '740406f9aa6a7ced44e8e1a5d5993353') in 0.017701 seconds 
+  Import took 0.022363 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/resource_default/btn_a_beige.png
+  artifactKey: Guid(8e8051156b4decf4693f0648a48b3fc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/btn_a_beige.png using Guid(8e8051156b4decf4693f0648a48b3fc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '886a63bec88f5e6c5b252be7e2162e29') in 0.020197 seconds 
+  Import took 0.025056 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/resource_default/box_c.png
+  artifactKey: Guid(7b03ca51eb13fef46ad379e25bc1bb4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/box_c.png using Guid(7b03ca51eb13fef46ad379e25bc1bb4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faca86da0519f753db9b9518d2cc7ba3') in 0.026565 seconds 
+  Import took 0.030685 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/resource_default/box_c_04.png
+  artifactKey: Guid(03262c876f6187b4f91fe5239e698673) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/box_c_04.png using Guid(03262c876f6187b4f91fe5239e698673) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd65770d63ec944e6a31a779a3218ed5d') in 0.012936 seconds 
+  Import took 0.016379 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.400635 seconds.
+  path: Assets/resource_default/gage_b_fill02.png
+  artifactKey: Guid(bcb5b4fb84e360f4ab517305cc7ea5ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/gage_b_fill02.png using Guid(bcb5b4fb84e360f4ab517305cc7ea5ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ded32c764311c3d48cfd1be4a76bc242') in 0.016910 seconds 
+  Import took 0.021319 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/resource_default/gage_b_fill05.png
+  artifactKey: Guid(5f800e8c23f52d9439d7929cf06cd922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/gage_b_fill05.png using Guid(5f800e8c23f52d9439d7929cf06cd922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '317210caf0aaaa7687ba034dcfcee164') in 0.016308 seconds 
+  Import took 0.020116 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/resource_default/gage_b_fill_progress.png
+  artifactKey: Guid(3ce5d913607d46846a0812d1b479e3d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/gage_b_fill_progress.png using Guid(3ce5d913607d46846a0812d1b479e3d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6355ae4c554a9910e509fbdb799c9f2c') in 0.030926 seconds 
+  Import took 0.037200 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/resource_default/gage_b_fill06.png
+  artifactKey: Guid(9e2d10e868bfcc2459840cd98bcfde42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/gage_b_fill06.png using Guid(9e2d10e868bfcc2459840cd98bcfde42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0402e162f05be880772c33fbff2c22b5') in 0.017246 seconds 
+  Import took 0.023163 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/resource_default/icon_arrowdown.png
+  artifactKey: Guid(031411cfd15824643a4ccdedb8d36bc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/icon_arrowdown.png using Guid(031411cfd15824643a4ccdedb8d36bc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3eda8b835209eff62fc79f5967c6e63c') in 0.018214 seconds 
+  Import took 0.023338 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/resource_default/point_beige.png
+  artifactKey: Guid(e73dd9c018a08e74e9e3b6b52eba48b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/point_beige.png using Guid(e73dd9c018a08e74e9e3b6b52eba48b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be00fbb7fee9a40c6dbf5e200f9205a6') in 0.018583 seconds 
+  Import took 0.022931 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/resource_default/innerbox_a_btn_03.png
+  artifactKey: Guid(e5436bf6647d2f540b4dc774bf27593e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/innerbox_a_btn_03.png using Guid(e5436bf6647d2f540b4dc774bf27593e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96f734080e1c26bbd13818f67269b288') in 0.020338 seconds 
+  Import took 0.024426 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/resource_default/innerbox_a_btn_02.png
+  artifactKey: Guid(49eaf0cf4f54e7a4ab865811163498e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/innerbox_a_btn_02.png using Guid(49eaf0cf4f54e7a4ab865811163498e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '324fc21eff0c52bde3ad20a67ad30da0') in 0.019229 seconds 
+  Import took 0.024099 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/resource_default/innerbox_a_btn_04.png
+  artifactKey: Guid(ff3db5d915c96184ea06e6aff8c7240a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/innerbox_a_btn_04.png using Guid(ff3db5d915c96184ea06e6aff8c7240a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ab8991d874f60a0ddc9ff72fcbfe1be') in 0.018558 seconds 
+  Import took 0.022081 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/resource_default/innerbox_a_btn.png
+  artifactKey: Guid(4dc79b73247092e4ab1b277f39e3f809) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/innerbox_a_btn.png using Guid(4dc79b73247092e4ab1b277f39e3f809) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84b2cce5d549950c0ad86f320647260c') in 0.022096 seconds 
+  Import took 0.026568 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/resource_default/gage_b_fill08.png
+  artifactKey: Guid(d40499526caa6e243958c6071f4d5b0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/gage_b_fill08.png using Guid(d40499526caa6e243958c6071f4d5b0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6d01610503f8c68528e60893af8fd86') in 0.017997 seconds 
+  Import took 0.022733 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/resource_default/gage_b_fill04.png
+  artifactKey: Guid(74eea1e5ac116724fad3c1971b35589c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/gage_b_fill04.png using Guid(74eea1e5ac116724fad3c1971b35589c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59ac38272a791ce62d2bf1d28de3e160') in 0.024673 seconds 
+  Import took 0.028979 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/resource_default/innerbox_a.png
+  artifactKey: Guid(d987d57fd92b64048bbfeee60e636663) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/innerbox_a.png using Guid(d987d57fd92b64048bbfeee60e636663) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c799a4b326d39d9e37f649abb322c61') in 0.012722 seconds 
+  Import took 0.016314 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/resource_default/innerbox_a_btn_01.png
+  artifactKey: Guid(34d3404d20b7a8245b1fac6e7855b705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/innerbox_a_btn_01.png using Guid(34d3404d20b7a8245b1fac6e7855b705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4eb296726cf74c1f0ec3c4d29ad545a') in 0.011675 seconds 
+  Import took 0.014841 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/resource_default/gage_b_fill03.png
+  artifactKey: Guid(52351609d8e630847acd8fd9a9c40c89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/gage_b_fill03.png using Guid(52351609d8e630847acd8fd9a9c40c89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad79785baef75c6c8fc032a5ae66d353') in 0.011441 seconds 
+  Import took 0.014553 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/resource_default/gage_b_fill07.png
+  artifactKey: Guid(3e5237d08b3a99a459942236eb0532f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/gage_b_fill07.png using Guid(3e5237d08b3a99a459942236eb0532f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe2bb07864e63fef9c8320291df3de17') in 0.011501 seconds 
+  Import took 0.014600 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.345752 seconds.
+  path: Assets/resource_default/radio_blank.png
+  artifactKey: Guid(cd34ff269b1774d4a914fd2ad1a6f428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/radio_blank.png using Guid(cd34ff269b1774d4a914fd2ad1a6f428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65819d49e9f93ed2df2c104c8a20ab8c') in 0.026157 seconds 
+  Import took 0.030273 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/resource_default/radio_check.png
+  artifactKey: Guid(df907ac5977a0d543a06e726893e2c9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/radio_check.png using Guid(df907ac5977a0d543a06e726893e2c9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81833d3212cad8f7dea75585de333a39') in 0.017589 seconds 
+  Import took 0.023262 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/resource_default/textinput_a.png
+  artifactKey: Guid(e4430d406d9e002418f1d3cf864fb0ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/textinput_a.png using Guid(e4430d406d9e002418f1d3cf864fb0ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bab223ec9e59b2c3048552990e7a88e5') in 0.018803 seconds 
+  Import took 0.023294 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003734 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.965 seconds
+Domain Reload Profiling:
+	ReloadAssembly (965ms)
+		BeginReloadAssembly (114ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (789ms)
+			LoadAssemblies (95ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (289ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (278ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (75ms)
+				ProcessInitializeOnLoadAttributes (181ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2372 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 123.6 MB.
+System memory in use after: 123.9 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2890.
+Total: 3.258300 ms (FindLiveObjects: 0.236000 ms CreateObjectMapping: 0.086400 ms MarkObjects: 2.915500 ms  DeleteObjects: 0.018700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 110.472385 seconds.
+  path: Assets/Sprites/Player.prefab
+  artifactKey: Guid(55ddf8babd4c3bd47b2b719483c1b9b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player.prefab using Guid(55ddf8babd4c3bd47b2b719483c1b9b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50ef872fb3fe5d47e3e0bad4ec83ace8') in 0.084061 seconds 
+  Import took 0.089826 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.622921 seconds.
+  path: Assets/Devion Games/Flat GUI
+  artifactKey: Guid(850a2705c4621b94085d608465f64498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI using Guid(850a2705c4621b94085d608465f64498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bf184b05db07f4360b661bc1594e290') in 0.007995 seconds 
+  Import took 0.011612 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 43.899530 seconds.
+  path: Assets/Devion Games/Flat GUI/Elements/Arrow.png
+  artifactKey: Guid(3651b1b375ec49747ac2053c0caabb65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Elements/Arrow.png using Guid(3651b1b375ec49747ac2053c0caabb65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c835da819ba8c9e7b567066d1f76cefb') in 0.069946 seconds 
+  Import took 0.077863 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001096 seconds.
+  path: Assets/Devion Games/Flat GUI/Elements/Square Outline.png
+  artifactKey: Guid(a9b53e4a2b293b34188ac48b59d1f8e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Elements/Square Outline.png using Guid(a9b53e4a2b293b34188ac48b59d1f8e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdc3b196c5469e1659c7149014ad9328') in 0.016347 seconds 
+  Import took 0.023609 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001054 seconds.
+  path: Assets/Devion Games/Flat GUI/Elements/Square Shadowed.png
+  artifactKey: Guid(c435d628874ea5549bb1eeaaa736227c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Elements/Square Shadowed.png using Guid(c435d628874ea5549bb1eeaaa736227c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3430e0b38c15f071b53b05c327ad4f26') in 0.022516 seconds 
+  Import took 0.028294 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/Devion Games/Flat GUI/Elements/Selection Line.png
+  artifactKey: Guid(8c3709d96dc991c4aa99023c032fc37e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Elements/Selection Line.png using Guid(8c3709d96dc991c4aa99023c032fc37e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbcfad926510746e50242b8278111ad9') in 0.022389 seconds 
+  Import took 0.027826 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/Devion Games/Flat GUI/Elements
+  artifactKey: Guid(34b446a9737384e48b31e78303615646) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Elements using Guid(34b446a9737384e48b31e78303615646) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '913c358b48d96730a90f3d8ee78b9596') in 0.008753 seconds 
+  Import took 0.013533 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000373 seconds.
+  path: Assets/Devion Games/Flat GUI/Elements/Header.png
+  artifactKey: Guid(983d402d99210e841baafff3e522d4eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Elements/Header.png using Guid(983d402d99210e841baafff3e522d4eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b97447f50ad869ea9fe392b9d69dd714') in 0.024382 seconds 
+  Import took 0.030300 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Devion Games/Flat GUI/Elements/Square.png
+  artifactKey: Guid(d03fea6710d5d5b47b6157005fec0375) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Elements/Square.png using Guid(d03fea6710d5d5b47b6157005fec0375) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c33655927f4d70bd1e21866501964d56') in 0.019955 seconds 
+  Import took 0.026462 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Devion Games/Flat GUI/Elements/CompassLine.png
+  artifactKey: Guid(2172cca045c47b24f96a75a4ab631049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Elements/CompassLine.png using Guid(2172cca045c47b24f96a75a4ab631049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '311924c9b5078cc68e692c145bf94755') in 0.025079 seconds 
+  Import took 0.030322 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Devion Games/Flat GUI/Elements/Rounded Square Outline.png
+  artifactKey: Guid(a7c354099fc3dc347972af2a63a91179) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Elements/Rounded Square Outline.png using Guid(a7c354099fc3dc347972af2a63a91179) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6327b9c49c8c107f0efc96f4e536817a') in 0.019338 seconds 
+  Import took 0.024518 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/Devion Games/Flat GUI/Elements/Circle Big.png
+  artifactKey: Guid(4e1c295a2e6ae824fbd7144812bd7a97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Elements/Circle Big.png using Guid(4e1c295a2e6ae824fbd7144812bd7a97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a625b783b00317b5124b92328424c96') in 0.025445 seconds 
+  Import took 0.030134 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/Devion Games/Flat GUI/Elements/Circle Outline Big.png
+  artifactKey: Guid(f2ce57ceddb53384ea358da0a27445b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Elements/Circle Outline Big.png using Guid(f2ce57ceddb53384ea358da0a27445b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06dad14b7decafc19e2723253b9efaca') in 0.016597 seconds 
+  Import took 0.019948 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Devion Games/Flat GUI/Elements/Crosshair.png
+  artifactKey: Guid(576e7db613e9d024fb1ac68e765255bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Elements/Crosshair.png using Guid(576e7db613e9d024fb1ac68e765255bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52cf33292756c8600bad2a092730b7b1') in 0.012483 seconds 
+  Import took 0.016069 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/Devion Games/Flat GUI/Elements/Compass.png
+  artifactKey: Guid(e9974645e2b89844e8f6c370f502ca20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Elements/Compass.png using Guid(e9974645e2b89844e8f6c370f502ca20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c9ca663f5ea8919c87c980a577a18e2') in 0.013288 seconds 
+  Import took 0.017155 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Devion Games/Flat GUI/Elements/Rounded Square Dotted Outline.png
+  artifactKey: Guid(c0e313976f2ff294d8041a9c86a671ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Elements/Rounded Square Dotted Outline.png using Guid(c0e313976f2ff294d8041a9c86a671ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c657a499d5216f4f5b3b267d4600b23b') in 0.012214 seconds 
+  Import took 0.015581 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Devion Games/Flat GUI/Elements/Circle.png
+  artifactKey: Guid(e63e19b592fc89c46b22961b98684cd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Elements/Circle.png using Guid(e63e19b592fc89c46b22961b98684cd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61da481221f825d26814bb013ca52d5d') in 0.012489 seconds 
+  Import took 0.017033 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Devion Games/Flat GUI/Elements/Square Dotted Outline.png
+  artifactKey: Guid(0eef136d195d7754ab20358ba0ef79b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Elements/Square Dotted Outline.png using Guid(0eef136d195d7754ab20358ba0ef79b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb5850d513c4c0e11a8f0ee93daf1e75') in 0.020615 seconds 
+  Import took 0.025650 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000485 seconds.
+  path: Assets/Devion Games/Flat GUI/Elements/Rounded Square.png
+  artifactKey: Guid(10645e95a9c6dac4c994eff825984384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Elements/Rounded Square.png using Guid(10645e95a9c6dac4c994eff825984384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd985c5d996be59b7b9fac7ddb52e8ac4') in 0.019838 seconds 
+  Import took 0.025123 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/Devion Games/Flat GUI/Elements/Square Shadow.png
+  artifactKey: Guid(d5c1f7c36945d3d46bf3e0bb0318c628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Elements/Square Shadow.png using Guid(d5c1f7c36945d3d46bf3e0bb0318c628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0b27b8b55672189758d522bc7912b21') in 0.029381 seconds 
+  Import took 0.034862 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: Assets/Devion Games/Flat GUI/Elements/CompassBackground.png
+  artifactKey: Guid(62b15a40e8c97224bb27b56f33dcb832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Elements/CompassBackground.png using Guid(62b15a40e8c97224bb27b56f33dcb832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2802e2d948b6ed30590506a4fd1d15e') in 0.022953 seconds 
+  Import took 0.027190 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/Devion Games/Flat GUI/Elements/Selection Dot.png
+  artifactKey: Guid(be0b942b1526a934a9ae99e172a9b6f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Elements/Selection Dot.png using Guid(be0b942b1526a934a9ae99e172a9b6f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bce69761ac4be96db83471e2f7f85906') in 0.020578 seconds 
+  Import took 0.025086 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/Devion Games/Flat GUI/Elements/Circle Outline.png
+  artifactKey: Guid(caf5fcd9de186224ba336911a0f680b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Elements/Circle Outline.png using Guid(caf5fcd9de186224ba336911a0f680b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ca012db25bee8bfb5a30d74037b9985') in 0.020119 seconds 
+  Import took 0.025010 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Devion Games/Flat GUI/Elements/Circle Inner Glow Big.png
+  artifactKey: Guid(9bd49b3d56e6e8b4197c83fda3a853e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Elements/Circle Inner Glow Big.png using Guid(9bd49b3d56e6e8b4197c83fda3a853e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38de51d6c161457456c8042685799221') in 0.016889 seconds 
+  Import took 0.021385 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.813831 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Arrow Down.png
+  artifactKey: Guid(51b3d2b89c40acc48b35981e140c69fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Arrow Down.png using Guid(51b3d2b89c40acc48b35981e140c69fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4f1a508132283f09d547e0dddb648a9') in 0.063436 seconds 
+  Import took 0.068104 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000510 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Following.png
+  artifactKey: Guid(2a42a271d6ff80d419ac0eb08bca7f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Following.png using Guid(2a42a271d6ff80d419ac0eb08bca7f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '845814e931effa02a2546851cd1a5ff5') in 0.013956 seconds 
+  Import took 0.017169 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/List.png
+  artifactKey: Guid(1929554932a27a043bf0c30899015047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/List.png using Guid(1929554932a27a043bf0c30899015047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50d1ae4141641fa598fe4ec863aef067') in 0.013648 seconds 
+  Import took 0.016981 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000339 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Earth.png
+  artifactKey: Guid(579c4d5b2aa357541ac1ad684a2c825b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Earth.png using Guid(579c4d5b2aa357541ac1ad684a2c825b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '903f6d66d9300e3a2578e7f2ac7bb79f') in 0.013590 seconds 
+  Import took 0.016848 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Compas.png
+  artifactKey: Guid(f397df8f642d4594ebf9995bea62e308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Compas.png using Guid(f397df8f642d4594ebf9995bea62e308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7acced7263ee56e1f26a8f2b7faaf46a') in 0.017632 seconds 
+  Import took 0.021814 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000345 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Locked.png
+  artifactKey: Guid(a7e596542bcca6540987d28297588d59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Locked.png using Guid(a7e596542bcca6540987d28297588d59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77a585253dc100f7625c3b16699262f0') in 0.028098 seconds 
+  Import took 0.032274 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Cancel.png
+  artifactKey: Guid(e7494d709beed4f4d9252e5cddfbfa9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Cancel.png using Guid(e7494d709beed4f4d9252e5cddfbfa9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79a0a08cd542cc2d7553cae97f238cba') in 0.015527 seconds 
+  Import took 0.018942 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Home.png
+  artifactKey: Guid(26095cea90be4584cbab9802c8c60449) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Home.png using Guid(26095cea90be4584cbab9802c8c60449) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62f30344f0dbc92819abce12784f3a44') in 0.015466 seconds 
+  Import took 0.019782 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000433 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Good.png
+  artifactKey: Guid(c7c34ce9d5790de408b83e0fcd7a17a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Good.png using Guid(c7c34ce9d5790de408b83e0fcd7a17a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '192e458ce8d12e2d4f94ebb688ac9bb7') in 0.020813 seconds 
+  Import took 0.026124 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Back.png
+  artifactKey: Guid(0b45c7a6b73f3fc488b96c82c3aa8352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Back.png using Guid(0b45c7a6b73f3fc488b96c82c3aa8352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ec89f4ec131ec134b5057e45c1a35a2') in 0.024528 seconds 
+  Import took 0.029225 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Forward.png
+  artifactKey: Guid(3ad51edd66adec446bd49a6c01ce6444) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Forward.png using Guid(3ad51edd66adec446bd49a6c01ce6444) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d261a356223793792d914a2e1bc31e9') in 0.013664 seconds 
+  Import took 0.017409 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Link.png
+  artifactKey: Guid(55a785d63b96af04782b939e24908dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Link.png using Guid(55a785d63b96af04782b939e24908dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e7b53de8f4eb7db16126f004cfe6dc3') in 0.013105 seconds 
+  Import took 0.016533 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Message.png
+  artifactKey: Guid(b8d4038d43e3f7744a1743020000e10d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Message.png using Guid(b8d4038d43e3f7744a1743020000e10d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8041df3b363698bab62d00bd627ecc1f') in 0.012263 seconds 
+  Import took 0.015492 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Book.png
+  artifactKey: Guid(6b62aac7fb702f54aa477bef708ae413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Book.png using Guid(6b62aac7fb702f54aa477bef708ae413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c491285f2eb1ba0d827b22cf60929341') in 0.012293 seconds 
+  Import took 0.015630 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Mark.png
+  artifactKey: Guid(5216e79063450d447b0e08e05d5ddab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Mark.png using Guid(5216e79063450d447b0e08e05d5ddab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dcf871693228248b9e44581cdeb6268') in 0.012069 seconds 
+  Import took 0.015441 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Friends.png
+  artifactKey: Guid(bf0fce8bec922ef4e91da77a98e26570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Friends.png using Guid(bf0fce8bec922ef4e91da77a98e26570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8a159aa078d39f299fc7d84d56a571d') in 0.012412 seconds 
+  Import took 0.015794 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Feedback.png
+  artifactKey: Guid(f082c638cc1921341b104af9843a8824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Feedback.png using Guid(f082c638cc1921341b104af9843a8824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4175f8b2f496d608a2689a9e7df6cb85') in 0.020236 seconds 
+  Import took 0.024825 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/File.png
+  artifactKey: Guid(aecd27e35f899054c809b4b7da40cd72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/File.png using Guid(aecd27e35f899054c809b4b7da40cd72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c077b461939b4414785c0606d266890') in 0.020546 seconds 
+  Import took 0.025482 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Followers.png
+  artifactKey: Guid(d892303628f0aa24499ccbac9aaafb63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Followers.png using Guid(d892303628f0aa24499ccbac9aaafb63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7042c393aae94b77aa6fed4d30f67935') in 0.021292 seconds 
+  Import took 0.026697 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Exit.png
+  artifactKey: Guid(8902d7ebdf4e5fc42a00c1f68a79f4fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Exit.png using Guid(8902d7ebdf4e5fc42a00c1f68a79f4fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80c2e056caeff3f417a423e1ec4119e0') in 0.014632 seconds 
+  Import took 0.018623 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/At.png
+  artifactKey: Guid(7803647d0a2286841bab0eeb732a1f5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/At.png using Guid(7803647d0a2286841bab0eeb732a1f5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b3fa2914beefa6dcf8422db9d84dcca') in 0.012162 seconds 
+  Import took 0.015957 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons
+  artifactKey: Guid(eebd3c0b4fdf6fd4f862b7d019fe09f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons using Guid(eebd3c0b4fdf6fd4f862b7d019fe09f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a623c188e9f12fe970379f8718e1241b') in 0.005357 seconds 
+  Import took 0.008837 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Download.png
+  artifactKey: Guid(c47358044f5c5ed4295070bf7d05ca01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Download.png using Guid(c47358044f5c5ed4295070bf7d05ca01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8d34e2cb7726b4caec9921580aa488e') in 0.012274 seconds 
+  Import took 0.015664 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Edit.png
+  artifactKey: Guid(8d56712869198a2429ed8fbf2e62be82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Edit.png using Guid(8d56712869198a2429ed8fbf2e62be82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c534d18e102443bc264ef47852f3a206') in 0.012388 seconds 
+  Import took 0.015801 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Audio.png
+  artifactKey: Guid(6145e6572cc4b0e45b390310cffc1512) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Audio.png using Guid(6145e6572cc4b0e45b390310cffc1512) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af17ba0fe7487428c8e808f291d81f25') in 0.012307 seconds 
+  Import took 0.015671 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Grade.png
+  artifactKey: Guid(ee0e1901911f8144e849786d4101a309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Grade.png using Guid(ee0e1901911f8144e849786d4101a309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b477112e0c91e23589e58ffbb4e481d') in 0.014705 seconds 
+  Import took 0.019131 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Location.png
+  artifactKey: Guid(d79edf6777b9b064db337318257d1b9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Location.png using Guid(d79edf6777b9b064db337318257d1b9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91302d4138b842fe0063d71e14a7edb9') in 0.019768 seconds 
+  Import took 0.025638 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000528 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Emote.png
+  artifactKey: Guid(d80ed2cedba16874190fc8006435823d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Emote.png using Guid(d80ed2cedba16874190fc8006435823d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7c377f91226513ffcff0c8c91cafcad') in 0.023583 seconds 
+  Import took 0.029102 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Front.png
+  artifactKey: Guid(09b7e51ab5390814a84a543b06b9c918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Front.png using Guid(09b7e51ab5390814a84a543b06b9c918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fba72af1fd20440026d50efa50a47f9') in 0.028042 seconds 
+  Import took 0.032820 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Info.png
+  artifactKey: Guid(3fccbea4b15adee4e98fc59b09952d10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Info.png using Guid(3fccbea4b15adee4e98fc59b09952d10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dacb51ab8f011d5b43ed2199c661ec94') in 0.013576 seconds 
+  Import took 0.017179 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Delete.png
+  artifactKey: Guid(fdaa702100942474b96dcde34cb72803) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Delete.png using Guid(fdaa702100942474b96dcde34cb72803) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9ef2d7c1e0a64ffd1aa80f4416d3bc9') in 0.012545 seconds 
+  Import took 0.016022 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Hide.png
+  artifactKey: Guid(b489c6c9f6a2a0c4585dea48c4a2c76e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Hide.png using Guid(b489c6c9f6a2a0c4585dea48c4a2c76e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12c75286266b249c4ff81dce8e6c4327') in 0.023306 seconds 
+  Import took 0.027014 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Comments.png
+  artifactKey: Guid(a06fc930d3ce8b8459ab6d4a29dd7806) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Comments.png using Guid(a06fc930d3ce8b8459ab6d4a29dd7806) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a0f30e14eca66ae9199c78850b8cc99') in 0.017364 seconds 
+  Import took 0.022273 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Font.png
+  artifactKey: Guid(44f52361cb8183745aee1d463caea5da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Font.png using Guid(44f52361cb8183745aee1d463caea5da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe77cdb0ddc7acb8a9eeb9a7bed2df6b') in 0.019155 seconds 
+  Import took 0.025128 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.039542 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Minus.png
+  artifactKey: Guid(a710e9e8ae178e249a937c52eca5ea1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Minus.png using Guid(a710e9e8ae178e249a937c52eca5ea1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16aa975c5d72399fd2ef61fb7316c082') in 0.016555 seconds 
+  Import took 0.021547 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Ok.png
+  artifactKey: Guid(a341abb3765fc4241bd031494f03c0bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Ok.png using Guid(a341abb3765fc4241bd031494f03c0bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54f78fa47188bf2909a77e739a4aa1f8') in 0.019540 seconds 
+  Import took 0.023763 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Navigation.png
+  artifactKey: Guid(7aaa8e236c3785f4da59b9732e934c0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Navigation.png using Guid(7aaa8e236c3785f4da59b9732e934c0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b489c34757ea4c6e30b53cac56f0dc04') in 0.019879 seconds 
+  Import took 0.025483 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/More.png
+  artifactKey: Guid(c7c9eb7cb3ec5b841909b0b03d66e02c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/More.png using Guid(c7c9eb7cb3ec5b841909b0b03d66e02c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2337dba35e7f8fb556fa6676594850ca') in 0.020822 seconds 
+  Import took 0.027689 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Next.png
+  artifactKey: Guid(de5cecddae69ecd47a3602b91f44ef5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Next.png using Guid(de5cecddae69ecd47a3602b91f44ef5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac77172eb8c1d39ccd2d90ba0bb8beab') in 0.019302 seconds 
+  Import took 0.024605 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Plus.png
+  artifactKey: Guid(726d7b476842d53499e18be780818c48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Plus.png using Guid(726d7b476842d53499e18be780818c48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30fffaf7be8945c7c2731d0259e5b82c') in 0.019228 seconds 
+  Import took 0.023632 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Ranking.png
+  artifactKey: Guid(9a3349a157574c24a8c727d0f9f3f217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Ranking.png using Guid(9a3349a157574c24a8c727d0f9f3f217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f97230b7a2751d7428327736c22dc0c2') in 0.026106 seconds 
+  Import took 0.030590 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Person.png
+  artifactKey: Guid(12a6ad9decdb9644ba80c70107876400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Person.png using Guid(12a6ad9decdb9644ba80c70107876400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d7c2f1d24c7a78a0bf131363cd7031e') in 0.026711 seconds 
+  Import took 0.030760 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.050031 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Refresh.png
+  artifactKey: Guid(459f0374d08507841b6969751d3e47e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Refresh.png using Guid(459f0374d08507841b6969751d3e47e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdc487c8b2e0ff17ce86c24451a46b77') in 0.016874 seconds 
+  Import took 0.022357 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Sound.png
+  artifactKey: Guid(e492d02d90d35f243b2829c3f03859cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Sound.png using Guid(e492d02d90d35f243b2829c3f03859cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfeed7025004e3fcdfb24285b4e88d2b') in 0.021429 seconds 
+  Import took 0.026556 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Search.png
+  artifactKey: Guid(9bf7d4a6ee904034d888dcc0522f3975) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Search.png using Guid(9bf7d4a6ee904034d888dcc0522f3975) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '706191efa391226125cafb1510ad4b46') in 0.020372 seconds 
+  Import took 0.025152 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Save.png
+  artifactKey: Guid(5139fa4d495a3de479c2cd7d0b03727e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Save.png using Guid(5139fa4d495a3de479c2cd7d0b03727e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0732292e49b448f8b32883e140f12707') in 0.020916 seconds 
+  Import took 0.026506 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Star.png
+  artifactKey: Guid(639c1478b323d6a41ad2539b928d8010) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Star.png using Guid(639c1478b323d6a41ad2539b928d8010) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3be74c416be2986fe52da1c05d2cd7ae') in 0.021813 seconds 
+  Import took 0.028275 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Setting.png
+  artifactKey: Guid(b461a552bbdc81846a670b44f5250f2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Setting.png using Guid(b461a552bbdc81846a670b44f5250f2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb9c4f73131d28d4875cd0360d7ed343') in 0.021232 seconds 
+  Import took 0.026062 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000299 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Share.png
+  artifactKey: Guid(f3d0f726bceeac646ba5a124840389d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Share.png using Guid(f3d0f726bceeac646ba5a124840389d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b373ad20687982a944e74069f3eee74') in 0.019959 seconds 
+  Import took 0.025160 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Shield.png
+  artifactKey: Guid(a529d1cc104670d4484e610a84a21917) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Shield.png using Guid(a529d1cc104670d4484e610a84a21917) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdf853f8f5a545a42ae0a468ef7859e9') in 0.023693 seconds 
+  Import took 0.029415 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.219945 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/Update.png
+  artifactKey: Guid(73e421a875bc1b940a75fcdc5b6bafc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/Update.png using Guid(73e421a875bc1b940a75fcdc5b6bafc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38f7d74bb0c50452619b862a0ec73491') in 0.019143 seconds 
+  Import took 0.023529 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000374 seconds.
+  path: Assets/Devion Games/Flat GUI/Icons/View.png
+  artifactKey: Guid(35b2bb3492db5be40930a20818c9d136) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Icons/View.png using Guid(35b2bb3492db5be40930a20818c9d136) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92dbf7a737a5081f4dd26228d7169047') in 0.015884 seconds 
+  Import took 0.020644 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.398695 seconds.
+  path: Assets/Devion Games/Flat GUI/Prefabs/Actionbar Slot.prefab
+  artifactKey: Guid(426c5458184e19546a349bc7d5d4cfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Prefabs/Actionbar Slot.prefab using Guid(426c5458184e19546a349bc7d5d4cfbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ea3971e2ca80ed1e1ee5a0342aa7aca') in 0.032433 seconds 
+  Import took 0.037217 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000533 seconds.
+  path: Assets/Devion Games/Flat GUI/Prefabs/Dialog Box.prefab
+  artifactKey: Guid(eea25108b2f8d074ebeca85bde5318d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Prefabs/Dialog Box.prefab using Guid(eea25108b2f8d074ebeca85bde5318d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '347ecca51dffa53e80396f7d8861719c') in 0.012094 seconds 
+  Import took 0.015760 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000321 seconds.
+  path: Assets/Devion Games/Flat GUI/Prefabs/Stats Bar.prefab
+  artifactKey: Guid(a82076b1ea290da478ca692272ac61b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Prefabs/Stats Bar.prefab using Guid(a82076b1ea290da478ca692272ac61b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3530f8918f5783ff08647a03cf916dfe') in 0.011210 seconds 
+  Import took 0.014901 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000467 seconds.
+  path: Assets/Devion Games/Flat GUI/Prefabs/Window.prefab
+  artifactKey: Guid(566691275c34e9d4eb36e5f63b7bc68a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Prefabs/Window.prefab using Guid(566691275c34e9d4eb36e5f63b7bc68a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51c9506ca1385d65e28aa208d83008c9') in 0.009264 seconds 
+  Import took 0.012535 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000661 seconds.
+  path: Assets/Devion Games/Flat GUI/Prefabs/Scroll View.prefab
+  artifactKey: Guid(bbeec1fb10cb92842a142c6570a960a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Prefabs/Scroll View.prefab using Guid(bbeec1fb10cb92842a142c6570a960a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7729e60a334d97d54330d3e3401b8f63') in 0.020103 seconds 
+  Import took 0.023946 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000460 seconds.
+  path: Assets/Devion Games/Flat GUI/Prefabs/Tooltip.prefab
+  artifactKey: Guid(d99f9ab8a03891049b0be2a6f22cd212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Prefabs/Tooltip.prefab using Guid(d99f9ab8a03891049b0be2a6f22cd212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa400fbd38f8d8b29637b1b233ba07d6') in 0.009651 seconds 
+  Import took 0.013154 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000531 seconds.
+  path: Assets/Devion Games/Flat GUI/Prefabs/Dropdown.prefab
+  artifactKey: Guid(8856af513dc2b0442b25fba2501ec677) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Prefabs/Dropdown.prefab using Guid(8856af513dc2b0442b25fba2501ec677) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5b231a325fe90dda6b9ec24201cfbea') in 0.025579 seconds 
+  Import took 0.032239 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000522 seconds.
+  path: Assets/Devion Games/Flat GUI/Prefabs
+  artifactKey: Guid(61ca7e93d2bf6e74ebd12a8f6baed006) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Prefabs using Guid(61ca7e93d2bf6e74ebd12a8f6baed006) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd5346b44c8bf6b3b2054abdf8891b6f') in 0.008627 seconds 
+  Import took 0.014313 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000402 seconds.
+  path: Assets/Devion Games/Flat GUI/Prefabs/Rectangle Button.prefab
+  artifactKey: Guid(daa42400c3c3b7448b299161cfacfbdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Prefabs/Rectangle Button.prefab using Guid(daa42400c3c3b7448b299161cfacfbdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a84aece33c100abe515f80689f8ecd4') in 0.012493 seconds 
+  Import took 0.017543 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000428 seconds.
+  path: Assets/Devion Games/Flat GUI/Prefabs/Circle Button.prefab
+  artifactKey: Guid(9ae2594c280f52f4c83cad8aeca25b1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Prefabs/Circle Button.prefab using Guid(9ae2594c280f52f4c83cad8aeca25b1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcf75ef0c4ea78a6d372499070e7c4d3') in 0.013285 seconds 
+  Import took 0.018448 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000356 seconds.
+  path: Assets/Devion Games/Flat GUI/Prefabs/Slot.prefab
+  artifactKey: Guid(209f6fd2f5a402f48b8577c5101bb632) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Prefabs/Slot.prefab using Guid(209f6fd2f5a402f48b8577c5101bb632) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33e2eb396105c9d688df60be24181076') in 0.012429 seconds 
+  Import took 0.017704 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003522 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.151 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1151ms)
+		BeginReloadAssembly (132ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (45ms)
+		EndReloadAssembly (947ms)
+			LoadAssemblies (104ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (341ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (48ms)
+			SetupLoadedEditorAssemblies (350ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (96ms)
+				ProcessInitializeOnLoadAttributes (229ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2372 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 124.1 MB.
+System memory in use after: 124.3 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2919.
+Total: 3.195800 ms (FindLiveObjects: 0.203100 ms CreateObjectMapping: 0.080200 ms MarkObjects: 2.877800 ms  DeleteObjects: 0.033500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 275.404051 seconds.
+  path: Assets/Menu/SettingsMenu.cs
+  artifactKey: Guid(689620c46e9845b4983fe5c4de99c716) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu/SettingsMenu.cs using Guid(689620c46e9845b4983fe5c4de99c716) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '351c2b8c7168a106e650411bf3f51790') in 0.014948 seconds 
+  Import took 0.021464 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004023 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.597 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1598ms)
+		BeginReloadAssembly (147ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (49ms)
+		EndReloadAssembly (1368ms)
+			LoadAssemblies (133ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (469ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (63ms)
+			SetupLoadedEditorAssemblies (550ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (3ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (123ms)
+				ProcessInitializeOnLoadAttributes (353ms)
+				ProcessInitializeOnLoadMethodAttributes (48ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (19ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2373 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 124.1 MB.
+System memory in use after: 124.3 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2922.
+Total: 3.164200 ms (FindLiveObjects: 0.224300 ms CreateObjectMapping: 0.093900 ms MarkObjects: 2.819200 ms  DeleteObjects: 0.025400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 72.992515 seconds.
+  path: Assets/Menu/SettingsMenu.cs
+  artifactKey: Guid(689620c46e9845b4983fe5c4de99c716) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu/SettingsMenu.cs using Guid(689620c46e9845b4983fe5c4de99c716) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1376f5b5ed1ea0c742b79afd5525aad4') in 0.013185 seconds 
+  Import took 0.023592 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003916 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.107 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1107ms)
+		BeginReloadAssembly (129ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (895ms)
+			LoadAssemblies (113ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (328ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (297ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (80ms)
+				ProcessInitializeOnLoadAttributes (191ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2373 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 124.1 MB.
+System memory in use after: 124.3 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2924.
+Total: 2.902700 ms (FindLiveObjects: 0.182000 ms CreateObjectMapping: 0.073200 ms MarkObjects: 2.621800 ms  DeleteObjects: 0.024200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004272 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.069 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1069ms)
+		BeginReloadAssembly (129ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (874ms)
+			LoadAssemblies (92ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (300ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (61ms)
+			SetupLoadedEditorAssemblies (326ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (89ms)
+				ProcessInitializeOnLoadAttributes (214ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2373 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 124.1 MB.
+System memory in use after: 124.3 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2926.
+Total: 3.504300 ms (FindLiveObjects: 0.206600 ms CreateObjectMapping: 0.128100 ms MarkObjects: 3.107700 ms  DeleteObjects: 0.059700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007436 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.163 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1164ms)
+		BeginReloadAssembly (123ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (40ms)
+		EndReloadAssembly (973ms)
+			LoadAssemblies (114ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (337ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (357ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (98ms)
+				ProcessInitializeOnLoadAttributes (231ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2373 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 124.0 MB.
+System memory in use after: 124.3 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2928.
+Total: 5.403000 ms (FindLiveObjects: 0.245500 ms CreateObjectMapping: 0.077600 ms MarkObjects: 5.048900 ms  DeleteObjects: 0.029400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 181.879112 seconds.
+  path: Assets/MainMixer.mixer
+  artifactKey: Guid(8916c299241758d4288522707bfad43d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainMixer.mixer using Guid(8916c299241758d4288522707bfad43d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adc0637ddc503a513eb4b9a52f119bb7') in 0.038343 seconds 
+  Import took 0.044221 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005114 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.154 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1154ms)
+		BeginReloadAssembly (145ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (44ms)
+		EndReloadAssembly (935ms)
+			LoadAssemblies (108ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (310ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (39ms)
+			SetupLoadedEditorAssemblies (314ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (88ms)
+				ProcessInitializeOnLoadAttributes (202ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2373 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 124.1 MB.
+System memory in use after: 124.4 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2930.
+Total: 4.172000 ms (FindLiveObjects: 0.201100 ms CreateObjectMapping: 0.076700 ms MarkObjects: 3.873300 ms  DeleteObjects: 0.019800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 197.057299 seconds.
+  path: Assets/easy UI emerald - default.psd
+  artifactKey: Guid(1f758ec661cd10f4b889c713e4d957cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/easy UI emerald - default.psd using Guid(1f758ec661cd10f4b889c713e4d957cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6d7e72ddbab2161db2d0e5c327f0442') in 0.071307 seconds 
+  Import took 0.075804 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.387621 seconds.
+  path: Assets/Menu/SettingsMenu.cs
+  artifactKey: Guid(689620c46e9845b4983fe5c4de99c716) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu/SettingsMenu.cs using Guid(689620c46e9845b4983fe5c4de99c716) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ba4f85b75fe8b1f1f77adcfbbd387ef') in 0.002768 seconds 
+  Import took 0.006543 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 164.060529 seconds.
+  path: Assets/Devion Games/UI Widgets
+  artifactKey: Guid(17c57564f60ca4b43b5320aacda9c6d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/UI Widgets using Guid(17c57564f60ca4b43b5320aacda9c6d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68e9d2fd76de468fc88621dc2238ce24') in 0.012385 seconds 
+  Import took 0.018689 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.400830 seconds.
+  path: Assets/Devion Games/UI Widgets/Scripts
+  artifactKey: Guid(a18a8867dbcfe4444a865c63932c2067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/UI Widgets/Scripts using Guid(a18a8867dbcfe4444a865c63932c2067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c39ae683dd26dec749154bc2af32549') in 0.011722 seconds 
+  Import took 0.016653 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.522398 seconds.
+  path: Assets/Devion Games/Utilities
+  artifactKey: Guid(cbcbf8bc0e847e347b242cb1747dc330) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Utilities using Guid(cbcbf8bc0e847e347b242cb1747dc330) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d4745d91574e8ab423ceaf37ad06d43') in 0.010891 seconds 
+  Import took 0.016604 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.213176 seconds.
+  path: Assets/Devion Games/Module Manager
+  artifactKey: Guid(03a2efc88fc3d494c964f5ecc4363ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Module Manager using Guid(03a2efc88fc3d494c964f5ecc4363ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddde933b7be747ef4f6410f4edf524b8') in 0.011676 seconds 
+  Import took 0.017116 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003847 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.978 seconds
+Domain Reload Profiling:
+	ReloadAssembly (978ms)
+		BeginReloadAssembly (106ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (815ms)
+			LoadAssemblies (81ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (284ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (311ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (84ms)
+				ProcessInitializeOnLoadAttributes (205ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2373 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 124.2 MB.
+System memory in use after: 124.4 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2935.
+Total: 3.580100 ms (FindLiveObjects: 0.238900 ms CreateObjectMapping: 0.089200 ms MarkObjects: 3.185000 ms  DeleteObjects: 0.065700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003900 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.997 seconds
+Domain Reload Profiling:
+	ReloadAssembly (997ms)
+		BeginReloadAssembly (121ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (808ms)
+			LoadAssemblies (86ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (289ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (293ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (190ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2373 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 124.2 MB.
+System memory in use after: 124.4 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2937.
+Total: 3.597800 ms (FindLiveObjects: 0.260100 ms CreateObjectMapping: 0.081200 ms MarkObjects: 3.237500 ms  DeleteObjects: 0.018100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008598 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.171 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1172ms)
+		BeginReloadAssembly (118ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (982ms)
+			LoadAssemblies (102ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (339ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (357ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (96ms)
+				ProcessInitializeOnLoadAttributes (236ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2373 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 124.2 MB.
+System memory in use after: 124.4 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2939.
+Total: 2.984700 ms (FindLiveObjects: 0.201500 ms CreateObjectMapping: 0.081200 ms MarkObjects: 2.674700 ms  DeleteObjects: 0.026000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.063424 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.230 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1230ms)
+		BeginReloadAssembly (132ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (1017ms)
+			LoadAssemblies (114ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (450ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (306ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (88ms)
+				ProcessInitializeOnLoadAttributes (196ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2373 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 124.1 MB.
+System memory in use after: 124.3 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2941.
+Total: 3.203700 ms (FindLiveObjects: 0.195900 ms CreateObjectMapping: 0.076800 ms MarkObjects: 2.907100 ms  DeleteObjects: 0.022700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003861 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.044 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1045ms)
+		BeginReloadAssembly (117ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (854ms)
+			LoadAssemblies (97ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (309ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (313ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (79ms)
+				ProcessInitializeOnLoadAttributes (205ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2373 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 124.2 MB.
+System memory in use after: 124.4 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2943.
+Total: 2.747800 ms (FindLiveObjects: 0.182500 ms CreateObjectMapping: 0.070700 ms MarkObjects: 2.475300 ms  DeleteObjects: 0.018400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 574.854284 seconds.
+  path: Assets/Devion Games/Flat GUI/Elements/Arrow.png
+  artifactKey: Guid(3651b1b375ec49747ac2053c0caabb65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Elements/Arrow.png using Guid(3651b1b375ec49747ac2053c0caabb65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '758750a328c5317f2a693b4966ac3ea6') in 0.057992 seconds 
+  Import took 0.062819 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/Devion Games/Flat GUI/Elements/Square.png
+  artifactKey: Guid(d03fea6710d5d5b47b6157005fec0375) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Elements/Square.png using Guid(d03fea6710d5d5b47b6157005fec0375) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c099c0e5cd2516741cb8f38b7fb2ebfc') in 0.017720 seconds 
+  Import took 0.022035 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/Devion Games/Flat GUI/Elements/Circle Outline Big.png
+  artifactKey: Guid(f2ce57ceddb53384ea358da0a27445b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Elements/Circle Outline Big.png using Guid(f2ce57ceddb53384ea358da0a27445b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff2e251200e5df8d5b51c371e317b402') in 0.027364 seconds 
+  Import took 0.031850 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/Devion Games/Flat GUI/Elements/Crosshair.png
+  artifactKey: Guid(576e7db613e9d024fb1ac68e765255bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Elements/Crosshair.png using Guid(576e7db613e9d024fb1ac68e765255bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dafba0822cfe2c2c7a6708094338166') in 0.028351 seconds 
+  Import took 0.032603 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Devion Games/Flat GUI/Elements/Circle.png
+  artifactKey: Guid(e63e19b592fc89c46b22961b98684cd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Elements/Circle.png using Guid(e63e19b592fc89c46b22961b98684cd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8c2929db40415075d71fb546c240ae0') in 0.012007 seconds 
+  Import took 0.017168 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/Devion Games/Flat GUI/Elements/Square Dotted Outline.png
+  artifactKey: Guid(0eef136d195d7754ab20358ba0ef79b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Elements/Square Dotted Outline.png using Guid(0eef136d195d7754ab20358ba0ef79b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c74b94a3860d178addb9cae4e99faf6b') in 0.023052 seconds 
+  Import took 0.028469 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/Devion Games/Flat GUI/Elements/CompassBackground.png
+  artifactKey: Guid(62b15a40e8c97224bb27b56f33dcb832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Elements/CompassBackground.png using Guid(62b15a40e8c97224bb27b56f33dcb832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5fa6d9fca7549ced00ce1cd09ff48b7') in 0.012665 seconds 
+  Import took 0.017851 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Devion Games/Flat GUI/Elements/Circle Inner Glow Big.png
+  artifactKey: Guid(9bd49b3d56e6e8b4197c83fda3a853e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Elements/Circle Inner Glow Big.png using Guid(9bd49b3d56e6e8b4197c83fda3a853e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbcabe8b9a6a66332d12354e98c90fc6') in 0.018375 seconds 
+  Import took 0.024395 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000308 seconds.
+  path: Assets/Devion Games/Flat GUI/Elements/Square Outline.png
+  artifactKey: Guid(a9b53e4a2b293b34188ac48b59d1f8e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Elements/Square Outline.png using Guid(a9b53e4a2b293b34188ac48b59d1f8e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6964c97d2cd609e05069440cfb94016') in 0.014646 seconds 
+  Import took 0.019656 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Devion Games/Flat GUI/Elements/Square Shadowed.png
+  artifactKey: Guid(c435d628874ea5549bb1eeaaa736227c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Elements/Square Shadowed.png using Guid(c435d628874ea5549bb1eeaaa736227c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '183c15b30c107cade13db0dc8668fb76') in 0.013904 seconds 
+  Import took 0.020018 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Devion Games/Flat GUI/Elements/Header.png
+  artifactKey: Guid(983d402d99210e841baafff3e522d4eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Elements/Header.png using Guid(983d402d99210e841baafff3e522d4eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cf84c31b2ff0bf16054f713495b55ba') in 0.015506 seconds 
+  Import took 0.020065 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/Devion Games/Flat GUI/Elements/CompassLine.png
+  artifactKey: Guid(2172cca045c47b24f96a75a4ab631049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Elements/CompassLine.png using Guid(2172cca045c47b24f96a75a4ab631049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99597b7834731b8b8b2d70640996ca4c') in 0.013547 seconds 
+  Import took 0.018121 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Devion Games/Flat GUI/Elements/Rounded Square Outline.png
+  artifactKey: Guid(a7c354099fc3dc347972af2a63a91179) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Elements/Rounded Square Outline.png using Guid(a7c354099fc3dc347972af2a63a91179) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3d7a8d8f9abebb86dd308b98274321d') in 0.013452 seconds 
+  Import took 0.017722 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Devion Games/Flat GUI/Elements/Circle Big.png
+  artifactKey: Guid(4e1c295a2e6ae824fbd7144812bd7a97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Elements/Circle Big.png using Guid(4e1c295a2e6ae824fbd7144812bd7a97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43585c0fa7e21a26d3f8d8079833e08f') in 0.015080 seconds 
+  Import took 0.019453 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Devion Games/Flat GUI/Elements/Compass.png
+  artifactKey: Guid(e9974645e2b89844e8f6c370f502ca20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Elements/Compass.png using Guid(e9974645e2b89844e8f6c370f502ca20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b33436436bf4ae7a4236a42f66caea44') in 0.014097 seconds 
+  Import took 0.018160 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/Devion Games/Flat GUI/Elements/Rounded Square Dotted Outline.png
+  artifactKey: Guid(c0e313976f2ff294d8041a9c86a671ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Elements/Rounded Square Dotted Outline.png using Guid(c0e313976f2ff294d8041a9c86a671ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9dfe36f3948968324f5c5ea5c9d0d8f') in 0.015551 seconds 
+  Import took 0.020794 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Devion Games/Flat GUI/Elements/Rounded Square.png
+  artifactKey: Guid(10645e95a9c6dac4c994eff825984384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Elements/Rounded Square.png using Guid(10645e95a9c6dac4c994eff825984384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc4e0000a52a6ac1b5bb613a0ba75026') in 0.016090 seconds 
+  Import took 0.020680 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Devion Games/Flat GUI/Elements/Square Shadow.png
+  artifactKey: Guid(d5c1f7c36945d3d46bf3e0bb0318c628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Elements/Square Shadow.png using Guid(d5c1f7c36945d3d46bf3e0bb0318c628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '825f2fe29fd4284d3a82d8cb5b623cf3') in 0.015714 seconds 
+  Import took 0.020151 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000366 seconds.
+  path: Assets/Devion Games/Flat GUI/Elements/Circle Outline.png
+  artifactKey: Guid(caf5fcd9de186224ba336911a0f680b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Devion Games/Flat GUI/Elements/Circle Outline.png using Guid(caf5fcd9de186224ba336911a0f680b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0f89542ab93dc5297fdcd1133180c88') in 0.012198 seconds 
+  Import took 0.016567 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.919576 seconds.
+  path: Assets/Menu/MainMixer.mixer
+  artifactKey: Guid(8916c299241758d4288522707bfad43d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu/MainMixer.mixer using Guid(8916c299241758d4288522707bfad43d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e954b9ab245746332bfcc8ad51a3041b') in 0.008824 seconds 
+  Import took 0.013944 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 499.752140 seconds.
+  path: Assets/Menu/SettingsMenu.cs
+  artifactKey: Guid(689620c46e9845b4983fe5c4de99c716) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu/SettingsMenu.cs using Guid(689620c46e9845b4983fe5c4de99c716) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5d2413a16b2087d8eab48cbc9a960bc') in 0.003087 seconds 
+  Import took 0.008747 seconds .
+
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
