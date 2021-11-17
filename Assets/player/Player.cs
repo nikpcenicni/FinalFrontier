@@ -202,32 +202,29 @@ public class Player : MonoBehaviour
     /*void updateHealtText() {
 
     }*/
-    
+
     //moon rock collection
-    void OnTriggerEnter2D(Collider2D other ){
-        if(other.transform.tag == "moonRock"){
-            coins ++;
-            if (coins < 10) 
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.transform.tag == "moonRock")
+        {
+            coins++;
+            if (coins < 10)
                 textCoins.text = "00" + coins.ToString();
-            else if (coins < 100 && coins >= 10) 
+            else if (coins < 100 && coins >= 10)
                 textCoins.text = "0" + coins.ToString();
             else
                 textCoins.text = coins.ToString();
             Destroy(other.gameObject);
         }
-    }
-
-
-
-    // enemy damage detection
-    void OnCollisionEnter(Collision collision)
-    {
-        Enemy other = collision.gameObject.GetComponent<Enemy>();
         if (other.transform.tag == "Enemy")
         {
             TakeDamage(1);
+            rb.transform.position = originalPos;
+
         }
     }
+
 
 
     public void levelCompleted() {
