@@ -69,6 +69,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
+    <Compile Include="Assets\Menu\SettingsMenu.cs" />
     <Compile Include="Assets\parallax.cs" />
     <Compile Include="Assets\Enemy\Enemy.cs" />
     <Compile Include="Assets\player\Weapon.cs" />
@@ -110,7 +111,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\GameAssets.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
-    <Compile Include="Assets\Menu\SettingsMenu.cs" />
+    <Compile Include="Assets\player\healthBar.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -801,13 +802,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="DevionGames.UIWidgets.csproj">
-      <Project>{BEDF07F9-85AF-6008-691D-C34C2C456F8B}</Project>
-      <Name>DevionGames.UIWidgets</Name>
-    </ProjectReference>
     <ProjectReference Include="DevionGames.Utilities.csproj">
       <Project>{41CABF5D-E8B8-D117-6F1F-6355A994CE3B}</Project>
       <Name>DevionGames.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="DevionGames.UIWidgets.csproj">
+      <Project>{BEDF07F9-85AF-6008-691D-C34C2C456F8B}</Project>
+      <Name>DevionGames.UIWidgets</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

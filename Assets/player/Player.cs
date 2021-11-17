@@ -9,7 +9,10 @@ public class Player : MonoBehaviour
     public static int level = 0;
     public int coins = 5;
     public int bank;
-    public int health = 5;
+    public int maxHealth = 5;
+    public int currentHealth;
+
+    public healthBar healthBar;
     
     public float speed;
     public float jumpforce;
@@ -48,6 +51,8 @@ public class Player : MonoBehaviour
         viewRender = GetComponent<SpriteRenderer>();
         Time.timeScale = 1f;
         originalPos = new Vector3(rb.transform.position.x, rb.transform.position.y, rb.transform.position.z);
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
         loadPlayer();
         
     }
@@ -70,6 +75,12 @@ public class Player : MonoBehaviour
 
 
     // Player Functions
+    void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
+    }
+
     public void addCoins(int amount){
         coins += amount;
     }
@@ -82,7 +93,7 @@ public class Player : MonoBehaviour
     void TryTakeHealthPot() {
 
     }
-
+/*
     void Hurt(){
         health--;
         if (health <= 0){
@@ -90,7 +101,7 @@ public class Player : MonoBehaviour
         }else {
 
         }
-    }
+    }*/
 
 
     // Movement
@@ -166,6 +177,8 @@ public class Player : MonoBehaviour
         if (rb.transform.position.y < -11) {
             fell = true;
             bank = coins;
+            TakeDamage(1);
+            rb.transform.position = originalPos;
         }
     }
 
@@ -184,9 +197,9 @@ public class Player : MonoBehaviour
         else
             textCoins.text = coins.ToString();
     }
-    void updateHealtText() {
+    /*void updateHealtText() {
 
-    }
+    }*/
     
     //moon rock collection
     void OnTriggerEnter2D(Collider2D other ){
@@ -208,7 +221,7 @@ public class Player : MonoBehaviour
     void OnTriggerEnter2D(Collision2D collision){
         Enemy enemy = collision.collider.GetComponent<Enemy>();
         if (enemy != null){
-            Hurt();
+            TakeDamage(1);
         }
     }
 
@@ -220,6 +233,8 @@ public class Player : MonoBehaviour
     public void Restart(){
         rb.transform.position = originalPos;
         bank = coins;
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
     }
 
     public void SavePlayer() {
@@ -230,7 +245,7 @@ public class Player : MonoBehaviour
         PlayerData data = SaveSystem.loadPlayer();
 
         level = data.level;
-        health = data.health;
+        currentHealth = data.health;
         bank = data.bank;
         coins = bank;
         for (int i = 0; i < achievementsUnlocked.Length; i++)

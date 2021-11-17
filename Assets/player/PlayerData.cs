@@ -14,7 +14,7 @@ public class PlayerData
 
     public PlayerData (Player Player) {
         level = Player.level;
-        health = Player.health;
+        health = Player.currentHealth;
         bank = Player.bank;
         for (int i = 0; i < achievementsUnlocked.Length; i++) {
             achievementsUnlocked[i] = Player.achievementsUnlocked[i];
