@@ -198,7 +198,7 @@ public class Player : MonoBehaviour
     }
 
     public void addKill() {
-        achievementsProgress[1]++;
+        achievementsProgress[1] += 1;
     }
 
     void CheckAchievementProgress() {
@@ -269,7 +269,8 @@ public class Player : MonoBehaviour
             TakeDamage(1);
             rb.transform.position = originalPos;
 
-        } else if (other.transform.tag == "Kill" ){
+        }
+        if (other.transform.tag == "Kill" ){
             addKill();
             Destroy(other.gameObject);
         }
