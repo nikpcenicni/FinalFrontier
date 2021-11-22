@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
 
     public GameObject deathEffect;
     public GameObject moonRock;
+    public Player player;
 
     private void Start()
     {
@@ -19,7 +20,8 @@ public class Enemy : MonoBehaviour
         curr_enemyHealth -= damage;
 
         if (curr_enemyHealth <= 0) {
-            Die(); 
+            Die();
+            player.addKill();
         }
     }
 

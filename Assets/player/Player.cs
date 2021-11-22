@@ -33,9 +33,11 @@ public class Player : MonoBehaviour
     public bool lastGroundedChecked;
     public bool hasJumped;
 
-    public bool[] achievementsUnlocked = new bool[7];
-    public float[] achievementsProgress = new float[7];
+    public bool[] achievementsUnlocked = new bool[9];
+    public float[] achievementsProgress = new float[9];
 
+    public GameObject pauseMenu;
+    public GameObject deadMenu;
     public TextMeshProUGUI textCoins;
     public Animator animator;
     private SpriteRenderer viewRender;
@@ -66,7 +68,9 @@ public class Player : MonoBehaviour
          BetterJump();
          CheckIfGrounded();
          CheckDirection();
-         SavePlayer();
+        if (pauseMenu.activeSelf || deadMenu.activeSelf) {
+            SavePlayer();
+        }
          CheckIfFall();
          Heal();
          updateCoinText();
@@ -124,15 +128,23 @@ public class Player : MonoBehaviour
     void Move(){
     	float x = Input.GetAxisRaw("Horizontal");
     	moveBy = x * speed;
-        if (!fell) {
-            achievementsProgress[6] += Math.Abs(moveBy);
+        if (!pauseMenu.activeSelf && !deadMenu.activeSelf) {
+            achievementsProgress[6] += Math.Abs(moveBy) * Time.deltaTime;
+        }
+        if (moveBy != 0) {
+            achievementsProgress[8] = 0;
         }
     	rb.velocity = new Vector2(moveBy, rb.velocity.y);
     }
     
     void Jump(){
         if (Input.GetKeyDown(KeyCode.Space) && (isGrounded || additionalJumps > 0)){
-    	    rb.velocity = new Vector2(rb.velocity.x, jumpforce);
+            if (!pauseMenu.activeSelf && !deadMenu.activeSelf)
+            {
+                achievementsProgress[7] += 1;
+            }
+            achievementsProgress[8] = 0;
+            rb.velocity = new Vector2(rb.velocity.x, jumpforce);
             if (hasJumped) {
                 additionalJumps--;
             }
@@ -184,9 +196,43 @@ public class Player : MonoBehaviour
         }
     }
 
+    public void addKill() {
+        achievementsProgress[1]++;
+    }
+
     void CheckAchievementProgress() {
-        if (achievementsProgress[6] > 10850142 && !achievementsUnlocked[6]) {
+        if (!achievementsUnlocked[0]) {
+            //Not Implementing Yet
+        }
+        if (deadMenu.activeSelf) {
+            achievementsProgress[1] = 0;
+        }
+        if (achievementsProgress[1] >= 100 && !achievementsUnlocked[1]) {
+            achievementsUnlocked[1] = true;
+        }
+        if (!achievementsUnlocked[2]) {
+            //Not Implementing Yet
+        }
+        if (!achievementsUnlocked[3]) {
+            //Not Implementing Yet
+        }
+        if (!achievementsUnlocked[4]) {
+            //Not Implementing Yet
+        }
+        if (!achievementsUnlocked[5]) {
+            //Not Implementing Yet
+        }
+        if (achievementsProgress[6] > 180836 && !achievementsUnlocked[6]) {
             achievementsUnlocked[6] = true;
+        }
+        if (achievementsProgress[7] >= 1000 && !achievementsUnlocked[7]) {
+            achievementsUnlocked[7] = true;
+        }
+        if (!pauseMenu.activeSelf && !deadMenu.activeSelf) {
+            achievementsProgress[8] += Time.deltaTime;
+        }
+        if (achievementsProgress[8] >= 900 && !achievementsUnlocked[8]) {
+            achievementsUnlocked[8] = true;
         }
     }
     // Player UI

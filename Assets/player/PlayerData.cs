@@ -8,8 +8,8 @@ public class PlayerData
     public int level;
     public int health;
     public int bank;
-    public bool[] achievementsUnlocked = new bool[7];
-    public float[] achievementsProgress = new float[7];
+    public bool[] achievementsUnlocked = new bool[9];
+    public float[] achievementsProgress = new float[9];
     public int[,,] items = new int[10,10,2];
 
     public PlayerData (Player Player) {
