@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour
 
     public GameObject deathEffect;
     public GameObject moonRock;
-    public Player player;
+    public GameObject confirmKill;
 
     private void Start()
     {
@@ -21,13 +21,13 @@ public class Enemy : MonoBehaviour
 
         if (curr_enemyHealth <= 0) {
             Die();
-            player.addKill();
         }
     }
 
     void Die() {
         Instantiate(deathEffect, transform.position, Quaternion.identity);
         Instantiate(moonRock, transform.position, Quaternion.identity);
+        Instantiate(confirmKill, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 

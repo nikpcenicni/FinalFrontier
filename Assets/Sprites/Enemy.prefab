@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 819079753684704646}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.3944325, y: -0.013306614, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -205,6 +205,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12251f1f2a5548c4e9e988d7582907df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
+  max_enemyhealth: 10
+  curr_enemyHealth: 0
   deathEffect: {fileID: 3457908148527966062, guid: c8cd41090b2c45d48a8da4bc835b1a53, type: 3}
   moonRock: {fileID: 6976353543508891349, guid: 6c3e897022f16e64d80776d556ee40b5, type: 3}
+  confirmKill: {fileID: 7376310981371033223, guid: 9a8d8ddeec9de6947b17bb23916c1809, type: 3}

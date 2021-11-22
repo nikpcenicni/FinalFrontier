@@ -35,6 +35,7 @@ public class Player : MonoBehaviour
 
     public bool[] achievementsUnlocked = new bool[9];
     public float[] achievementsProgress = new float[9];
+    public int kills;
 
     public GameObject pauseMenu;
     public GameObject deadMenu;
@@ -75,8 +76,8 @@ public class Player : MonoBehaviour
          Heal();
          updateCoinText();
          CheckAchievementProgress();
-     
-    }
+        SavePlayer();
+          }
 
 
 
@@ -263,11 +264,14 @@ public class Player : MonoBehaviour
                 textCoins.text = coins.ToString();
             Destroy(other.gameObject);
         }
-        if (other.transform.tag == "Enemy")
+        else if (other.transform.tag == "Enemy")
         {
             TakeDamage(1);
             rb.transform.position = originalPos;
 
+        } else if (other.transform.tag == "Kill" ){
+            addKill();
+            Destroy(other.gameObject);
         }
     }
 
@@ -295,6 +299,7 @@ public class Player : MonoBehaviour
         currentHealth = data.health;
         bank = data.bank;
         coins = bank;
+
         for (int i = 0; i < achievementsUnlocked.Length; i++)
         {
             achievementsUnlocked[i] = data.achievementsUnlocked[i];
