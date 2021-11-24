@@ -71,19 +71,11 @@ public class AchievementMenu : MonoBehaviour
 
         float distance;
         distance = ((achievementsProgress[6] / 6f) * 1.4f) / 1000f;
-        if (distance > 42.195) {
-            distance = 42.195f;
-        }
         m_Text = transform.GetChild(1).gameObject.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.transform.GetChild(6).gameObject.transform.GetChild(1).gameObject.GetComponent<Text>();
         m_Text.text = Math.Round(distance, 3).ToString() + "km / 42.195km";
 
         float jumps;
-        if (achievementsProgress[7] > 1000) {
-            jumps = 1000f;
-        }
-        else {
-            jumps = achievementsProgress[7];
-        }
+        jumps = achievementsProgress[7];
         m_Text = transform.GetChild(1).gameObject.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.transform.GetChild(7).gameObject.transform.GetChild(1).gameObject.GetComponent<Text>();
         m_Text.text = jumps.ToString() + " / 1000";
     }
@@ -94,11 +86,11 @@ public class AchievementMenu : MonoBehaviour
                 m_MyColor = new Color(0.2762609f, 0.509804f, 0.2431373f, 1f);
                 m_Graphic = transform.GetChild(1).gameObject.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.transform.GetChild(i).gameObject.GetComponent<Graphic>();
                 m_Graphic.color = m_MyColor;
+                m_Text = transform.GetChild(1).gameObject.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.transform.GetChild(i).gameObject.transform.GetChild(1).gameObject.GetComponent<Text>();
+                m_Text.text = "Completed!";
                 if (i == 8) {
                     m_TMProText = transform.GetChild(1).gameObject.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.transform.GetChild(8).gameObject.transform.GetChild(0).gameObject.GetComponent<TMPro.TextMeshProUGUI>();
                     m_TMProText.text = "Stand Still for 15 Minutes";
-                    m_Text = transform.GetChild(1).gameObject.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.transform.GetChild(8).gameObject.transform.GetChild(1).gameObject.GetComponent<Text>();
-                    m_Text.text = "Completed!";
                 }
             }
         }
