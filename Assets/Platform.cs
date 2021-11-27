@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
 
 public class Platform : MonoBehaviour
 {
@@ -14,25 +13,13 @@ public class Platform : MonoBehaviour
     }
 
     void OnCollisionEnter2D (Collision2D col){
-        if(col.gameObject.name.Equals("Player")){
-            StartCoroutine(DropPlatform());
-            Destroy(gameObject, 7f);
+        if(col.gameObject.name.Equals ("Player")){
+            Invoke("DropPlatform", 0.5f);
+            Destroy (gameObject, 2f);
         }
     }
 
-    IEnumerator DropPlatform(){
-        yield return new WaitForSeconds(1);
-        rb.constraints = RigidbodyConstraints2D.None;
-        rb.constraints = RigidbodyConstraints2D.FreezePositionX;
-        rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-        float t = 0f;
-        float speed = 0f;
-        while (t < 1)
-        {
-            t += Time.deltaTime / 1f;
-            speed = t * 3.71f;
-            rb.velocity = new Vector2(0f, -speed);
-            yield return null;
-        }
+    void DropPlatform(){
+        rb.isKinematic = false;
     }
 }
