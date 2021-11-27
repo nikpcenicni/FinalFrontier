@@ -37,6 +37,11 @@ public class Player : MonoBehaviour
     public float[] achievementsProgress = new float[9];
     public int kills;
 
+    public GameObject achievementCanvas;
+    public GameObject achievementDescription;
+    public float achMoveSpeed = 2f;
+    public bool achievementOn = false;
+
     public GameObject pauseMenu;
     public GameObject deadMenu;
     public TextMeshProUGUI textCoins;
@@ -45,7 +50,6 @@ public class Player : MonoBehaviour
     private Vector3 originalPos;    
 
     Rigidbody2D rb;
-    
     
     // Start is called before the first frame update
     void Start()
@@ -202,39 +206,85 @@ public class Player : MonoBehaviour
     }
 
     void CheckAchievementProgress() {
-        if (!achievementsUnlocked[0]) {
-            //Not Implementing Yet
-        }
-        if (deadMenu.activeSelf) {
+        if (deadMenu.activeSelf)
+        {
             achievementsProgress[1] = 0;
         }
-        if (achievementsProgress[1] >= 100 && !achievementsUnlocked[1]) {
-            achievementsUnlocked[1] = true;
-        }
-        if (!achievementsUnlocked[2]) {
-            //Not Implementing Yet
-        }
-        if (!achievementsUnlocked[3]) {
-            //Not Implementing Yet
-        }
-        if (!achievementsUnlocked[4]) {
-            //Not Implementing Yet
-        }
-        if (!achievementsUnlocked[5]) {
-            //Not Implementing Yet
-        }
-        if (achievementsProgress[6] > 180836 && !achievementsUnlocked[6]) {
-            achievementsUnlocked[6] = true;
-        }
-        if (achievementsProgress[7] >= 1000 && !achievementsUnlocked[7]) {
-            achievementsUnlocked[7] = true;
-        }
-        if (!pauseMenu.activeSelf && !deadMenu.activeSelf) {
+        if (!pauseMenu.activeSelf && !deadMenu.activeSelf)
+        {
             achievementsProgress[8] += Time.deltaTime;
         }
-        if (achievementsProgress[8] >= 900 && !achievementsUnlocked[8]) {
-            achievementsUnlocked[8] = true;
+        if (!achievementOn)
+        {
+            if (!achievementsUnlocked[0])
+            {
+                //Not Implementing Yet
+            }
+            if (achievementsProgress[1] >= 100 && !achievementsUnlocked[1])
+            {
+                achievementsUnlocked[1] = true;
+                StartCoroutine(TriggerAchievement("Confirm 100 Kills Without Dying"));
+            }
+            if (!achievementsUnlocked[2])
+            {
+                //Not Implementing Yet
+            }
+            if (!achievementsUnlocked[3])
+            {
+                //Not Implementing Yet
+            }
+            if (!achievementsUnlocked[4])
+            {
+                //Not Implementing Yet
+            }
+            if (!achievementsUnlocked[5])
+            {
+                //Not Implementing Yet
+            }
+            if (achievementsProgress[6] > 180836 && !achievementsUnlocked[6])
+            {
+                achievementsUnlocked[6] = true;
+                StartCoroutine(TriggerAchievement("Travel a Marathon's Distance (~42km)"));
+            }
+            if (achievementsProgress[7] >= 1000 && !achievementsUnlocked[7])
+            {
+                achievementsUnlocked[7] = true;
+                StartCoroutine(TriggerAchievement("Jump 1000 Times"));
+            }
+            if (achievementsProgress[8] >= 900 && !achievementsUnlocked[8])
+            {
+                achievementsUnlocked[8] = true;
+                StartCoroutine(TriggerAchievement("Stand Still for 15 Minutes"));
+            }
         }
+    }
+
+    IEnumerator TriggerAchievement(String s) {
+
+        achievementOn = true;
+        achievementDescription.GetComponent<TMPro.TextMeshProUGUI>().text = s;
+        achievementCanvas.SetActive(true);
+        Vector2 currentPos = achievementCanvas.transform.position;
+        float t = 0f;
+        while (t < 1)
+        {
+            t += Time.deltaTime / 1f;
+            achievementCanvas.transform.position = Vector2.Lerp(currentPos, new Vector2(currentPos.x, 135), t);
+            yield return null;
+        }
+        yield return new WaitForSeconds(3);
+        currentPos = achievementCanvas.transform.position;
+        t = 0f;
+        while (t < 1)
+        {
+            t += Time.deltaTime / 1f;
+            achievementCanvas.transform.position = Vector2.Lerp(currentPos, new Vector2(currentPos.x, -135), t);
+            yield return null;
+        }
+        achievementCanvas.SetActive(false);
+        achievementDescription.GetComponent<TMPro.TextMeshProUGUI>().text = "";
+        achievementOn = false;
+
     }
     // Player UI
 
