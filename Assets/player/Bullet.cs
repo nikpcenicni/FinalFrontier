@@ -22,6 +22,12 @@ public class Bullet : MonoBehaviour
             enemy.TakeDamage(damage);
         }
 
+        BossHealth boss = hitInfo.GetComponent<BossHealth>();
+        if (boss != null)
+        {
+            boss.TakeDamage(damage);
+        }
+
         //Instantiate(impactEffect, transform.position, transform.rotation);
 
         Destroy(gameObject);

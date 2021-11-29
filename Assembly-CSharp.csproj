@@ -62,6 +62,7 @@
     <Compile Include="Assets\Menu\AchievementMenu.cs" />
     <Compile Include="Assets\Combat\Enemy\EnemyBehaviour.cs" />
     <Compile Include="Assets\player\healthBar.cs" />
+    <Compile Include="Assets\Boss\Boss.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\Combat\MeleeCombat.cs" />
     <Compile Include="Assets\Cut Scenes\IntoductionText.cs" />
@@ -77,7 +78,9 @@
     <Compile Include="Assets\Scripts\parallax.cs" />
     <Compile Include="Assets\Combat\Enemy\Enemy.cs" />
     <Compile Include="Assets\player\Weapon.cs" />
+    <Compile Include="Assets\Boss\Low_Swordman\Demo\Scripts\CameraController.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
+    <Compile Include="Assets\Boss\Boss_Run.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
@@ -95,8 +98,10 @@
     <Compile Include="Assets\player\SaveSystem.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
+    <Compile Include="Assets\Boss\Low_Swordman\Demo\Scripts\GroundSensor.cs" />
     <Compile Include="Assets\player\Bullet.cs" />
     <Compile Include="Assets\Menu\MainMenu.cs" />
+    <Compile Include="Assets\Boss\Low_Swordman\Demo\Scripts\Swordman.cs" />
     <Compile Include="Assets\Scripts\ShopCollider.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\ShopManager.cs" />
@@ -113,9 +118,15 @@
     <Compile Include="Assets\Scripts\GoToGameCollider.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets\Scripts\WeaponSwitch.cs" />
+    <Compile Include="Assets\Boss\Low_Swordman\Demo\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\Scripts\GameAssets.cs" />
+    <Compile Include="Assets\Boss\Low_Swordman\Demo\Scripts\Demo_GM.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
+    <Compile Include="Assets\Boss\Boss_Enrage.cs" />
+    <Compile Include="Assets\Boss\BossHealth.cs" />
+    <Compile Include="Assets\Boss\BossWeapon.cs" />
+    <Compile Include="Assets\player\PlayerHealth.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Downloaded Assets\TextMesh Pro\Shaders\TMPro.cginc" />

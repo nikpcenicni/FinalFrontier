@@ -86,10 +86,37 @@ public class Player : MonoBehaviour
 
 
     // Player Functions
-    void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
+        StartCoroutine(DamageAnimation());
+    }
+  
+    IEnumerator DamageAnimation()
+    {
+        SpriteRenderer[] srs = GetComponentsInChildren<SpriteRenderer>();
+
+        for (int i = 0; i < 3; i++)
+        {
+            foreach (SpriteRenderer sr in srs)
+            {
+                Color c = sr.color;
+                c.a = 0;
+                sr.color = c;
+            }
+
+            yield return new WaitForSeconds(.1f);
+
+            foreach (SpriteRenderer sr in srs)
+            {
+                Color c = sr.color;
+                c.a = 1;
+                sr.color = c;
+            }
+
+            yield return new WaitForSeconds(.1f);
+        }
     }
 
     public void addCoins(int amount){
