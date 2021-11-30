@@ -62,7 +62,7 @@
     <Compile Include="Assets\Menu\AchievementMenu.cs" />
     <Compile Include="Assets\Combat\Enemy\EnemyBehaviour.cs" />
     <Compile Include="Assets\player\healthBar.cs" />
-    <Compile Include="Assets\Boss\Boss.cs" />
+    <Compile Include="Assets\Boss\KnightBoss\Boss.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\Combat\MeleeCombat.cs" />
     <Compile Include="Assets\Cut Scenes\IntoductionText.cs" />
@@ -75,12 +75,15 @@
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
     <Compile Include="Assets\Menu\SettingsMenu.cs" />
     <Compile Include="Assets\Downloaded Assets\Bandits - Pixel Art\Demo\Sensor_Bandit.cs" />
+    <Compile Include="Assets\Boss\KnightBoss\Boss_Enrage.cs" />
     <Compile Include="Assets\Scripts\parallax.cs" />
+    <Compile Include="Assets\Boss\KnightBoss\BossWeapon.cs" />
     <Compile Include="Assets\Combat\Enemy\Enemy.cs" />
     <Compile Include="Assets\player\Weapon.cs" />
-    <Compile Include="Assets\Boss\Low_Swordman\Demo\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Boss\KnightBoss\Low_Swordman\Demo\Scripts\CameraController.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
-    <Compile Include="Assets\Boss\Boss_Run.cs" />
+    <Compile Include="Assets\player\PlayerHealth.cs" />
+    <Compile Include="Assets\Boss\KnightBoss\Boss_Run.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
@@ -98,10 +101,10 @@
     <Compile Include="Assets\player\SaveSystem.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
-    <Compile Include="Assets\Boss\Low_Swordman\Demo\Scripts\GroundSensor.cs" />
+    <Compile Include="Assets\Boss\KnightBoss\Low_Swordman\Demo\Scripts\GroundSensor.cs" />
     <Compile Include="Assets\player\Bullet.cs" />
     <Compile Include="Assets\Menu\MainMenu.cs" />
-    <Compile Include="Assets\Boss\Low_Swordman\Demo\Scripts\Swordman.cs" />
+    <Compile Include="Assets\Boss\KnightBoss\Low_Swordman\Demo\Scripts\Swordman.cs" />
     <Compile Include="Assets\Scripts\ShopCollider.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\ShopManager.cs" />
@@ -109,6 +112,7 @@
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
+    <Compile Include="Assets\Boss\KnightBoss\BossHealth.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
@@ -118,15 +122,12 @@
     <Compile Include="Assets\Scripts\GoToGameCollider.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets\Scripts\WeaponSwitch.cs" />
-    <Compile Include="Assets\Boss\Low_Swordman\Demo\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Boss\KnightBoss\Low_Swordman\Demo\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\Scripts\GameAssets.cs" />
-    <Compile Include="Assets\Boss\Low_Swordman\Demo\Scripts\Demo_GM.cs" />
+    <Compile Include="Assets\Boss\KnightBoss\Low_Swordman\Demo\Scripts\Demo_GM.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
-    <Compile Include="Assets\Boss\Boss_Enrage.cs" />
-    <Compile Include="Assets\Boss\BossHealth.cs" />
-    <Compile Include="Assets\Boss\BossWeapon.cs" />
-    <Compile Include="Assets\player\PlayerHealth.cs" />
+    <Compile Include="Assets\EnemyGFX.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Downloaded Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -379,6 +380,9 @@
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Pathfinding.Ionic.Zip.Reduced">
+      <HintPath>Assets\BirdBoss\AstarPathfindingProject\Plugins\DotNetZip\Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.22f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -824,6 +828,18 @@
     <ProjectReference Include="DevionGames.UIWidgets.csproj">
       <Project>{BEDF07F9-85AF-6008-691D-C34C2C456F8B}</Project>
       <Name>DevionGames.UIWidgets</Name>
+    </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProject.csproj">
+      <Project>{DA2218DC-54A5-26CF-B264-66562468980F}</Project>
+      <Name>AstarPathfindingProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="PackageToolsEditor.csproj">
+      <Project>{B3F9D148-31E9-5F53-19DA-5E2C550936FC}</Project>
+      <Name>PackageToolsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProjectEditor.csproj">
+      <Project>{6C27351C-BA85-2086-DAC3-DEEC7CC872D7}</Project>
+      <Name>AstarPathfindingProjectEditor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
