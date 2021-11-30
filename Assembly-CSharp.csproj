@@ -58,7 +58,7 @@
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <Compile Include="Assets\player\Pivot.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
-    <Compile Include="Assets\EnemyGFX.cs" />
+    <Compile Include="Assets\Boss\BirdBoss\EnemyGFX.cs" />
     <Compile Include="Assets\Downloaded Assets\Bandits - Pixel Art\Demo\Bandit.cs" />
     <Compile Include="Assets\Menu\AchievementMenu.cs" />
     <Compile Include="Assets\Combat\Enemy\EnemyBehaviour.cs" />
@@ -378,11 +378,11 @@
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.22f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="Pathfinding.Ionic.Zip.Reduced">
       <HintPath>Assets\Boss\BirdBoss\AstarPathfindingProject\Plugins\DotNetZip\Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.22f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -821,25 +821,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="PackageToolsEditor.csproj">
+      <Project>{B3F9D148-31E9-5F53-19DA-5E2C550936FC}</Project>
+      <Name>PackageToolsEditor</Name>
+    </ProjectReference>
     <ProjectReference Include="DevionGames.Utilities.csproj">
       <Project>{41CABF5D-E8B8-D117-6F1F-6355A994CE3B}</Project>
       <Name>DevionGames.Utilities</Name>
-    </ProjectReference>
-    <ProjectReference Include="DevionGames.UIWidgets.csproj">
-      <Project>{BEDF07F9-85AF-6008-691D-C34C2C456F8B}</Project>
-      <Name>DevionGames.UIWidgets</Name>
     </ProjectReference>
     <ProjectReference Include="AstarPathfindingProject.csproj">
       <Project>{DA2218DC-54A5-26CF-B264-66562468980F}</Project>
       <Name>AstarPathfindingProject</Name>
     </ProjectReference>
-    <ProjectReference Include="PackageToolsEditor.csproj">
-      <Project>{B3F9D148-31E9-5F53-19DA-5E2C550936FC}</Project>
-      <Name>PackageToolsEditor</Name>
-    </ProjectReference>
     <ProjectReference Include="AstarPathfindingProjectEditor.csproj">
       <Project>{6C27351C-BA85-2086-DAC3-DEEC7CC872D7}</Project>
       <Name>AstarPathfindingProjectEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="DevionGames.UIWidgets.csproj">
+      <Project>{BEDF07F9-85AF-6008-691D-C34C2C456F8B}</Project>
+      <Name>DevionGames.UIWidgets</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
