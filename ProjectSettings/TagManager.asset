@@ -19,11 +19,11 @@ TagManager:
   - UI
   - 
   - 
-  - Ground
-  - enemies/obstacles
-  - Boss
-  - 
-  - 
+  - Player
+  - obstacles
+  - ground
+  - enemies
+  - boss
   - 
   - 
   - 
