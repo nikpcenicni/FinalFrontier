@@ -53,12 +53,12 @@
     <UnityVersion>2020.3.22f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\BirdBoss\AstarPathfindingProject\PackageTools\Editor\EditorBase.cs" />
-    <Compile Include="Assets\BirdBoss\AstarPathfindingProject\PackageTools\Editor\EditorGUIx.cs" />
-    <Compile Include="Assets\BirdBoss\AstarPathfindingProject\PackageTools\Editor\EnumFlagDrawer.cs" />
+    <Compile Include="Assets\Boss\BirdBoss\AstarPathfindingProject\PackageTools\Editor\EditorBase.cs" />
+    <Compile Include="Assets\Boss\BirdBoss\AstarPathfindingProject\PackageTools\Editor\EnumFlagDrawer.cs" />
+    <Compile Include="Assets\Boss\BirdBoss\AstarPathfindingProject\PackageTools\Editor\EditorGUIx.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\BirdBoss\AstarPathfindingProject\PackageTools\Editor\PackageToolsEditor.asmdef" />
+    <None Include="Assets\Boss\BirdBoss\AstarPathfindingProject\PackageTools\Editor\PackageToolsEditor.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -308,7 +308,7 @@
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Pathfinding.Ionic.Zip.Reduced">
-      <HintPath>Assets\BirdBoss\AstarPathfindingProject\Plugins\DotNetZip\Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+      <HintPath>Assets\Boss\BirdBoss\AstarPathfindingProject\Plugins\DotNetZip\Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>

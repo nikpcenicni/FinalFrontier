@@ -53,30 +53,30 @@
     <UnityVersion>2020.3.22f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\BirdBoss\AstarPathfindingProject\Editor\GraphEditors\GridGeneratorEditor.cs" />
-    <Compile Include="Assets\BirdBoss\AstarPathfindingProject\Editor\ProceduralGridMoverEditor.cs" />
-    <Compile Include="Assets\BirdBoss\AstarPathfindingProject\Editor\AstarPathEditor.cs" />
-    <Compile Include="Assets\BirdBoss\AstarPathfindingProject\Editor\AstarUpdateChecker.cs" />
-    <Compile Include="Assets\BirdBoss\AstarPathfindingProject\Editor\GraphUpdateSceneEditor.cs" />
-    <Compile Include="Assets\BirdBoss\AstarPathfindingProject\Editor\AstarUpdateWindow.cs" />
-    <Compile Include="Assets\BirdBoss\AstarPathfindingProject\Editor\GraphEditors\PointGeneratorEditor.cs" />
-    <Compile Include="Assets\BirdBoss\AstarPathfindingProject\Editor\GraphEditors\GraphEditor.cs" />
-    <Compile Include="Assets\BirdBoss\AstarPathfindingProject\Editor\ModifierEditors\SmoothModifierEditor.cs" />
-    <Compile Include="Assets\BirdBoss\AstarPathfindingProject\Editor\AnimationLinkEditor.cs" />
-    <Compile Include="Assets\BirdBoss\AstarPathfindingProject\Editor\GraphEditors\NavMeshGeneratorEditor.cs" />
-    <Compile Include="Assets\BirdBoss\AstarPathfindingProject\Editor\Legacy\LegacyAIPathEditor2.cs" />
-    <Compile Include="Assets\BirdBoss\AstarPathfindingProject\Editor\CustomGraphEditorAttribute.cs" />
-    <Compile Include="Assets\BirdBoss\AstarPathfindingProject\Editor\ModifierEditors\RaycastModifierEditor.cs" />
-    <Compile Include="Assets\BirdBoss\AstarPathfindingProject\Editor\SeekerEditor.cs" />
-    <Compile Include="Assets\BirdBoss\AstarPathfindingProject\Editor\Legacy\LegacyEditorHelper2.cs" />
-    <Compile Include="Assets\BirdBoss\AstarPathfindingProject\Editor\AIBaseEditor.cs" />
-    <Compile Include="Assets\BirdBoss\AstarPathfindingProject\Editor\AILerpEditor.cs" />
+    <Compile Include="Assets\Boss\BirdBoss\AstarPathfindingProject\Editor\SeekerEditor.cs" />
+    <Compile Include="Assets\Boss\BirdBoss\AstarPathfindingProject\Editor\ModifierEditors\SmoothModifierEditor.cs" />
+    <Compile Include="Assets\Boss\BirdBoss\AstarPathfindingProject\Editor\AILerpEditor.cs" />
+    <Compile Include="Assets\Boss\BirdBoss\AstarPathfindingProject\Editor\GraphEditors\GridGeneratorEditor.cs" />
+    <Compile Include="Assets\Boss\BirdBoss\AstarPathfindingProject\Editor\AstarUpdateWindow.cs" />
+    <Compile Include="Assets\Boss\BirdBoss\AstarPathfindingProject\Editor\ProceduralGridMoverEditor.cs" />
+    <Compile Include="Assets\Boss\BirdBoss\AstarPathfindingProject\Editor\GraphUpdateSceneEditor.cs" />
+    <Compile Include="Assets\Boss\BirdBoss\AstarPathfindingProject\Editor\GraphEditors\PointGeneratorEditor.cs" />
+    <Compile Include="Assets\Boss\BirdBoss\AstarPathfindingProject\Editor\Legacy\LegacyAIPathEditor2.cs" />
+    <Compile Include="Assets\Boss\BirdBoss\AstarPathfindingProject\Editor\ModifierEditors\RaycastModifierEditor.cs" />
+    <Compile Include="Assets\Boss\BirdBoss\AstarPathfindingProject\Editor\Legacy\LegacyEditorHelper2.cs" />
+    <Compile Include="Assets\Boss\BirdBoss\AstarPathfindingProject\Editor\AnimationLinkEditor.cs" />
+    <Compile Include="Assets\Boss\BirdBoss\AstarPathfindingProject\Editor\AstarPathEditor.cs" />
+    <Compile Include="Assets\Boss\BirdBoss\AstarPathfindingProject\Editor\AstarUpdateChecker.cs" />
+    <Compile Include="Assets\Boss\BirdBoss\AstarPathfindingProject\Editor\GraphEditors\NavMeshGeneratorEditor.cs" />
+    <Compile Include="Assets\Boss\BirdBoss\AstarPathfindingProject\Editor\CustomGraphEditorAttribute.cs" />
+    <Compile Include="Assets\Boss\BirdBoss\AstarPathfindingProject\Editor\AIBaseEditor.cs" />
+    <Compile Include="Assets\Boss\BirdBoss\AstarPathfindingProject\Editor\GraphEditors\GraphEditor.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\BirdBoss\AstarPathfindingProject\Editor\AstarPathfindingProjectEditor.asmdef" />
-    <None Include="Assets\BirdBoss\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh.cginc" />
-    <None Include="Assets\BirdBoss\AstarPathfindingProject\Editor\EditorAssets\Materials\NavmeshOutline.shader" />
-    <None Include="Assets\BirdBoss\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh.shader" />
+    <None Include="Assets\Boss\BirdBoss\AstarPathfindingProject\Editor\AstarPathfindingProjectEditor.asmdef" />
+    <None Include="Assets\Boss\BirdBoss\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh.cginc" />
+    <None Include="Assets\Boss\BirdBoss\AstarPathfindingProject\Editor\EditorAssets\Materials\NavmeshOutline.shader" />
+    <None Include="Assets\Boss\BirdBoss\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -326,7 +326,7 @@
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Pathfinding.Ionic.Zip.Reduced">
-      <HintPath>Assets\BirdBoss\AstarPathfindingProject\Plugins\DotNetZip\Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+      <HintPath>Assets\Boss\BirdBoss\AstarPathfindingProject\Plugins\DotNetZip\Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
