@@ -347,6 +347,12 @@ public class Player : MonoBehaviour
             rb.transform.position = originalPos;
 
         }
+        else if (other.gameObject.CompareTag("Spike"))
+        {
+            TakeDamage(1);
+            rb.transform.position = originalPos;
+
+        }
         if (other.transform.tag == "Kill" ){
             addKill();
             Destroy(other.gameObject);
