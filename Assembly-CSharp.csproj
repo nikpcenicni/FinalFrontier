@@ -132,6 +132,8 @@
     <Compile Include="Assets\Scripts\GameAssets.cs" />
     <Compile Include="Assets\Boss\KnightBoss\Low_Swordman\Demo\Scripts\Demo_GM.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
+    <Compile Include="Assets\Boss\KnightBoss\CyberPunk\Scripts\Perspective2DSortMode.cs" />
+    <Compile Include="Assets\Boss\KnightBoss\CyberPunk\Scripts\Done_BGScroller.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Downloaded Assets\TextMesh Pro\Shaders\TMPro.cginc" />
