@@ -12,6 +12,8 @@ public class Player : MonoBehaviour
     public int maxHealth = 5;
     public int currentHealth;
 
+    public float upspeed; //trampoline jump
+
     public healthBar healthBar;
 
     public float speed;
@@ -72,6 +74,10 @@ public class Player : MonoBehaviour
          Jump();
          BetterJump();
          CheckIfGrounded();
+        if (isGrounded)
+        {
+            upspeed = 500f;
+        }
          CheckDirection();
         if (pauseMenu.activeSelf || deadMenu.activeSelf) {
             SavePlayer();
@@ -359,6 +365,18 @@ public class Player : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Tramp" && isGrounded == false)
+        {
+            upspeed += 300f;
+            if( upspeed >= 1400f)
+            {
+                upspeed = 1400f;
+            }
+            rb.AddForce(new Vector2(0, upspeed));
+        }
+    }
 
 
     public void levelCompleted() {

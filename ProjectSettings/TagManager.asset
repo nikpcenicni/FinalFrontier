@@ -11,6 +11,7 @@ TagManager:
   - Kill
   - Boss
   - Spike
+  - Tramp
   layers:
   - Default
   - TransparentFX
