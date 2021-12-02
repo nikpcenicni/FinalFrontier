@@ -30,15 +30,15 @@ public class Boss_Run : StateMachineBehaviour
 		Vector2 newPos = Vector2.MoveTowards(rb.position, target, speed * Time.fixedDeltaTime);
 		rb.MovePosition(newPos);
 
-		if (Vector2.Distance(player.position, rb.position) <= attackRange)
+		/*if (Vector2.Distance(player.position, rb.position) <= attackRange)
 		{
 			animator.SetTrigger("Attack");
-		}
+		}*/
 	}
 
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state
 	override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
 	{
-		animator.ResetTrigger("Attack");
+		//animator.ResetTrigger("Attack");
 	}
 }

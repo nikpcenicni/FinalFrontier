@@ -5,16 +5,21 @@ using UnityEngine;
 public class GameMaster : MonoBehaviour
 {
     public static GameMaster gm;
+   
+    [SerializeField]
+    private WaveSpawner waveSpawner;
 
     private void Start()
     {
         if(gm == null)
         {
             gm = this;
+           // gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
+
         }
     }
 
-    public Transform playerPrefab;
+    /*public Transform playerPrefab;
     public Transform spawnPoint;
     public int spawnDelay = 2; 
 
@@ -31,5 +36,5 @@ public class GameMaster : MonoBehaviour
     {
         Destroy(player.gameObject);
         gm.StartCoroutine (gm.RespawnPlayer());
-    }
+    }*/
 }

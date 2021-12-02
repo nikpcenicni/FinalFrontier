@@ -94,6 +94,7 @@
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
     <Compile Include="Assets\Platform.cs" />
+    <Compile Include="Assets\Boss\BirdBoss\BirdHealthBar.cs" />
     <Compile Include="Assets\Scripts\Inventory.cs" />
     <Compile Include="Assets\player\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\ButtonInfo.cs" />
@@ -114,6 +115,7 @@
     <Compile Include="Assets\Boss\KnightBoss\Assets\Low_Swordman\Demo\Scripts\Swordman.cs" />
     <Compile Include="Assets\Scripts\ShopCollider.cs" />
     <Compile Include="Assets\Level2\Scripts\FalingPlatform.cs" />
+    <Compile Include="Assets\Boss\BirdBoss\BirdHealth.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\ShopManager.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
@@ -136,8 +138,9 @@
     <Compile Include="Assets\Scripts\GameAssets.cs" />
     <Compile Include="Assets\Boss\KnightBoss\Assets\Low_Swordman\Demo\Scripts\Demo_GM.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
-    <Compile Include="Assets\Boss\BirdBoss\BirdHealth.cs" />
-    <Compile Include="Assets\Boss\BirdBoss\BirdHealthBar.cs" />
+    <Compile Include="Assets\Level3\WaveSpawner.cs" />
+    <Compile Include="Assets\Level3\FollowPlayer.cs" />
+    <Compile Include="Assets\Level3\AlienSaucer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Downloaded Assets\TextMesh Pro\Shaders\TMPro.cginc" />
