@@ -18,7 +18,7 @@ public class PauseMenu : MonoBehaviour
             else
                 Pause();
         }
-        if (GameObject.Find("Player").GetComponent<Player>().currentHealth == 0 || GameObject.Find("Player").GetComponent<Player>().dead){
+        if (GameObject.Find("Player").GetComponent<Player>().currentHealth <= 0 || GameObject.Find("Player").GetComponent<Player>().dead){
             Dead();
         }
             

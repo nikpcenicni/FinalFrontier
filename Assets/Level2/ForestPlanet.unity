@@ -16598,9 +16598,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8b0c703c9967e748b26f0a548ccf014, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 28956339}
-  spawnPoint: {fileID: 1052589482}
-  spawnDelay: 2
+  waveSpawner: {fileID: 0}
 --- !u!1 &1724063232
 GameObject:
   m_ObjectHideFlags: 0
@@ -18334,6 +18332,10 @@ PrefabInstance:
     - target: {fileID: 1144568611750888844, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
       propertyPath: HitDetection
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1144568611750888844, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
+      propertyPath: currentHealth
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1144568611750888844, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
       propertyPath: achievementCanvas
