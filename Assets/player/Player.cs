@@ -49,7 +49,7 @@ public class Player : MonoBehaviour
     private SpriteRenderer viewRender;
     private Vector3 originalPos;    
 
-    Rigidbody2D rb;
+    public Rigidbody2D rb;
     
     // Start is called before the first frame update
     void Start()
@@ -86,7 +86,7 @@ public class Player : MonoBehaviour
 
 
     // Player Functions
-    void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);

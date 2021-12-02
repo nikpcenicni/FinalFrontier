@@ -7,10 +7,20 @@ public class Platform : MonoBehaviour
 {
 
     Rigidbody2D rb;
+    int playerHealth;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D> ();
+        playerHealth = GameObject.Find("Player").GetComponent<Player>().currentHealth;
+    }
+
+    void Update()
+    {
+        if (GameObject.Find("Player").GetComponent<Player>().currentHealth < playerHealth) {
+            Destroy(gameObject);
+        }
+        playerHealth = GameObject.Find("Player").GetComponent<Player>().currentHealth;
     }
 
     void OnCollisionEnter2D (Collision2D col){
@@ -21,7 +31,7 @@ public class Platform : MonoBehaviour
     }
 
     IEnumerator DropPlatform(){
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(3);
         rb.constraints = RigidbodyConstraints2D.None;
         rb.constraints = RigidbodyConstraints2D.FreezePositionX;
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
