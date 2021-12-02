@@ -12,6 +12,7 @@ TagManager:
   - Boss
   - Spike
   - Tramp
+  - GM
   layers:
   - Default
   - TransparentFX
