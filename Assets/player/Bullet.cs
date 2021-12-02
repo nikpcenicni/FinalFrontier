@@ -28,6 +28,12 @@ public class Bullet : MonoBehaviour
             boss.TakeDamage(damage);
         }
 
+        BirdHealth bird = hitInfo.GetComponent<BirdHealth>();
+        if (bird != null)
+        {
+            bird.TakeDamage(damage);
+        }
+
         //Instantiate(impactEffect, transform.position, transform.rotation);
 
         Destroy(gameObject);
