@@ -8,6 +8,8 @@ public class EnemyWeapon : MonoBehaviour
     public Transform firePoint;
 
     public GameObject bulletPrefab;
+    Vector2 screenBounds;
+    Vector2 screenOrigo;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +19,9 @@ public class EnemyWeapon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.time - lastTimeShot > 2f) {
+        screenBounds = Camera.main.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height));
+        screenOrigo = Camera.main.ScreenToWorldPoint(Vector2.zero);
+        if (Time.time - lastTimeShot > 2f && !(transform.position.x > screenBounds.x || transform.position.x < screenOrigo.x)) {
             Shoot();
             lastTimeShot = Time.time;
         }

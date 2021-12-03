@@ -60,6 +60,7 @@
      <Compile Include="Assets\Combat\MeleeCombat.cs" />
      <Compile Include="Assets\Cut Scenes\IntoductionText.cs" />
      <Compile Include="Assets\player\Player.cs" />
+     <Compile Include="Assets\Combat\Enemy\EnemyBullet.cs" />
      <Compile Include="Assets\Backgound\tiling.cs" />
      <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
      <Compile Include="Assets\Scripts\LevelGenerator.cs" />
@@ -86,7 +87,10 @@
      <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
      <Compile Include="Assets\player\PlayerData.cs" />
      <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
+     <Compile Include="Assets\Scripts\EnemyWeapon.cs" />
      <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
+     <Compile Include="Assets\Combat\Enemy\ShootingEnemyBehaviour.cs" />
+     <Compile Include="Assets\Combat\Enemy\ShootingEnemyPivot.cs" />
      <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
      <Compile Include="Assets\player\SaveSystem.cs" />
      <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
