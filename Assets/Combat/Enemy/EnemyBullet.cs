@@ -28,9 +28,6 @@ public class EnemyBullet : MonoBehaviour
         }
 
         //Instantiate(impactEffect, transform.position, transform.rotation);
-
-        if (hitInfo.attachedRigidbody == shootingEnemy.GetComponent<Rigidbody2D>()) {
-            Destroy(gameObject);
-        }
+        Destroy(gameObject);
     }
 }

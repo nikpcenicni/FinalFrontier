@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     public int bank;
     public int maxHealth = 5;
     public int currentHealth;
+    public float highScore;
 
     public healthBar healthBar;
 
@@ -33,8 +34,8 @@ public class Player : MonoBehaviour
     public bool lastGroundedChecked;
     public bool hasJumped;
 
-    public bool[] achievementsUnlocked = new bool[9];
-    public float[] achievementsProgress = new float[9];
+    public bool[] achievementsUnlocked = new bool[10];
+    public float[] achievementsProgress = new float[10];
     public int kills;
 
     public GameObject achievementCanvas;
@@ -80,7 +81,6 @@ public class Player : MonoBehaviour
          Heal();
          updateCoinText();
          CheckAchievementProgress();
-        SavePlayer();
           }
 
 
@@ -214,6 +214,7 @@ public class Player : MonoBehaviour
         {
             achievementsProgress[8] += Time.deltaTime;
         }
+        achievementsProgress[9] = highScore;
         if (!achievementOn)
         {
             if (!achievementsUnlocked[0])
@@ -256,6 +257,10 @@ public class Player : MonoBehaviour
                 achievementsUnlocked[8] = true;
                 StartCoroutine(TriggerAchievement("Stand Still for 15 Minutes"));
             }
+            if (highScore > 428 && achievementsUnlocked[9]) {
+                achievementsUnlocked[9] = true;
+                StartCoroutine(TriggerAchievement("Get a Score of Over 100m in Endless Mode"));
+            }
         }
     }
 
@@ -269,7 +274,7 @@ public class Player : MonoBehaviour
         while (t < 1)
         {
             t += Time.deltaTime / 1f;
-            achievementCanvas.transform.position = Vector2.Lerp(currentPos, new Vector2(currentPos.x, 135), t);
+            achievementCanvas.transform.position = Vector2.Lerp(currentPos, new Vector2(currentPos.x, 34), t);
             yield return null;
         }
         yield return new WaitForSeconds(3);
@@ -278,7 +283,7 @@ public class Player : MonoBehaviour
         while (t < 1)
         {
             t += Time.deltaTime / 1f;
-            achievementCanvas.transform.position = Vector2.Lerp(currentPos, new Vector2(currentPos.x, -135), t);
+            achievementCanvas.transform.position = Vector2.Lerp(currentPos, new Vector2(currentPos.x, -34), t);
             yield return null;
         }
         achievementCanvas.SetActive(false);
@@ -350,6 +355,7 @@ public class Player : MonoBehaviour
         currentHealth = data.health;
         bank = data.bank;
         coins = bank;
+        highScore = data.highScore;
 
         for (int i = 0; i < achievementsUnlocked.Length; i++)
         {

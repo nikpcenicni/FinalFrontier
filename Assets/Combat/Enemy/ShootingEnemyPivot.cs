@@ -28,13 +28,13 @@ public class ShootingEnemyPivot : MonoBehaviour
             {
 
 
-                transform.localRotation = Quaternion.Euler(180, 0, -rotationZ);
+                transform.localRotation = Quaternion.Euler(180, 0, rotationZ);
 
 
             } else if (myEnemy.transform.eulerAngles.y == 180) {
 
 
-                transform.localRotation = Quaternion.Euler(180, 180, -rotationZ);
+                transform.localRotation = Quaternion.Euler(180, 180, rotationZ);
 
 
             }

@@ -22,6 +22,12 @@ public class ShootingEnemyBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GameObject.Find("Player").GetComponent<Player>().GetPosition().x - transform.position.x > 0) {
+            viewRender.flipX = false;
+        }
+        else {
+            viewRender.flipX = true;
+        }
         if (IsFacingRight())
         {
             // Move Right

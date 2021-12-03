@@ -8,15 +8,17 @@ public class PlayerData
     public int level;
     public int health;
     public int bank;
-    public bool[] achievementsUnlocked = new bool[9];
-    public float[] achievementsProgress = new float[9];
+    public bool[] achievementsUnlocked = new bool[10];
+    public float[] achievementsProgress = new float[10];
+    public float highScore;
     public int[,,] items = new int[10,10,2];
 
     public PlayerData (Player Player) {
         level = Player.level;
         health = Player.currentHealth;
         bank = Player.bank;
-    
+        highScore = Player.highScore;
+
         for (int i = 0; i < achievementsUnlocked.Length; i++) {
             achievementsUnlocked[i] = Player.achievementsUnlocked[i];
         }

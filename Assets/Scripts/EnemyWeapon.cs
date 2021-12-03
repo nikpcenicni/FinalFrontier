@@ -21,7 +21,8 @@ public class EnemyWeapon : MonoBehaviour
     {
         screenBounds = Camera.main.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height));
         screenOrigo = Camera.main.ScreenToWorldPoint(Vector2.zero);
-        if (Time.time - lastTimeShot > 2f && !(transform.position.x > screenBounds.x || transform.position.x < screenOrigo.x)) {
+        if (Time.time - lastTimeShot > 2f && !(transform.position.x > screenBounds.x || transform.position.x < screenOrigo.x) &&
+            Mathf.Sign(transform.localScale.x) == Mathf.Sign(GameObject.Find("Player").GetComponent<Player>().GetPosition().x - transform.position.x)) {
             Shoot();
             lastTimeShot = Time.time;
         }
@@ -29,6 +30,7 @@ public class EnemyWeapon : MonoBehaviour
 
     void Shoot()
     {
-        Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        var bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        Physics2D.IgnoreCollision(bullet.GetComponent<Collider2D>(), GetComponent<Collider2D>());
     }
 }
