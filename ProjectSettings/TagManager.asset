@@ -13,6 +13,7 @@ TagManager:
   - Spike
   - Tramp
   - GM
+  - FireTrap
   layers:
   - Default
   - TransparentFX
