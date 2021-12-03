@@ -67,6 +67,7 @@
     <Compile Include="Assets\player\healthBar.cs" />
     <Compile Include="Assets\Boss\KnightBoss\Scripts\Boss.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
+    <Compile Include="Assets\Level3\RunToPlayer.cs" />
     <Compile Include="Assets\Combat\MeleeCombat.cs" />
     <Compile Include="Assets\Cut Scenes\IntoductionText.cs" />
     <Compile Include="Assets\Boss\KnightBoss\Assets\CyberPunk\Scripts\Perspective2DSortMode.cs" />
@@ -105,6 +106,7 @@
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
     <Compile Include="Assets\Level2\Scripts\Rotate.cs" />
+    <Compile Include="Assets\Level3\AI.cs" />
     <Compile Include="Assets\player\PlayerData.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
@@ -117,6 +119,7 @@
     <Compile Include="Assets\Menu\MainMenu.cs" />
     <Compile Include="Assets\Boss\KnightBoss\Assets\Low_Swordman\Demo\Scripts\Swordman.cs" />
     <Compile Include="Assets\Scripts\ShopCollider.cs" />
+    <Compile Include="Assets\Level3\EnemyAI.cs" />
     <Compile Include="Assets\Level2\Scripts\FalingPlatform.cs" />
     <Compile Include="Assets\Boss\BirdBoss\BirdHealth.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
@@ -141,9 +144,6 @@
     <Compile Include="Assets\Scripts\GameAssets.cs" />
     <Compile Include="Assets\Boss\KnightBoss\Assets\Low_Swordman\Demo\Scripts\Demo_GM.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
-    <Compile Include="Assets\Level3\EnemyAI.cs" />
-    <Compile Include="Assets\Level3\RunToPlayer.cs" />
-    <Compile Include="Assets\Level3\AI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Downloaded Assets\TextMesh Pro\Shaders\TMPro.cginc" />
