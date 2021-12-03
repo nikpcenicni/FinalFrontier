@@ -55,7 +55,7 @@
   <ItemGroup>
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
-    <Compile Include="Assets\Level3\WaveSpawner.cs" />
+    <Compile Include="Assets\Level3\Scripts\WaveSpawner.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <Compile Include="Assets\player\Pivot.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
@@ -84,7 +84,7 @@
     <Compile Include="Assets\Scripts\parallax.cs" />
     <Compile Include="Assets\Boss\KnightBoss\Scripts\BossWeapon.cs" />
     <Compile Include="Assets\Combat\Enemy\Enemy.cs" />
-    <Compile Include="Assets\Level3\FollowPlayer.cs" />
+    <Compile Include="Assets\Level3\Scripts\FollowPlayer.cs" />
     <Compile Include="Assets\player\Weapon.cs" />
     <Compile Include="Assets\Boss\KnightBoss\Assets\Low_Swordman\Demo\Scripts\CameraController.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
@@ -97,7 +97,7 @@
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
     <Compile Include="Assets\Platform.cs" />
     <Compile Include="Assets\Boss\BirdBoss\BirdHealthBar.cs" />
-    <Compile Include="Assets\Level3\ShipGFX1.cs" />
+    <Compile Include="Assets\Level3\Scripts\ShipGFX1.cs" />
     <Compile Include="Assets\Scripts\Inventory.cs" />
     <Compile Include="Assets\player\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\ButtonInfo.cs" />
@@ -141,6 +141,9 @@
     <Compile Include="Assets\Scripts\GameAssets.cs" />
     <Compile Include="Assets\Boss\KnightBoss\Assets\Low_Swordman\Demo\Scripts\Demo_GM.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
+    <Compile Include="Assets\Level3\EnemyAI.cs" />
+    <Compile Include="Assets\Level3\RunToPlayer.cs" />
+    <Compile Include="Assets\Level3\AI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Downloaded Assets\TextMesh Pro\Shaders\TMPro.cginc" />
