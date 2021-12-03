@@ -9,6 +9,7 @@ TagManager:
   - Event
   - Enemy
   - Kill
+  - enemyBullet
   layers:
   - Default
   - TransparentFX

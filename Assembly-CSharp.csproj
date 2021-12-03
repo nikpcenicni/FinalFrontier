@@ -66,9 +66,11 @@
      <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
      <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
+     <Compile Include="Assets\player\CameraFixed.cs" />
      <Compile Include="Assets\Menu\SettingsMenu.cs" />
      <Compile Include="Assets\Downloaded Assets\Bandits - Pixel Art\Demo\Sensor_Bandit.cs" />
      <Compile Include="Assets\Scripts\parallax.cs" />
+     <Compile Include="Assets\Scripts\MoonRockReset.cs" />
      <Compile Include="Assets\Combat\Enemy\Enemy.cs" />
      <Compile Include="Assets\player\Weapon.cs" />
      <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
