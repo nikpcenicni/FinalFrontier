@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2412370907411718820}
   - component: {fileID: 2412370907411718819}
   - component: {fileID: 2412370907411718818}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,7 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2412370907424315607}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AttackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -162,7 +162,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2412370907485560231}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -193,7 +193,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2412370907521437223}
   - component: {fileID: 2412370907521437272}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Plasma Rifle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -275,7 +275,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2412370907755200616}
   - component: {fileID: 2412370907755200617}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Laser Rifle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -356,7 +356,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2412370907935940756}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Laser Rifle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -388,7 +388,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2412370908159377403}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FirePoint (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -449,7 +449,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2412370908363256694}
   - component: {fileID: 2412370908363256695}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pistol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -537,7 +537,7 @@ GameObject:
   - component: {fileID: 2412370908398619958}
   - component: {fileID: 2412370908398619949}
   - component: {fileID: 2412370907460855186}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -774,7 +774,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2412370908432847827}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -804,7 +804,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2412370908488417733}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pistol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -836,7 +836,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2412370908855569521}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Plasma Rifle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -868,7 +868,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2412370908953113245}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -899,7 +899,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2412370908969437210}
   - component: {fileID: 2412370908969437211}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: machete
   m_TagString: Untagged
   m_Icon: {fileID: 0}
