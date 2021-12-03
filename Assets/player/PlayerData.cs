@@ -10,13 +10,16 @@ public class PlayerData
     public int bank;
     public bool[] achievementsUnlocked = new bool[9];
     public float[] achievementsProgress = new float[9];
-    public int[,,] items = new int[10,10,2];
+    public bool[] weapons = new bool[3];
 
     public PlayerData (Player Player) {
         level = Player.level;
         health = Player.currentHealth;
         bank = Player.bank;
-    
+        for (int i = 0; i < weapons.Length; i ++){
+            weapons[i] = Player.weapons[i];
+        }
+
         for (int i = 0; i < achievementsUnlocked.Length; i++) {
             achievementsUnlocked[i] = Player.achievementsUnlocked[i];
         }

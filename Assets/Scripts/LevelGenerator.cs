@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelGenerator : MonoBehaviour{
 
@@ -51,6 +52,12 @@ public class LevelGenerator : MonoBehaviour{
     }
 
     private void SpawnBossLevel() {
-
+        
     }
+
+    private void moveLevel() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+
 }

@@ -13,13 +13,14 @@ public class MeleeCombat : MonoBehaviour
 
     public float attackRate = 2f;
     float nextAttacktime = 0f; 
+    public Player player;
 
     // Update is called once per frame
     void Update()
     {
         if(Time.time >= nextAttacktime)
         {
-            if (Input.GetMouseButton(1))
+            if (Input.GetMouseButton(0) && !player.gunActive)
             {
                 MeleeAttack();
                 nextAttacktime = Time.time + 1f / attackRate; 

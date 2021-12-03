@@ -14,10 +14,13 @@ public class ButtonInfo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        PriceTxt.text = ShopManager.GetComponent<ShopManager>().shopItems[2, ItemID].ToString();
-        DmgText.text = "Dmg: " + ShopManager.GetComponent<ShopManager>().shopItems[3, ItemID].ToString();
-        
-        if (ItemID >= 4 && ItemID <= 7)
-            DmgText.text = "Qty: " + ShopManager.GetComponent<ShopManager>().shopItems[3, ItemID].ToString();
+        PriceTxt.text = ShopManager.GetComponent<ShopManager>().shopItems[1, ItemID].ToString();
+        if (ItemID < 3) {
+            if (ShopManager.GetComponent<ShopManager>().shopItems[1, ItemID].ToString() == "0")
+                PriceTxt.text = "Owned";
+            DmgText.text = "Dmg: " + ShopManager.GetComponent<ShopManager>().shopItems[2, ItemID].ToString();
+        }
+        if (ItemID >= 3 && ItemID <= 5)
+            DmgText.text = "Qty: " + ShopManager.GetComponent<ShopManager>().shopItems[2, ItemID].ToString();
     }
 }

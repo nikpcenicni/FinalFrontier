@@ -931,7 +931,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 413dd60d70dd0574a86b1d941cd6d7a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemID: 4
+  ItemID: 3
   PriceTxt: {fileID: 114090256}
   DmgText: {fileID: 1409570737}
   ShopManager: {fileID: 276037486}
@@ -2021,7 +2021,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c950cc23cb8a8ce4b9d2b28121096dad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ownedGuns: 00000000000000000000000000000000
+  ownedGuns: 00000000
   player: {fileID: 1438336574}
   weaponSwitch: {fileID: 0}
 --- !u!4 &276037488
@@ -4907,7 +4907,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 413dd60d70dd0574a86b1d941cd6d7a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemID: 5
+  ItemID: 4
   PriceTxt: {fileID: 38231988}
   DmgText: {fileID: 1305955081}
   ShopManager: {fileID: 276037486}
@@ -10601,7 +10601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 413dd60d70dd0574a86b1d941cd6d7a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemID: 1
+  ItemID: 0
   PriceTxt: {fileID: 28089618}
   DmgText: {fileID: 400630604}
   ShopManager: {fileID: 276037486}
@@ -11147,6 +11147,8 @@ MonoBehaviour:
   bank: 0
   maxHealth: 5
   currentHealth: 0
+  weapons: 000000
+  upspeed: 0
   healthBar: {fileID: 1317775494}
   speed: 4
   jumpforce: 5
@@ -12223,7 +12225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 413dd60d70dd0574a86b1d941cd6d7a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemID: 3
+  ItemID: 2
   PriceTxt: {fileID: 411379390}
   DmgText: {fileID: 166681703}
   ShopManager: {fileID: 276037486}
@@ -13555,7 +13557,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 413dd60d70dd0574a86b1d941cd6d7a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemID: 2
+  ItemID: 1
   PriceTxt: {fileID: 1222846296}
   DmgText: {fileID: 1038027321}
   ShopManager: {fileID: 276037486}
@@ -13820,7 +13822,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 413dd60d70dd0574a86b1d941cd6d7a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemID: 6
+  ItemID: 5
   PriceTxt: {fileID: 1547332282}
   DmgText: {fileID: 8540790}
   ShopManager: {fileID: 276037486}
