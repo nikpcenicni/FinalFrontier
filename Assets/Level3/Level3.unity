@@ -258,6 +258,9 @@ MonoBehaviour:
   coins2: {fileID: 0}
   health3: {fileID: 0}
   coins3: {fileID: 0}
+  world1: {fileID: 0}
+  world2: {fileID: 0}
+  world3: {fileID: 0}
 --- !u!114 &64943283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1691,6 +1694,9 @@ MonoBehaviour:
   coins2: {fileID: 0}
   health3: {fileID: 0}
   coins3: {fileID: 0}
+  world1: {fileID: 0}
+  world2: {fileID: 0}
+  world3: {fileID: 0}
 --- !u!114 &448071717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2814,6 +2820,9 @@ MonoBehaviour:
   coins2: {fileID: 0}
   health3: {fileID: 0}
   coins3: {fileID: 0}
+  world1: {fileID: 0}
+  world2: {fileID: 0}
+  world3: {fileID: 0}
 --- !u!114 &580344022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3024,6 +3033,9 @@ MonoBehaviour:
   coins2: {fileID: 0}
   health3: {fileID: 0}
   coins3: {fileID: 0}
+  world1: {fileID: 0}
+  world2: {fileID: 0}
+  world3: {fileID: 0}
 --- !u!114 &659259777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3878,6 +3890,9 @@ MonoBehaviour:
   coins2: {fileID: 0}
   health3: {fileID: 0}
   coins3: {fileID: 0}
+  world1: {fileID: 0}
+  world2: {fileID: 0}
+  world3: {fileID: 0}
 --- !u!114 &757568530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7970,6 +7985,9 @@ MonoBehaviour:
   coins2: {fileID: 0}
   health3: {fileID: 0}
   coins3: {fileID: 0}
+  world1: {fileID: 0}
+  world2: {fileID: 0}
+  world3: {fileID: 0}
 --- !u!114 &1724063235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8290,6 +8308,9 @@ MonoBehaviour:
   coins2: {fileID: 0}
   health3: {fileID: 0}
   coins3: {fileID: 0}
+  world1: {fileID: 0}
+  world2: {fileID: 0}
+  world3: {fileID: 0}
 --- !u!114 &1860144233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8386,6 +8407,9 @@ MonoBehaviour:
   coins2: {fileID: 0}
   health3: {fileID: 0}
   coins3: {fileID: 0}
+  world1: {fileID: 0}
+  world2: {fileID: 0}
+  world3: {fileID: 0}
 --- !u!114 &1880364194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11028,6 +11052,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2412370907935940755, guid: cc6843a71eab29f4998a4cad38eb9e53, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2412370907935940756, guid: cc6843a71eab29f4998a4cad38eb9e53, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2412370907935940756, guid: cc6843a71eab29f4998a4cad38eb9e53, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2412370907935940756, guid: cc6843a71eab29f4998a4cad38eb9e53, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 2412370907935940756, guid: cc6843a71eab29f4998a4cad38eb9e53, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.24
+      objectReference: {fileID: 0}
     - target: {fileID: 2412370908398619947, guid: cc6843a71eab29f4998a4cad38eb9e53, type: 3}
       propertyPath: m_RootOrder
       value: 2

@@ -13,6 +13,11 @@ public class MainMenu : MonoBehaviour{
     public TextMeshProUGUI coins2;
     public TextMeshProUGUI health3;
     public TextMeshProUGUI coins3;
+    public TextMeshProUGUI world1;
+    public TextMeshProUGUI world2;
+    public TextMeshProUGUI world3;
+
+
     
     
     public void playGame() {
