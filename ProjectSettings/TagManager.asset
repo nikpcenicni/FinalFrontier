@@ -14,6 +14,7 @@ TagManager:
   - Tramp
   - GM
   - FireTrap
+  - Arrow
   layers:
   - Default
   - TransparentFX

@@ -20,7 +20,7 @@ public class MeleeCombat : MonoBehaviour
     {
         if(Time.time >= nextAttacktime)
         {
-            if (Input.GetMouseButton(0) && !player.gunActive)
+            if (Input.GetMouseButton(0)) //&& !player.gunActive
             {
                 MeleeAttack();
                 nextAttacktime = Time.time + 1f / attackRate; 
