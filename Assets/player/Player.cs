@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     public int bank;
     public int maxHealth = 5;
     public int currentHealth;
+    public bool[] weapons = new bool[3];
 
     public float upspeed; //trampoline jump
 
@@ -52,6 +53,13 @@ public class Player : MonoBehaviour
     private Vector3 originalPos;    
 
     Rigidbody2D rb;
+
+    public int currentWeaponIndex;
+    public GameObject[] guns;
+    public GameObject weaponHolder;
+    public GameObject currentGun;
+    public bool gunActive = false;
+
     
     // Start is called before the first frame update
     void Start()
@@ -63,31 +71,32 @@ public class Player : MonoBehaviour
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
         loadPlayer();
-        
+        initalizeWeapons();
     }
 
     // Update is called once per frame
-    void Update()
-    {
-         Move();
-		 animator.SetFloat("Speed", Mathf.Abs(moveBy));
-         Jump();
-         BetterJump();
-         CheckIfGrounded();
+    void Update(){
+        Move();
+        animator.SetFloat("Speed", Mathf.Abs(moveBy));
+        Jump();
+        BetterJump();
+        CheckIfGrounded();
         if (isGrounded)
         {
             upspeed = 500f;
         }
-         CheckDirection();
+        CheckDirection();
         if (pauseMenu.activeSelf || deadMenu.activeSelf) {
             SavePlayer();
         }
-         CheckIfFall();
-         Heal();
-         updateCoinText();
-         CheckAchievementProgress();
+        CheckIfFall();
+        Heal();
+        updateCoinText();
+        CheckAchievementProgress();
         SavePlayer();
-          }
+        
+        changeWeapon();
+    }
 
 
 
@@ -137,6 +146,87 @@ public class Player : MonoBehaviour
     void TryTakeHealthPot() {
 
     }
+
+    void initalizeWeapons(){
+        //int totalWeapons = 4;
+        // guns = new GameObject[totalWeapons];
+        // for (int i = 0; i < totalWeapons; i++) {
+        //     guns[i] = weaponHolder.transform.GetChild(i).gameObject;
+        //     guns[i].SetActive(false);
+        // }
+        
+        currentWeaponIndex = 0;
+        //currentGun = guns[currentWeaponIndex];
+        guns[currentWeaponIndex].SetActive(true);
+    }
+
+    void changeWeapon(){
+        if (Input.GetKeyDown(KeyCode.E) && currentWeaponIndex < guns.Length-1){
+            // if (gunActive){
+            //     disableGuns();
+            // }
+
+            Debug.Log("next Weapon");
+            if (currentWeaponIndex < guns.Length){
+                guns[currentWeaponIndex].SetActive(false);
+                currentWeaponIndex++;
+                if (currentWeaponIndex == 0){
+                    currentGun = guns[currentWeaponIndex];
+                    guns[currentWeaponIndex].SetActive(true);
+                }
+                else if (currentWeaponIndex == 1 && weapons[0]){
+                    currentGun = guns[currentWeaponIndex];
+                    guns[currentWeaponIndex].SetActive(true);
+                } else if (currentWeaponIndex == 2 && weapons[1]){
+                    currentGun = guns[currentWeaponIndex];
+                    guns[currentWeaponIndex].SetActive(true);
+                }
+                else if (currentWeaponIndex == 3 && weapons[2]){
+                    currentGun = guns[currentWeaponIndex];
+                    guns[currentWeaponIndex].SetActive(true);
+                } else {
+                    currentWeaponIndex--;
+                    guns[currentWeaponIndex].SetActive(true);
+                }
+                // currentGun = guns[currentWeaponIndex];
+                // guns[currentWeaponIndex].SetActive(true);
+            }   
+
+        } else if (Input.GetKeyDown(KeyCode.Q) && currentWeaponIndex >= 0){
+            Debug.Log("prev Weapon");
+            if (currentWeaponIndex < guns.Length){
+                guns[currentWeaponIndex].SetActive(false);
+                currentWeaponIndex--;
+                if (currentWeaponIndex == 0){
+                    currentGun = guns[currentWeaponIndex];
+                    guns[currentWeaponIndex].SetActive(true);
+                }
+                else if (currentWeaponIndex == 1 && weapons[0]){
+                    currentGun = guns[currentWeaponIndex];
+                    guns[currentWeaponIndex].SetActive(true);
+                } else if (currentWeaponIndex == 2 && weapons[1]){
+                    currentGun = guns[currentWeaponIndex];
+                    guns[currentWeaponIndex].SetActive(true);
+                }
+                else if (currentWeaponIndex == 3 && weapons[2]){
+                    currentGun = guns[currentWeaponIndex];
+                    guns[currentWeaponIndex].SetActive(true);
+                } else {
+                    currentWeaponIndex++;
+                    guns[currentWeaponIndex].SetActive(true);
+                }
+                // currentGun = guns[currentWeaponIndex];
+                // guns[currentWeaponIndex].SetActive(true);
+            }   
+        }
+    }
+    void disableGuns(){
+        for (int i = 0; i < guns.Length; i++){
+            guns[i] = weaponHolder.transform.GetChild(i).gameObject;
+            guns[i].SetActive(false);
+        }
+    }
+
 /*
     void Hurt(){
         health--;
@@ -401,6 +491,10 @@ public class Player : MonoBehaviour
         currentHealth = data.health;
         bank = data.bank;
         coins = bank;
+        for (int i = 0; i < weapons.Length; i++)
+        {
+            weapons[i] = data.weapons[i];
+        }
 
         for (int i = 0; i < achievementsUnlocked.Length; i++)
         {
