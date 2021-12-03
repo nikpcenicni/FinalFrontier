@@ -13,6 +13,7 @@ TagManager:
   - Spike
   - Tramp
   - GM
+  - warning
   layers:
   - Default
   - TransparentFX

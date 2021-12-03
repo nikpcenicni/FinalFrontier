@@ -49,7 +49,7 @@
   <ItemGroup>
      <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
      <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
-     <Compile Include="Assets\Level3\WaveSpawner.cs" />
+     <Compile Include="Assets\Level3\Scripts\WaveSpawner.cs" />
      <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
      <Compile Include="Assets\player\Pivot.cs" />
      <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
@@ -61,6 +61,7 @@
      <Compile Include="Assets\player\healthBar.cs" />
      <Compile Include="Assets\Boss\KnightBoss\Scripts\Boss.cs" />
      <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
+     <Compile Include="Assets\Level3\RunToPlayer.cs" />
      <Compile Include="Assets\Combat\MeleeCombat.cs" />
      <Compile Include="Assets\Cut Scenes\IntoductionText.cs" />
      <Compile Include="Assets\Boss\KnightBoss\Assets\CyberPunk\Scripts\Perspective2DSortMode.cs" />
@@ -78,7 +79,7 @@
      <Compile Include="Assets\Scripts\parallax.cs" />
      <Compile Include="Assets\Boss\KnightBoss\Scripts\BossWeapon.cs" />
      <Compile Include="Assets\Combat\Enemy\Enemy.cs" />
-     <Compile Include="Assets\Level3\FollowPlayer.cs" />
+     <Compile Include="Assets\Level3\Scripts\FollowPlayer.cs" />
      <Compile Include="Assets\player\Weapon.cs" />
      <Compile Include="Assets\Boss\KnightBoss\Assets\Low_Swordman\Demo\Scripts\CameraController.cs" />
      <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
@@ -91,7 +92,7 @@
      <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
      <Compile Include="Assets\Platform.cs" />
      <Compile Include="Assets\Boss\BirdBoss\BirdHealthBar.cs" />
-     <Compile Include="Assets\Level3\ShipGFX1.cs" />
+     <Compile Include="Assets\Level3\Scripts\ShipGFX1.cs" />
      <Compile Include="Assets\Scripts\Inventory.cs" />
      <Compile Include="Assets\player\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\ButtonInfo.cs" />
@@ -99,6 +100,7 @@
      <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
      <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
      <Compile Include="Assets\Level2\Scripts\Rotate.cs" />
+     <Compile Include="Assets\Level3\AI.cs" />
      <Compile Include="Assets\player\PlayerData.cs" />
      <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
      <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
@@ -111,6 +113,7 @@
      <Compile Include="Assets\Menu\MainMenu.cs" />
      <Compile Include="Assets\Boss\KnightBoss\Assets\Low_Swordman\Demo\Scripts\Swordman.cs" />
      <Compile Include="Assets\Scripts\ShopCollider.cs" />
+     <Compile Include="Assets\Level3\EnemyAI.cs" />
      <Compile Include="Assets\Level2\Scripts\FalingPlatform.cs" />
      <Compile Include="Assets\Boss\BirdBoss\BirdHealth.cs" />
      <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
@@ -129,7 +132,6 @@
      <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
      <Compile Include="Assets\Scripts\GoToGameCollider.cs" />
      <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
-     <Compile Include="Assets\Scripts\WeaponSwitch.cs" />
      <Compile Include="Assets\Boss\KnightBoss\Assets\Low_Swordman\Demo\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\Scripts\GameAssets.cs" />

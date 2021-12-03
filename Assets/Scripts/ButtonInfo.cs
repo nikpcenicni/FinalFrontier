@@ -15,12 +15,15 @@ public class ButtonInfo : MonoBehaviour
     void Update()
     {
         PriceTxt.text = ShopManager.GetComponent<ShopManager>().shopItems[1, ItemID].ToString();
+
         if (ItemID < 3) {
             if (ShopManager.GetComponent<ShopManager>().shopItems[1, ItemID].ToString() == "0")
                 PriceTxt.text = "Owned";
             DmgText.text = "Dmg: " + ShopManager.GetComponent<ShopManager>().shopItems[2, ItemID].ToString();
         }
-        if (ItemID >= 3 && ItemID <= 5)
+        if (ItemID >= 3 && ItemID <= 5){
+            //PriceTxt.text = ShopManager.GetComponent<ShopManager>().shopItems[1, ItemID].ToString();
             DmgText.text = "Qty: " + ShopManager.GetComponent<ShopManager>().shopItems[2, ItemID].ToString();
+        }
     }
 }
