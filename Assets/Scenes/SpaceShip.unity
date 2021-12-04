@@ -931,7 +931,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 413dd60d70dd0574a86b1d941cd6d7a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemID: 4
+  ItemID: 3
   PriceTxt: {fileID: 114090256}
   DmgText: {fileID: 1409570737}
   ShopManager: {fileID: 276037486}
@@ -4922,7 +4922,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 413dd60d70dd0574a86b1d941cd6d7a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemID: 5
+  ItemID: 4
   PriceTxt: {fileID: 38231988}
   DmgText: {fileID: 1305955081}
   ShopManager: {fileID: 276037486}
@@ -5557,7 +5557,7 @@ Transform:
   - {fileID: 1844795825}
   - {fileID: 1366257860}
   m_Father: {fileID: 1273529624}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &772811791
 GameObject:
@@ -6781,6 +6781,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1038027319}
   m_CullTransparentMesh: 1
+--- !u!1 &1039144857
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1039144858}
+  m_Layer: 0
+  m_Name: AttackPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1039144858
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039144857}
+  m_LocalRotation: {x: 0.039401863, y: -0.008487242, z: 0.21040143, w: 0.9767839}
+  m_LocalPosition: {x: 1.4808364, y: 3.8227587, z: -0.97854686}
+  m_LocalScale: {x: 10.243625, y: 11.319016, z: 1.0060045}
+  m_Children: []
+  m_Father: {fileID: 1818216510}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1054465485
 GameObject:
   m_ObjectHideFlags: 0
@@ -7977,7 +8007,7 @@ Transform:
   - {fileID: 933386713}
   - {fileID: 1173886366}
   m_Father: {fileID: 1273529624}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1257404234
 GameObject:
@@ -8224,6 +8254,7 @@ Transform:
   m_LocalScale: {x: 0.3295915, y: 0.37928808, z: 1}
   m_Children:
   - {fileID: 1184464051}
+  - {fileID: 1818216510}
   - {fileID: 1243042196}
   - {fileID: 759204874}
   - {fileID: 1433208163}
@@ -8306,13 +8337,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6153382aff63c4a80139b2732d916b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentWeaponIndex: 0
-  guns:
-  - {fileID: 1243042195}
-  - {fileID: 759204873}
-  - {fileID: 1433208162}
-  weaponHolder: {fileID: 1273529623}
-  currentGun: {fileID: 0}
 --- !u!1 &1296454937
 GameObject:
   m_ObjectHideFlags: 0
@@ -10751,7 +10775,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 413dd60d70dd0574a86b1d941cd6d7a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemID: 1
+  ItemID: 0
   PriceTxt: {fileID: 28089618}
   DmgText: {fileID: 400630604}
   ShopManager: {fileID: 276037486}
@@ -10883,7 +10907,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 1725533659}
   achievementMenu: {fileID: 1910565221}
-  deadUI: {fileID: 0}
+  deadUI: {fileID: 1188425380}
 --- !u!114 &1400766928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11148,7 +11172,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1433208163
 Transform:
   m_ObjectHideFlags: 0
@@ -11163,7 +11187,7 @@ Transform:
   - {fileID: 145154261}
   - {fileID: 1853020765}
   m_Father: {fileID: 1273529624}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1438199670
 GameObject:
@@ -11296,7 +11320,8 @@ MonoBehaviour:
   coins: 0
   bank: 0
   maxHealth: 5
-  currentHealth: 0
+  currentHealth: 5
+  weapons: 000000
   upspeed: 0
   healthBar: {fileID: 1317775494}
   speed: 4
@@ -11335,6 +11360,15 @@ MonoBehaviour:
   deadMenu: {fileID: 1188425380}
   textCoins: {fileID: 2049747019}
   animator: {fileID: 1438336577}
+  currentWeaponIndex: 0
+  guns:
+  - {fileID: 1818216509}
+  - {fileID: 1243042195}
+  - {fileID: 759204873}
+  - {fileID: 1433208162}
+  weaponHolder: {fileID: 1273529623}
+  currentGun: {fileID: 1818216509}
+  gunActive: 0
 --- !u!61 &1438336575
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12374,7 +12408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 413dd60d70dd0574a86b1d941cd6d7a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemID: 3
+  ItemID: 2
   PriceTxt: {fileID: 411379390}
   DmgText: {fileID: 166681703}
   ShopManager: {fileID: 276037486}
@@ -13685,6 +13719,89 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1815719127}
   m_CullTransparentMesh: 1
+--- !u!1 &1818216509
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1818216510}
+  - component: {fileID: 1818216511}
+  m_Layer: 0
+  m_Name: machete
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1818216510
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818216509}
+  m_LocalRotation: {x: -0.039401863, y: 0.008487242, z: -0.21040143, w: 0.9767839}
+  m_LocalPosition: {x: 0.92, y: 0.51, z: 3}
+  m_LocalScale: {x: 0.09999555, y: 0.0799968, z: 1}
+  m_Children:
+  - {fileID: 1039144858}
+  m_Father: {fileID: 1273529624}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -4.209, y: 1.905, z: -24.382}
+--- !u!212 &1818216511
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818216509}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 41191d10eb6e1874789539fa022dc302, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 4.78125, y: 22.5}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1825113457
 GameObject:
   m_ObjectHideFlags: 0
@@ -13815,7 +13932,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 413dd60d70dd0574a86b1d941cd6d7a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemID: 2
+  ItemID: 1
   PriceTxt: {fileID: 1222846296}
   DmgText: {fileID: 1038027321}
   ShopManager: {fileID: 276037486}
@@ -14080,7 +14197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 413dd60d70dd0574a86b1d941cd6d7a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemID: 6
+  ItemID: 5
   PriceTxt: {fileID: 1547332282}
   DmgText: {fileID: 8540790}
   ShopManager: {fileID: 276037486}

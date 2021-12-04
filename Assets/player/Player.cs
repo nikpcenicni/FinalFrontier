@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
 	public float moveBy;
 
     public bool fell;
-    public bool dead;
+    public bool dead = false;
     public bool lastGroundedChecked;
     public bool hasJumped;
 
