@@ -13,20 +13,26 @@ public class MeleeCombat : MonoBehaviour
 
     public float attackRate = 2f;
     float nextAttacktime = 0f; 
+	float waitTime = 0f;
     public Player player;
+	public GameObject arm;
 
     // Update is called once per frame
     void Update()
     {
         if(Time.time >= nextAttacktime)
         {
-            if (Input.GetMouseButton(0)) //&& !player.gunActive
+            if (Input.GetKeyDown(KeyCode.F))
             {
                 MeleeAttack();
                 nextAttacktime = Time.time + 1f / attackRate; 
+				waitTime = Time.time + 1f / 3.5f;
+				arm.GetComponent<SpriteRenderer>().enabled = !arm.GetComponent<SpriteRenderer>().enabled;
             }
         }
-        
+		if(Time.time >= waitTime){
+			arm.GetComponent<SpriteRenderer>().enabled = true;
+		}
     }
 
     void MeleeAttack()
