@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 9083702356536848737}
   - component: {fileID: 8920517872668213598}
   - component: {fileID: 4495833893775413806}
-  - component: {fileID: 4537704710382161644}
   m_Layer: 0
   m_Name: moon_rock_0
   m_TagString: moonRock
@@ -130,15 +129,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.1812603, y: 0.17961657}
   m_EdgeRadius: 0
---- !u!114 &4537704710382161644
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6976353543508891349}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8735d4b2344fdb24e89cd565a8c242bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

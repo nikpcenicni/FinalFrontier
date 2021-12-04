@@ -11,8 +11,8 @@ public class AchievementMenu : MonoBehaviour
     public Color m_MyColor;
     public Text m_Text;
     public TMPro.TextMeshProUGUI m_TMProText;
-    public bool[] achievementsUnlocked = new bool[10];
-    public float[] achievementsProgress = new float[10];
+    public bool[] achievementsUnlocked = new bool[9];
+    public float[] achievementsProgress = new float[9];
     public GameObject pauseMenu;
     public GameObject deadMenu;
 
@@ -78,10 +78,6 @@ public class AchievementMenu : MonoBehaviour
         jumps = achievementsProgress[7];
         m_Text = transform.GetChild(1).gameObject.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.transform.GetChild(7).gameObject.transform.GetChild(1).gameObject.GetComponent<Text>();
         m_Text.text = jumps.ToString() + " / 1000";
-
-        distance = (achievementsProgress[9] / 6f) * 1.4f;
-        m_Text = transform.GetChild(1).gameObject.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.transform.GetChild(9).gameObject.transform.GetChild(1).gameObject.GetComponent<Text>();
-        m_Text.text = Math.Round(distance, 3).ToString() + "m / 100m";
     }
 
     public void CheckAchievementUnlocked () {
