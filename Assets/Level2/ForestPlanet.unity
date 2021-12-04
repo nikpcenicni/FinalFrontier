@@ -29120,7 +29120,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4177466214684238844, guid: 539f43f2fc9391c4bb11bfcc827a1a5f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5083209975937326629, guid: 539f43f2fc9391c4bb11bfcc827a1a5f, type: 3}
       propertyPath: nextWaypointDistance
