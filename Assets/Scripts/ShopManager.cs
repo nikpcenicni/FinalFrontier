@@ -6,10 +6,10 @@ using UnityEngine.EventSystems;
 public class ShopManager : MonoBehaviour{
 
     public int[,] shopItems = new int[3,6];
-    public string error;
-    public GameObject errorButton;
-    public Player player;
+    public bool[] ownedGuns = new bool[3];
 
+    public Player player;
+    public GameObject weaponSwitch;
 
 
     // Start is called before the first frame update
@@ -24,8 +24,7 @@ public class ShopManager : MonoBehaviour{
         shopItems[0 , 5] = 5;
 
         //price
-
-        shopItems[1 , 0] = 5; 
+        shopItems[1 , 0] = 5;
         shopItems[1 , 1] = 30;
         shopItems[1 , 2] = 100;
         shopItems[1 , 3] = 5;
@@ -43,62 +42,26 @@ public class ShopManager : MonoBehaviour{
         shopItems[2 , 5] = 0;
     }
 
-    // Update is called once per frame checks if player owns weapon and sets price to zero so text will update
-    void Update(){
-        if(player.weapons[0])
-            shopItems[1 , 0] = 0;
-        else if (player.weapons[1])
-            shopItems[1 , 1] = 0;
-        else if (player.weapons[2])
-            shopItems[1 , 2] = 0;
-        
-        shopItems[2 , 3] = player.potions[0];
-        shopItems[2 , 4] = player.potions[1];
-        shopItems[2 , 5] = player.potions[2];
-    }
-
-
+    // Update is called once per frame
     public void Buy() {
         GameObject ButtonRef = GameObject.FindGameObjectWithTag("Event").GetComponent<EventSystem>().currentSelectedGameObject;
         int itemID = ButtonRef.GetComponent<ButtonInfo>().ItemID;
         
         if (player.coins >= shopItems[1, itemID]){
             if (itemID >= 0 && itemID < 3) {
-                if (itemID == 0 && !player.weapons[itemID]){
+                if (!player.weapons[itemID]){
                     player.weapons[itemID] = true;
                     Debug.Log("player Weapons added");
                     player.coins -= shopItems[1, itemID];
                     shopItems[1, itemID] = 0;
-                } else if (itemID == 1 && !player.weapons[itemID] && player.weapons[0]){
-                    player.weapons[itemID] = true;
-                    Debug.Log("player Weapons added");
-                    player.coins -= shopItems[1, itemID];
-                    shopItems[1, itemID] = 0;
-                } else if (itemID == 2 && !player.weapons[itemID] && player.weapons[1]){
-                    player.weapons[itemID] = true;
-                    Debug.Log("player Weapons added");
-                    player.coins -= shopItems[1, itemID];
-                    shopItems[1, itemID] = 0;
-                } else {
-                    error = "Must own all previous weapons";
-                    warn();
+                }else {
+                    Debug.Log("already Owned");
                 }
                 
             } else if (itemID > 2 && itemID < 6){
-                player.potions[itemID-3]++;
+                shopItems[2, itemID]++;
                 player.coins -= shopItems[1, itemID];
             }
-        } else {
-            error = "Not enough moon rocks";
-            warn();
         }
-    }
-
-    public void warn(){
-        errorButton.SetActive(true);
-    }
-
-    public void dismiss(){
-        errorButton.SetActive(false);
     }
 }
