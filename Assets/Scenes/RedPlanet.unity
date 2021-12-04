@@ -5370,8 +5370,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   attackRate: 2
-  player: {fileID: 0}
-  arm: {fileID: 1920754479}
 --- !u!1 &1247812873
 GameObject:
   m_ObjectHideFlags: 0
@@ -9748,11 +9746,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &1920754479 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1144568612937034266, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
-  m_PrefabInstance: {fileID: 1144568611772338978}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1931655414
 GameObject:
   m_ObjectHideFlags: 0
@@ -10918,10 +10911,6 @@ PrefabInstance:
     - target: {fileID: 1144568613486553134, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.17
-      objectReference: {fileID: 0}
-    - target: {fileID: 5209531155653032091, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
