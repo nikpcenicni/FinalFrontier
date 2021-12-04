@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth;
     public bool[] weapons = new bool[3];
+    public float highScore;
 
     public float upspeed; //trampoline jump
 
@@ -36,8 +37,8 @@ public class Player : MonoBehaviour
     public bool lastGroundedChecked;
     public bool hasJumped;
 
-    public bool[] achievementsUnlocked = new bool[9];
-    public float[] achievementsProgress = new float[9];
+    public bool[] achievementsUnlocked = new bool[10];
+    public float[] achievementsProgress = new float[10];
     public int kills;
 
     public GameObject achievementCanvas;
@@ -52,7 +53,7 @@ public class Player : MonoBehaviour
     private SpriteRenderer viewRender;
     private Vector3 originalPos;    
 
-    Rigidbody2D rb;
+    public Rigidbody2D rb;
 
     public int currentWeaponIndex;
     public GameObject[] guns;
@@ -93,7 +94,6 @@ public class Player : MonoBehaviour
         Heal();
         updateCoinText();
         CheckAchievementProgress();
-        SavePlayer();
         
         changeWeapon();
     }
@@ -337,6 +337,7 @@ public class Player : MonoBehaviour
         {
             achievementsProgress[8] += Time.deltaTime;
         }
+        achievementsProgress[9] = highScore;
         if (!achievementOn)
         {
             if (!achievementsUnlocked[0])
@@ -378,6 +379,11 @@ public class Player : MonoBehaviour
             {
                 achievementsUnlocked[8] = true;
                 StartCoroutine(TriggerAchievement("Stand Still for 15 Minutes"));
+            }
+            if (highScore > 428 && achievementsUnlocked[9])
+            {
+                achievementsUnlocked[9] = true;
+                StartCoroutine(TriggerAchievement("Get a Score of Over 100m in Endless Mode"));
             }
         }
     }
@@ -497,6 +503,7 @@ public class Player : MonoBehaviour
         currentHealth = data.health;
         bank = data.bank;
         coins = bank;
+        highScore = data.highScore;
         for (int i = 0; i < weapons.Length; i++)
         {
             weapons[i] = data.weapons[i];

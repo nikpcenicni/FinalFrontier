@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class LevelGenerator : MonoBehaviour{
 
@@ -14,12 +13,16 @@ public class LevelGenerator : MonoBehaviour{
     [SerializeField] private Player player;
     [SerializeField] private int EndPlatformsX;
 
+    int playerHealth;
+
     private Vector3 lastEndPosition;
 
     private int [] array = new int[]{0,1,2,3,4,5};
     private List<int> list = new List<int>{0,1,2,3,4,5};
 
-    
+    void Start() {
+        playerHealth = GameObject.Find("Player").GetComponent<Player>().currentHealth;
+    }
 
     private void Awake() {
         lastEndPosition = LevelPart_Start.Find("EndPosition").position;
@@ -36,6 +39,11 @@ public class LevelGenerator : MonoBehaviour{
         } else {
             SpawnBossLevel();
         }
+        if (GameObject.Find("Player").GetComponent<Player>().currentHealth < playerHealth)
+        {
+            Awake();
+        }
+        playerHealth = GameObject.Find("Player").GetComponent<Player>().currentHealth;
     }
   
     private void SpawnLevelPart() {
@@ -52,12 +60,6 @@ public class LevelGenerator : MonoBehaviour{
     }
 
     private void SpawnBossLevel() {
-        
+
     }
-
-    private void moveLevel() {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }
-
-
 }
