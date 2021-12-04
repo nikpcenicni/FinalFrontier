@@ -11380,8 +11380,9 @@ MonoBehaviour:
   m_MyColor: {r: 0, g: 0, b: 0, a: 0}
   m_Text: {fileID: 0}
   m_TMProText: {fileID: 0}
-  achievementsUnlocked: 000000000000000000
+  achievementsUnlocked: 00000000000000000000
   achievementsProgress:
+  - 0
   - 0
   - 0
   - 0
@@ -11740,6 +11741,14 @@ PrefabInstance:
     - target: {fileID: 1144568611750888844, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
       propertyPath: defaultAdditionalJumps
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1144568611750888844, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
+      propertyPath: achievementsProgress.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1144568611750888844, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
+      propertyPath: achievementsUnlocked.Array.size
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1144568611750888847, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
       propertyPath: m_Name
