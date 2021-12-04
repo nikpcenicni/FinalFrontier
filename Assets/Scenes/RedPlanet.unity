@@ -11711,6 +11711,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 739550157}
     - target: {fileID: 1144568611750888844, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
+      propertyPath: maxHealth
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1144568611750888844, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
       propertyPath: pauseMenu
       value: 
       objectReference: {fileID: 747438114}
@@ -11721,6 +11725,10 @@ PrefabInstance:
     - target: {fileID: 1144568611750888844, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
       propertyPath: HitDetection
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1144568611750888844, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
+      propertyPath: currentHealth
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1144568611750888844, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
       propertyPath: achievementCanvas

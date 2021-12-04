@@ -23,7 +23,7 @@ public class EnemyBullet : MonoBehaviour
         Player player = hitInfo.GetComponent<Player>();
         if (player != null)
         {
-            player.TakeDamage(1);
+            player.TakeDamage(10);
             GameObject.Find("Player").GetComponent<Player>().rb.transform.position = originalPos;
         }
 
