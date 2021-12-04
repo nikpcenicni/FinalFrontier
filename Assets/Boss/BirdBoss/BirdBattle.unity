@@ -3998,7 +3998,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -582, y: -209}
   m_SizeDelta: {x: 3840, y: 2160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &676930399
@@ -4409,7 +4409,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -899, y: 903}
+  m_AnchoredPosition: {x: -1130, y: 683}
   m_SizeDelta: {x: 655, y: 169.737}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &739550157
@@ -5458,8 +5458,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
+  m_ReferencePixelsPerUnit: 16
+  m_ScaleFactor: 0.9
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
@@ -6511,7 +6511,7 @@ MonoBehaviour:
   attackDamage: 10
   enemyLayers:
     serializedVersion: 2
-    m_Bits: 6144
+    m_Bits: 6400
   attackRate: 2
   player: {fileID: 28956334}
   arm: {fileID: 1268537716}
@@ -8283,7 +8283,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -186.18176, y: 0}
+  m_AnchoredPosition: {x: -186.1875, y: 0}
   m_SizeDelta: {x: -372.3636, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1568353673
@@ -8423,7 +8423,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 15.639893, y: -901.6705}
+  m_AnchoredPosition: {x: -347, y: -901.6705}
   m_SizeDelta: {x: 2654.2798, y: 141.0779}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1576827520
@@ -11153,6 +11153,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1144568611862415742, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1144568612233528522, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -11163,7 +11167,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1144568612335237670, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1144568612937034264, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
       propertyPath: guns.Array.size
@@ -11527,6 +11531,18 @@ PrefabInstance:
     - target: {fileID: 7641503982096669492, guid: 2676ea0f05b65934097a5ac3be4448e1, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7641503982096669494, guid: 2676ea0f05b65934097a5ac3be4448e1, type: 3}
+      propertyPath: m_Radius
+      value: 1.2194731
+      objectReference: {fileID: 0}
+    - target: {fileID: 7641503982096669494, guid: 2676ea0f05b65934097a5ac3be4448e1, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.27999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 7641503982096669494, guid: 2676ea0f05b65934097a5ac3be4448e1, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.50004816
       objectReference: {fileID: 0}
     - target: {fileID: 7641503982096669495, guid: 2676ea0f05b65934097a5ac3be4448e1, type: 3}
       propertyPath: target

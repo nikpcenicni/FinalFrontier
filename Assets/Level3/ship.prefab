@@ -154,11 +154,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4177466214684238816}
   - component: {fileID: 4177466214684238817}
-  - component: {fileID: 4177466214684238846}
   - component: {fileID: 4177466214684238819}
   - component: {fileID: 4177466214684238818}
   - component: {fileID: 3785388068068922062}
   - component: {fileID: 5083209975937326629}
+  - component: {fileID: 5183425078494584138}
+  - component: {fileID: 707766326242061965}
   m_Layer: 8
   m_Name: ship
   m_TagString: Enemy
@@ -209,22 +210,6 @@ MonoBehaviour:
   tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   graphMask:
     value: -1
---- !u!58 &4177466214684238846
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4177466214684238844}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.28, y: -0.47}
-  serializedVersion: 2
-  m_Radius: 1.55
 --- !u!114 &4177466214684238819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -322,6 +307,38 @@ MonoBehaviour:
   pathIsEnded: 0
   nextWaypointDistance: 3
   isFlipped: 0
+--- !u!70 &5183425078494584138
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4177466214684238844}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -2.3335345, y: -0.62825996}
+  m_Size: {x: 5.6670804, y: 2.7950404}
+  m_Direction: 1
+--- !u!70 &707766326242061965
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4177466214684238844}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -2.3335345, y: -0.62825996}
+  m_Size: {x: 5.6670804, y: 2.7950404}
+  m_Direction: 1
 --- !u!1 &4460416024617226494
 GameObject:
   m_ObjectHideFlags: 0
