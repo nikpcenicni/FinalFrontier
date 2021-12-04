@@ -5,7 +5,7 @@ using UnityEngine;
 public class BirdHealth : MonoBehaviour
 {
 
-	public int health = 40;
+	public int health = 100;
 
 	public GameObject deathEffect;
 

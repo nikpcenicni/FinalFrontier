@@ -61,6 +61,7 @@
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\Boss\KnightBoss\Scripts\BossHealthBar.cs" />
     <Compile Include="Assets\Boss\BirdBoss\EnemyGFX.cs" />
+    <Compile Include="Assets\Level2\Scripts\EnemyDamage.cs" />
     <Compile Include="Assets\Downloaded Assets\Bandits - Pixel Art\Demo\Bandit.cs" />
     <Compile Include="Assets\Menu\AchievementMenu.cs" />
     <Compile Include="Assets\Combat\Enemy\EnemyBehaviour.cs" />
@@ -102,6 +103,7 @@
     <Compile Include="Assets\Scripts\Inventory.cs" />
     <Compile Include="Assets\player\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\ButtonInfo.cs" />
+    <Compile Include="Assets\Level2\Scripts\ArrowTrap.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
@@ -118,6 +120,7 @@
     <Compile Include="Assets\player\Bullet.cs" />
     <Compile Include="Assets\Menu\MainMenu.cs" />
     <Compile Include="Assets\Boss\KnightBoss\Assets\Low_Swordman\Demo\Scripts\Swordman.cs" />
+    <Compile Include="Assets\Level2\Scripts\EnemyProjectile.cs" />
     <Compile Include="Assets\Scripts\ShopCollider.cs" />
     <Compile Include="Assets\Level3\EnemyAI.cs" />
     <Compile Include="Assets\Level2\Scripts\FalingPlatform.cs" />
@@ -144,9 +147,6 @@
     <Compile Include="Assets\Scripts\GameAssets.cs" />
     <Compile Include="Assets\Boss\KnightBoss\Assets\Low_Swordman\Demo\Scripts\Demo_GM.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
-    <Compile Include="Assets\Level2\ArrowTrap.cs" />
-    <Compile Include="Assets\Level2\EnemyProjectile.cs" />
-    <Compile Include="Assets\Level2\EnemyDamage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Downloaded Assets\TextMesh Pro\Shaders\TMPro.cginc" />

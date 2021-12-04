@@ -15,6 +15,7 @@ TagManager:
   - GM
   - FireTrap
   - Arrow
+  - BirdBoss
   layers:
   - Default
   - TransparentFX

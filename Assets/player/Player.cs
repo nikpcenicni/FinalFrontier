@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     public static int level = 0;
     public int coins = 5;
     public int bank;
-    public int maxHealth = 5;
+    public int maxHealth = 100;
     public int currentHealth;
     public bool[] weapons = new bool[3];
 
@@ -319,7 +319,7 @@ public class Player : MonoBehaviour
         if (rb.transform.position.y < -11) {
             fell = true;
             bank = coins;
-            TakeDamage(1);
+            TakeDamage(20);
             rb.transform.position = originalPos;
         }
     }
@@ -439,13 +439,19 @@ public class Player : MonoBehaviour
         }
         else if (other.transform.tag == "Enemy")
         {
-            TakeDamage(1);
+            TakeDamage(10);
             rb.transform.position = originalPos;
 
         }
         else if (other.gameObject.CompareTag("Spike"))
         {
-            TakeDamage(1);
+            TakeDamage(10);
+            rb.transform.position = originalPos;
+
+        }
+        else if (other.gameObject.CompareTag("Bird"))
+        {
+            TakeDamage(10);
             rb.transform.position = originalPos;
 
         }

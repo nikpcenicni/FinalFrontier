@@ -97,7 +97,7 @@ MonoBehaviour:
   radius: 1.69
   height: 2
   canMove: 1
-  maxSpeed: 3
+  maxSpeed: 5
   gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d814b5510d547f94f90250ef7887ce9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 40
+  health: 100
   deathEffect: {fileID: 1755349173569476, guid: a8fd0a18ff2983a48b1180dde853f1fe, type: 3}
   isInvulnerable: 0
 --- !u!50 &7457154376921639430
