@@ -239,7 +239,14 @@ MonoBehaviour:
   textBox: {fileID: 756044554}
   phrases:
   - Welcome to the final frontier...
-  - You are the last remaining human in search of a new world to restart humanity.
+  - The year is 2070 AD
+  - You are the one of the last remaining humans
+  - Overpopulation, political strife, and pollution have caused the earth to be completely
+    uninhabitable
+  - It is your duty to find a new home for humanity
+  - Your journey begins on a terraformed Mars
+  - Here is the spaceship that will be taking you on your journey
+  - Click to enter your spaceship
   phraseCounter: 0
 --- !u!1 &690904125
 GameObject:
