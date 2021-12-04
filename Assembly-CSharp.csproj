@@ -93,7 +93,6 @@
      <Compile Include="Assets\Platform.cs" />
      <Compile Include="Assets\Boss\BirdBoss\BirdHealthBar.cs" />
      <Compile Include="Assets\Level3\Scripts\ShipGFX1.cs" />
-     <Compile Include="Assets\Scripts\Inventory.cs" />
      <Compile Include="Assets\player\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\ButtonInfo.cs" />
      <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
@@ -101,6 +100,7 @@
      <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
      <Compile Include="Assets\Level2\Scripts\Rotate.cs" />
      <Compile Include="Assets\Level3\AI.cs" />
+     <Compile Include="Assets\Scripts\warningInfo.cs" />
      <Compile Include="Assets\player\PlayerData.cs" />
      <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
      <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
@@ -132,6 +132,7 @@
      <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
      <Compile Include="Assets\Scripts\GoToGameCollider.cs" />
      <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
+     <Compile Include="Assets\Level2\Traps\Fire\Firetrap.cs" />
      <Compile Include="Assets\Boss\KnightBoss\Assets\Low_Swordman\Demo\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\Scripts\GameAssets.cs" />

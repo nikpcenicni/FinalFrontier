@@ -2603,6 +2603,9 @@ MonoBehaviour:
   coins2: {fileID: 0}
   health3: {fileID: 0}
   coins3: {fileID: 0}
+  world1: {fileID: 0}
+  world2: {fileID: 0}
+  world3: {fileID: 0}
 --- !u!114 &324064773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2699,6 +2702,9 @@ MonoBehaviour:
   coins2: {fileID: 0}
   health3: {fileID: 0}
   coins3: {fileID: 0}
+  world1: {fileID: 0}
+  world2: {fileID: 0}
+  world3: {fileID: 0}
 --- !u!114 &328241802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4208,6 +4214,9 @@ MonoBehaviour:
   coins2: {fileID: 0}
   health3: {fileID: 0}
   coins3: {fileID: 0}
+  world1: {fileID: 0}
+  world2: {fileID: 0}
+  world3: {fileID: 0}
 --- !u!114 &571543688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4513,6 +4522,9 @@ MonoBehaviour:
   coins2: {fileID: 0}
   health3: {fileID: 0}
   coins3: {fileID: 0}
+  world1: {fileID: 0}
+  world2: {fileID: 0}
+  world3: {fileID: 0}
 --- !u!114 &625991468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4970,6 +4982,9 @@ MonoBehaviour:
   coins2: {fileID: 0}
   health3: {fileID: 0}
   coins3: {fileID: 0}
+  world1: {fileID: 0}
+  world2: {fileID: 0}
+  world3: {fileID: 0}
 --- !u!114 &684336279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6746,6 +6761,9 @@ MonoBehaviour:
   coins2: {fileID: 0}
   health3: {fileID: 0}
   coins3: {fileID: 0}
+  world1: {fileID: 0}
+  world2: {fileID: 0}
+  world3: {fileID: 0}
 --- !u!114 &984629885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6842,6 +6860,9 @@ MonoBehaviour:
   coins2: {fileID: 0}
   health3: {fileID: 0}
   coins3: {fileID: 0}
+  world1: {fileID: 0}
+  world2: {fileID: 0}
+  world3: {fileID: 0}
 --- !u!114 &993933964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11413,6 +11434,7 @@ GameObject:
   - component: {fileID: 1438336575}
   - component: {fileID: 1438336574}
   - component: {fileID: 1438336573}
+  - component: {fileID: 1438336580}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -11432,9 +11454,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb1cc3f8d9aded54189251671f6b45ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isFull: []
-  weapons: 000000000000000000000000
-  potions: 
 --- !u!114 &1438336574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11452,6 +11471,7 @@ MonoBehaviour:
   maxHealth: 5
   currentHealth: 0
   weapons: 000000
+  potions: 000000000000000000000000
   upspeed: 0
   healthBar: {fileID: 1317775494}
   speed: 4
@@ -11496,7 +11516,6 @@ MonoBehaviour:
   - {fileID: 1243042195}
   - {fileID: 759204873}
   - {fileID: 1433208162}
-  weaponHolder: {fileID: 1273529623}
   currentGun: {fileID: 503710288}
   gunActive: 0
 --- !u!61 &1438336575
@@ -11632,6 +11651,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1438336580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1438336572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6418f1c132d5fdc4598daac3c3668154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  attackpoint: {fileID: 1879876732}
+  attackRange: 0.5
+  attackDamage: 10
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  attackRate: 2
+  player: {fileID: 1438336574}
 --- !u!1 &1489713341
 GameObject:
   m_ObjectHideFlags: 0
@@ -14023,8 +14063,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1853020764}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.21, y: -0.117, z: 0}
-  m_LocalScale: {x: 1.6934, y: 1.6934, z: 1.6934}
+  m_LocalPosition: {x: -0.29, y: -0.346, z: 0}
+  m_LocalScale: {x: 0.34705245, y: 0.34705245, z: 0.34705245}
   m_Children: []
   m_Father: {fileID: 1433208163}
   m_RootOrder: 1
@@ -14291,6 +14331,9 @@ MonoBehaviour:
   coins2: {fileID: 0}
   health3: {fileID: 0}
   coins3: {fileID: 0}
+  world1: {fileID: 0}
+  world2: {fileID: 0}
+  world3: {fileID: 0}
 --- !u!114 &1862100396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14970,6 +15013,9 @@ MonoBehaviour:
   coins2: {fileID: 0}
   health3: {fileID: 0}
   coins3: {fileID: 0}
+  world1: {fileID: 0}
+  world2: {fileID: 0}
+  world3: {fileID: 0}
 --- !u!114 &1978863050
 MonoBehaviour:
   m_ObjectHideFlags: 0
