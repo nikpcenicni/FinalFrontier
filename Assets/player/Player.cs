@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -95,6 +96,9 @@ public class Player : MonoBehaviour
         }
         CheckDirection();
         if (pauseMenu.activeSelf || deadMenu.activeSelf) {
+            SavePlayer();
+        }
+        if (SceneManager.GetActiveScene().name == "SpaceShip"){
             SavePlayer();
         }
         CheckIfFall();
@@ -509,6 +513,10 @@ public class Player : MonoBehaviour
         for (int i = 0; i < weapons.Length; i++)
         {
             weapons[i] = data.weapons[i];
+        }
+        for (int i = 0; i < potions.Length; i++)
+        {
+            potions[i] = data.potions[i];
         }
 
         for (int i = 0; i < achievementsUnlocked.Length; i++)
