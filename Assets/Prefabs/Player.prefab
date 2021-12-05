@@ -315,12 +315,8 @@ MonoBehaviour:
   maxHealth: 5
   currentHealth: 0
   weapons: 000000
-  potions: 000000000000000000000000
-  highScore: 0
   upspeed: 0
   healthBar: {fileID: 0}
-  damage: 050000001400000032000000
-  currentDamage: 0
   speed: 6
   jumpforce: 8
   isGroundedChecker: {fileID: 1144568611545479380}
@@ -357,15 +353,14 @@ MonoBehaviour:
   deadMenu: {fileID: 0}
   textCoins: {fileID: 0}
   animator: {fileID: 1144568611750888851}
-  rb: {fileID: 0}
   currentWeaponIndex: 0
   guns:
-  - {fileID: 1144568612335237670}
+  - {fileID: 0}
   - {fileID: 1144568611862415742}
   - {fileID: 1144568612233528522}
   - {fileID: 1144568613486553129}
   weaponHolder: {fileID: 1144568612937034266}
-  currentGun: {fileID: 1144568612335237670}
+  currentGun: {fileID: 0}
   gunActive: 0
 --- !u!114 &1144568611750888855
 MonoBehaviour:

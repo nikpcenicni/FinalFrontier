@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System;
-using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -13,15 +12,11 @@ public class Player : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth;
     public bool[] weapons = new bool[3];
-    public int[] damage = new int[3];
-    public int currentDamage;
-    public int[] potions = new int[3];
     public float highScore;
 
     public float upspeed; //trampoline jump
 
     public healthBar healthBar;
-
 
     public float speed;
     public float jumpforce;
@@ -98,9 +93,6 @@ public class Player : MonoBehaviour
         }
         CheckDirection();
         if (pauseMenu.activeSelf || deadMenu.activeSelf) {
-            SavePlayer();
-        }
-        if (SceneManager.GetActiveScene().name == "SpaceShip"){
             SavePlayer();
         }
         CheckIfFall();
@@ -186,24 +178,17 @@ public class Player : MonoBehaviour
                 if (currentWeaponIndex == 0){
                     currentGun = guns[currentWeaponIndex];
                     guns[currentWeaponIndex].SetActive(true);
-                    gunActive = false;
                 }
                 else if (currentWeaponIndex == 1 && weapons[0]){
                     currentGun = guns[currentWeaponIndex];
                     guns[currentWeaponIndex].SetActive(true);
-                    currentDamage = damage[0];
-                    gunActive = true;
                 } else if (currentWeaponIndex == 2 && weapons[1]){
                     currentGun = guns[currentWeaponIndex];
                     guns[currentWeaponIndex].SetActive(true);
-                    currentDamage = damage[1];
-                    gunActive = true;
                 }
                 else if (currentWeaponIndex == 3 && weapons[2]){
                     currentGun = guns[currentWeaponIndex];
                     guns[currentWeaponIndex].SetActive(true);
-                    currentDamage = damage[2];
-                    gunActive = true;
                 } else {
                     currentWeaponIndex--;
                     guns[currentWeaponIndex].SetActive(true);
@@ -220,21 +205,17 @@ public class Player : MonoBehaviour
                 if (currentWeaponIndex == 0){
                     currentGun = guns[currentWeaponIndex];
                     guns[currentWeaponIndex].SetActive(true);
-                    gunActive = false;
                 }
                 else if (currentWeaponIndex == 1 && weapons[0]){
                     currentGun = guns[currentWeaponIndex];
                     guns[currentWeaponIndex].SetActive(true);
-                    gunActive = true;
                 } else if (currentWeaponIndex == 2 && weapons[1]){
                     currentGun = guns[currentWeaponIndex];
                     guns[currentWeaponIndex].SetActive(true);
-                    gunActive = true;
                 }
                 else if (currentWeaponIndex == 3 && weapons[2]){
                     currentGun = guns[currentWeaponIndex];
                     guns[currentWeaponIndex].SetActive(true);
-                    gunActive = true;
                 } else {
                     currentWeaponIndex++;
                     guns[currentWeaponIndex].SetActive(true);
@@ -529,17 +510,17 @@ public class Player : MonoBehaviour
         bank = data.bank;
         coins = bank;
         highScore = data.highScore;
-        for (int i = 0; i < weapons.Length; i++) {
+        for (int i = 0; i < weapons.Length; i++)
+        {
             weapons[i] = data.weapons[i];
         }
-        for (int i = 0; i < potions.Length; i++) {
-            potions[i] = data.potions[i];
-        }
 
-        for (int i = 0; i < achievementsUnlocked.Length; i++) {
+        for (int i = 0; i < achievementsUnlocked.Length; i++)
+        {
             achievementsUnlocked[i] = data.achievementsUnlocked[i];
         }
-        for (int i = 0; i < achievementsProgress.Length; i++) {
+        for (int i = 0; i < achievementsProgress.Length; i++)
+        {
             achievementsProgress[i] = data.achievementsProgress[i];
         }
     }

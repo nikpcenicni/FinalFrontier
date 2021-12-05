@@ -6,20 +6,13 @@ public class Bullet : MonoBehaviour
 {
     public float speed = 20f;
     public Rigidbody2D rb;
-    private int damage = 5;
-    public Player player;
+    public int damage = 5;
     //public GameObject impactEffect;
 
     // Start is called before the first frame update
     void Start()
     {
         rb.velocity = transform.right * speed;
-        
-    
-    }
-    void Update(){
-        player = GameObject.Find("Player").GetComponent<Player>();
-        damage = player.currentDamage;
     }
 
     void OnTriggerEnter2D (Collider2D hitInfo) {

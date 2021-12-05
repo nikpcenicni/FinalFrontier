@@ -22,7 +22,7 @@ public class MeleeCombat : MonoBehaviour
     {
         if(Time.time >= nextAttacktime)
         {
-            if (Input.GetKeyDown(KeyCode.F))
+            if (Input.GetMouseButtonDown(1))
             {
                 MeleeAttack();
                 nextAttacktime = Time.time + 1f / attackRate; 
