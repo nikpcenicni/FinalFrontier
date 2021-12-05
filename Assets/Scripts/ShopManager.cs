@@ -12,6 +12,8 @@ public class ShopManager : MonoBehaviour{
     public GameObject Error;
     public Text errorText;
 
+    public AudioSource errorEffect;
+
 
     // Start is called before the first frame update
     void Start()
@@ -66,6 +68,7 @@ public class ShopManager : MonoBehaviour{
                 if (player.weapons[itemID]){
                     Error.SetActive(true);
                     errorText.text = "Already Owned";
+                    errorEffect.Play();
                 }
                 else if (!player.weapons[itemID] && itemID == 0){
                     player.weapons[itemID] = true;
@@ -81,6 +84,7 @@ public class ShopManager : MonoBehaviour{
                 } else {
                     Error.SetActive(true);
                     errorText.text = "Must own all previous weapons";
+                    errorEffect.Play();
                 }
                 
             } else if (itemID > 2 && itemID < 6){
@@ -90,6 +94,7 @@ public class ShopManager : MonoBehaviour{
         } else {
             Error.SetActive(true);
             errorText.text = "Not enough moon rocks";
+            errorEffect.Play();
         }
     }
 

@@ -2125,6 +2125,7 @@ MonoBehaviour:
   player: {fileID: 1438336574}
   Error: {fileID: 901496355}
   errorText: {fileID: 15647453}
+  errorEffect: {fileID: 1778113709}
 --- !u!4 &276037488
 Transform:
   m_ObjectHideFlags: 0
@@ -14247,7 +14248,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6626d9d693d773f4aba035bd77aa48eb, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0

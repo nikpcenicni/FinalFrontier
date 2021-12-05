@@ -8,6 +8,9 @@ public class Weapon : MonoBehaviour
 
     public GameObject bulletPrefab;
     public Player player;
+    public AudioSource Plasma;
+    public AudioSource Pistol;
+    public AudioSource Laser;
     // Update is called once per frame
     void Update()
     {
@@ -20,5 +23,12 @@ public class Weapon : MonoBehaviour
 
     void Shoot() {
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        if (player.currentGun.name == "Pistol"){
+            Pistol.Play();
+        } else if (player.currentGun.name == "Plasma Rifle"){
+            Plasma.Play();
+        } else if (player.currentGun.name == "Laser Rifle"){
+            Laser.Play();
+        }
     }
 }

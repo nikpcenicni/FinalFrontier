@@ -107,6 +107,9 @@ public class Player : MonoBehaviour
         CheckAchievementProgress();
         
         changeWeapon();
+
+        if (currentGun.name == "Pistol")
+            Debug.Log(currentGun);
     }
 
 
@@ -544,20 +547,5 @@ public class Player : MonoBehaviour
         {
             achievementsProgress[i] = data.achievementsProgress[i];
         }
-    }
-
-
-    // weapons
-    public void pistol(){
-        //damage = shop.shopItems[3,1];
-    }
-
-    public void LaserRifle(){
-        //damage = shop.shopItems[3,2];
-    }
-
-    public void PlasmaRifle(){
-        //damage = shop.shopItems[3,3];
-
     }
 }
