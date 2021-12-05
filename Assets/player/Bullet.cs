@@ -18,7 +18,7 @@ public class Bullet : MonoBehaviour
     }
 
     void Update(){
-         player = GameObject.Find("Player").GetComponent<Player>();
+        player = GameObject.Find("Player").GetComponent<Player>();
         damage = player.currentDamage;
     }
 

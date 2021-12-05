@@ -5,7 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class PlayerData 
 {
-    public int level;
+    public string level;
     public int health;
     public int coins;
     public bool[] achievementsUnlocked = new bool[10];

@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    public static int level = 0;
+    public static string level = "";
     public int coins = 5;
     public int maxHealth = 100;
     public int currentHealth;

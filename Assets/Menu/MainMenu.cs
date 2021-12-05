@@ -32,14 +32,28 @@ public class MainMenu : MonoBehaviour{
         PlayerData data = SaveSystem.loadPlayer();
         health1.text = data.health.ToString();
         coins1.text = data.coins.ToString();
+        if (data.level == "")
+            world1.text = "New Beginning";
+        else
+            world1.text = data.level;
+
         MainMenu.saveNumber = 1;
         data = SaveSystem.loadPlayer();
         health2.text = data.health.ToString();
         coins2.text = data.coins.ToString();
+        if (data.level == "")
+            world2.text = "New Beginning";
+        else
+            world2.text = data.level;
+
         MainMenu.saveNumber = 2;
         data = SaveSystem.loadPlayer();
         health3.text = data.health.ToString();
         coins3.text = data.coins.ToString();
+        if (data.level == "")
+            world3.text = "New Beginning";
+        else
+            world3.text = data.level;
 
     }
     public void firstSave() {
