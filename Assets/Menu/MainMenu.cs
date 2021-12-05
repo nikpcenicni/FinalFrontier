@@ -28,12 +28,9 @@ public class MainMenu : MonoBehaviour{
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }
     public void forestPlanet(){
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
-    }
-    public void endlessMode(){
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }
 
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
     public void quitGame() {
         Application.Quit();
     }
