@@ -482,8 +482,8 @@ MonoBehaviour:
   highScore: 0
   upspeed: 0
   healthBar: {fileID: 0}
-  speed: 6
-  jumpforce: 11
+  speed: 8
+  jumpforce: 12
   isGroundedChecker: {fileID: 1144568611545479380}
   checkGroundRadius: 0.05
   groundLayer:
