@@ -2450,14 +2450,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health1: {fileID: 0}
+  heart1: {fileID: 0}
   coins1: {fileID: 0}
+  moonRock1: {fileID: 0}
   health2: {fileID: 0}
+  heart2: {fileID: 0}
   coins2: {fileID: 0}
+  moonRock2: {fileID: 0}
   health3: {fileID: 0}
+  heart3: {fileID: 0}
   coins3: {fileID: 0}
-  world1: {fileID: 0}
-  world2: {fileID: 0}
-  world3: {fileID: 0}
+  moonRock3: {fileID: 0}
+  newGame1: {fileID: 0}
+  newGame2: {fileID: 0}
+  newGame3: {fileID: 0}
+  saveFlag: 0
 --- !u!114 &324064773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2549,14 +2556,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health1: {fileID: 0}
+  heart1: {fileID: 0}
   coins1: {fileID: 0}
+  moonRock1: {fileID: 0}
   health2: {fileID: 0}
+  heart2: {fileID: 0}
   coins2: {fileID: 0}
+  moonRock2: {fileID: 0}
   health3: {fileID: 0}
+  heart3: {fileID: 0}
   coins3: {fileID: 0}
-  world1: {fileID: 0}
-  world2: {fileID: 0}
-  world3: {fileID: 0}
+  moonRock3: {fileID: 0}
+  newGame1: {fileID: 0}
+  newGame2: {fileID: 0}
+  newGame3: {fileID: 0}
+  saveFlag: 0
 --- !u!114 &328241802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4113,14 +4127,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health1: {fileID: 0}
+  heart1: {fileID: 0}
   coins1: {fileID: 0}
+  moonRock1: {fileID: 0}
   health2: {fileID: 0}
+  heart2: {fileID: 0}
   coins2: {fileID: 0}
+  moonRock2: {fileID: 0}
   health3: {fileID: 0}
+  heart3: {fileID: 0}
   coins3: {fileID: 0}
-  world1: {fileID: 0}
-  world2: {fileID: 0}
-  world3: {fileID: 0}
+  moonRock3: {fileID: 0}
+  newGame1: {fileID: 0}
+  newGame2: {fileID: 0}
+  newGame3: {fileID: 0}
+  saveFlag: 0
 --- !u!114 &571543688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4421,14 +4442,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health1: {fileID: 0}
+  heart1: {fileID: 0}
   coins1: {fileID: 0}
+  moonRock1: {fileID: 0}
   health2: {fileID: 0}
+  heart2: {fileID: 0}
   coins2: {fileID: 0}
+  moonRock2: {fileID: 0}
   health3: {fileID: 0}
+  heart3: {fileID: 0}
   coins3: {fileID: 0}
-  world1: {fileID: 0}
-  world2: {fileID: 0}
-  world3: {fileID: 0}
+  moonRock3: {fileID: 0}
+  newGame1: {fileID: 0}
+  newGame2: {fileID: 0}
+  newGame3: {fileID: 0}
+  saveFlag: 0
 --- !u!114 &625991468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4881,14 +4909,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health1: {fileID: 0}
+  heart1: {fileID: 0}
   coins1: {fileID: 0}
+  moonRock1: {fileID: 0}
   health2: {fileID: 0}
+  heart2: {fileID: 0}
   coins2: {fileID: 0}
+  moonRock2: {fileID: 0}
   health3: {fileID: 0}
+  heart3: {fileID: 0}
   coins3: {fileID: 0}
-  world1: {fileID: 0}
-  world2: {fileID: 0}
-  world3: {fileID: 0}
+  moonRock3: {fileID: 0}
+  newGame1: {fileID: 0}
+  newGame2: {fileID: 0}
+  newGame3: {fileID: 0}
+  saveFlag: 0
 --- !u!114 &684336279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6690,14 +6725,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health1: {fileID: 0}
+  heart1: {fileID: 0}
   coins1: {fileID: 0}
+  moonRock1: {fileID: 0}
   health2: {fileID: 0}
+  heart2: {fileID: 0}
   coins2: {fileID: 0}
+  moonRock2: {fileID: 0}
   health3: {fileID: 0}
+  heart3: {fileID: 0}
   coins3: {fileID: 0}
-  world1: {fileID: 0}
-  world2: {fileID: 0}
-  world3: {fileID: 0}
+  moonRock3: {fileID: 0}
+  newGame1: {fileID: 0}
+  newGame2: {fileID: 0}
+  newGame3: {fileID: 0}
+  saveFlag: 0
 --- !u!114 &984629885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6789,14 +6831,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health1: {fileID: 0}
+  heart1: {fileID: 0}
   coins1: {fileID: 0}
+  moonRock1: {fileID: 0}
   health2: {fileID: 0}
+  heart2: {fileID: 0}
   coins2: {fileID: 0}
+  moonRock2: {fileID: 0}
   health3: {fileID: 0}
+  heart3: {fileID: 0}
   coins3: {fileID: 0}
-  world1: {fileID: 0}
-  world2: {fileID: 0}
-  world3: {fileID: 0}
+  moonRock3: {fileID: 0}
+  newGame1: {fileID: 0}
+  newGame2: {fileID: 0}
+  newGame3: {fileID: 0}
+  saveFlag: 0
 --- !u!114 &993933964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6888,14 +6937,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health1: {fileID: 0}
+  heart1: {fileID: 0}
   coins1: {fileID: 0}
+  moonRock1: {fileID: 0}
   health2: {fileID: 0}
+  heart2: {fileID: 0}
   coins2: {fileID: 0}
+  moonRock2: {fileID: 0}
   health3: {fileID: 0}
+  heart3: {fileID: 0}
   coins3: {fileID: 0}
-  world1: {fileID: 0}
-  world2: {fileID: 0}
-  world3: {fileID: 0}
+  moonRock3: {fileID: 0}
+  newGame1: {fileID: 0}
+  newGame2: {fileID: 0}
+  newGame3: {fileID: 0}
+  saveFlag: 0
 --- !u!114 &1018995652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11454,7 +11510,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1433208163
 Transform:
   m_ObjectHideFlags: 0
@@ -11644,6 +11700,7 @@ MonoBehaviour:
   deadMenu: {fileID: 1188425380}
   textCoins: {fileID: 2049747019}
   animator: {fileID: 1438336577}
+  originalPos: {x: 0, y: 0, z: 0}
   rb: {fileID: 0}
   currentWeaponIndex: 0
   guns: []
@@ -14546,14 +14603,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health1: {fileID: 0}
+  heart1: {fileID: 0}
   coins1: {fileID: 0}
+  moonRock1: {fileID: 0}
   health2: {fileID: 0}
+  heart2: {fileID: 0}
   coins2: {fileID: 0}
+  moonRock2: {fileID: 0}
   health3: {fileID: 0}
+  heart3: {fileID: 0}
   coins3: {fileID: 0}
-  world1: {fileID: 0}
-  world2: {fileID: 0}
-  world3: {fileID: 0}
+  moonRock3: {fileID: 0}
+  newGame1: {fileID: 0}
+  newGame2: {fileID: 0}
+  newGame3: {fileID: 0}
+  saveFlag: 0
 --- !u!114 &1862100396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15199,14 +15263,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health1: {fileID: 0}
+  heart1: {fileID: 0}
   coins1: {fileID: 0}
+  moonRock1: {fileID: 0}
   health2: {fileID: 0}
+  heart2: {fileID: 0}
   coins2: {fileID: 0}
+  moonRock2: {fileID: 0}
   health3: {fileID: 0}
+  heart3: {fileID: 0}
   coins3: {fileID: 0}
-  world1: {fileID: 0}
-  world2: {fileID: 0}
-  world3: {fileID: 0}
+  moonRock3: {fileID: 0}
+  newGame1: {fileID: 0}
+  newGame2: {fileID: 0}
+  newGame3: {fileID: 0}
+  saveFlag: 0
 --- !u!114 &1978863050
 MonoBehaviour:
   m_ObjectHideFlags: 0

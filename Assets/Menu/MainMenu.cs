@@ -23,12 +23,24 @@ public class MainMenu : MonoBehaviour{
     public TextMeshProUGUI newGame1;
     public TextMeshProUGUI newGame2;
     public TextMeshProUGUI newGame3;
+    public int saveFlag1;
+    public int saveFlag2;
+    public int saveFlag3;
 
 
     
     
-    public void playGame() {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    public void playGame1() {
+        if(saveFlag1 == 0)
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+    public void playGame2() {
+        if(saveFlag2 == 0)
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+    public void playGame3() {
+        if(saveFlag3 == 0)
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void quitGame() {
@@ -45,9 +57,11 @@ public class MainMenu : MonoBehaviour{
             newGame1.enabled = true;
             moonRock1.enabled = false;
             heart1.enabled = false;
+            saveFlag1 = 0;
         } else {
             health1.text = data.health.ToString();
             coins1.text = data.bank.ToString();
+            saveFlag1 = 1;
         }
         
         MainMenu.saveNumber = 1;
@@ -56,9 +70,11 @@ public class MainMenu : MonoBehaviour{
             newGame2.enabled = true;
             moonRock2.enabled = false;
             heart2.enabled = false;
+            saveFlag2 = 0;
         } else{
             health2.text = data1.health.ToString();
             coins2.text = data1.bank.ToString();
+            saveFlag2 = 1;
         }
 
         MainMenu.saveNumber = 2;
@@ -67,9 +83,11 @@ public class MainMenu : MonoBehaviour{
             newGame3.enabled = true;
             moonRock3.enabled = false;
             heart3.enabled = false;
+            saveFlag3 = 0;
         } else {
             health3.text = data2.health.ToString();
             coins3.text = data2.bank.ToString();
+            saveFlag3 = 1;
         }
     }
     public void firstSave() {
