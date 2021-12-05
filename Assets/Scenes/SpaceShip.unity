@@ -12100,7 +12100,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coins: 0
-  bank: 0
   maxHealth: 5
   currentHealth: 0
   weapons: 000000

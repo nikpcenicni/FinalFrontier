@@ -31,15 +31,15 @@ public class MainMenu : MonoBehaviour{
         MainMenu.saveNumber = 0;
         PlayerData data = SaveSystem.loadPlayer();
         health1.text = data.health.ToString();
-        coins1.text = data.bank.ToString();
+        coins1.text = data.coins.ToString();
         MainMenu.saveNumber = 1;
         data = SaveSystem.loadPlayer();
         health2.text = data.health.ToString();
-        coins2.text = data.bank.ToString();
+        coins2.text = data.coins.ToString();
         MainMenu.saveNumber = 2;
         data = SaveSystem.loadPlayer();
         health3.text = data.health.ToString();
-        coins3.text = data.bank.ToString();
+        coins3.text = data.coins.ToString();
 
     }
     public void firstSave() {
