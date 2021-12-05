@@ -326,14 +326,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health1: {fileID: 0}
+  heart1: {fileID: 0}
   coins1: {fileID: 0}
+  moonRock1: {fileID: 0}
   health2: {fileID: 0}
+  heart2: {fileID: 0}
   coins2: {fileID: 0}
+  moonRock2: {fileID: 0}
   health3: {fileID: 0}
+  heart3: {fileID: 0}
   coins3: {fileID: 0}
-  world1: {fileID: 0}
-  world2: {fileID: 0}
-  world3: {fileID: 0}
+  moonRock3: {fileID: 0}
+  newGame1: {fileID: 0}
+  newGame2: {fileID: 0}
+  newGame3: {fileID: 0}
+  saveFlag1: 0
+  saveFlag2: 0
+  saveFlag3: 0
 --- !u!114 &64943283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31935,14 +31944,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health1: {fileID: 0}
+  heart1: {fileID: 0}
   coins1: {fileID: 0}
+  moonRock1: {fileID: 0}
   health2: {fileID: 0}
+  heart2: {fileID: 0}
   coins2: {fileID: 0}
+  moonRock2: {fileID: 0}
   health3: {fileID: 0}
+  heart3: {fileID: 0}
   coins3: {fileID: 0}
-  world1: {fileID: 0}
-  world2: {fileID: 0}
-  world3: {fileID: 0}
+  moonRock3: {fileID: 0}
+  newGame1: {fileID: 0}
+  newGame2: {fileID: 0}
+  newGame3: {fileID: 0}
+  saveFlag1: 0
+  saveFlag2: 0
+  saveFlag3: 0
 --- !u!114 &363199799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32436,14 +32454,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health1: {fileID: 0}
+  heart1: {fileID: 0}
   coins1: {fileID: 0}
+  moonRock1: {fileID: 0}
   health2: {fileID: 0}
+  heart2: {fileID: 0}
   coins2: {fileID: 0}
+  moonRock2: {fileID: 0}
   health3: {fileID: 0}
+  heart3: {fileID: 0}
   coins3: {fileID: 0}
-  world1: {fileID: 0}
-  world2: {fileID: 0}
-  world3: {fileID: 0}
+  moonRock3: {fileID: 0}
+  newGame1: {fileID: 0}
+  newGame2: {fileID: 0}
+  newGame3: {fileID: 0}
+  saveFlag1: 0
+  saveFlag2: 0
+  saveFlag3: 0
 --- !u!114 &448071717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33423,14 +33450,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health1: {fileID: 0}
+  heart1: {fileID: 0}
   coins1: {fileID: 0}
+  moonRock1: {fileID: 0}
   health2: {fileID: 0}
+  heart2: {fileID: 0}
   coins2: {fileID: 0}
+  moonRock2: {fileID: 0}
   health3: {fileID: 0}
+  heart3: {fileID: 0}
   coins3: {fileID: 0}
-  world1: {fileID: 0}
-  world2: {fileID: 0}
-  world3: {fileID: 0}
+  moonRock3: {fileID: 0}
+  newGame1: {fileID: 0}
+  newGame2: {fileID: 0}
+  newGame3: {fileID: 0}
+  saveFlag1: 0
+  saveFlag2: 0
+  saveFlag3: 0
 --- !u!114 &580344022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33918,14 +33954,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health1: {fileID: 0}
+  heart1: {fileID: 0}
   coins1: {fileID: 0}
+  moonRock1: {fileID: 0}
   health2: {fileID: 0}
+  heart2: {fileID: 0}
   coins2: {fileID: 0}
+  moonRock2: {fileID: 0}
   health3: {fileID: 0}
+  heart3: {fileID: 0}
   coins3: {fileID: 0}
-  world1: {fileID: 0}
-  world2: {fileID: 0}
-  world3: {fileID: 0}
+  moonRock3: {fileID: 0}
+  newGame1: {fileID: 0}
+  newGame2: {fileID: 0}
+  newGame3: {fileID: 0}
+  saveFlag1: 0
+  saveFlag2: 0
+  saveFlag3: 0
 --- !u!114 &659259777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34777,14 +34822,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health1: {fileID: 0}
+  heart1: {fileID: 0}
   coins1: {fileID: 0}
+  moonRock1: {fileID: 0}
   health2: {fileID: 0}
+  heart2: {fileID: 0}
   coins2: {fileID: 0}
+  moonRock2: {fileID: 0}
   health3: {fileID: 0}
+  heart3: {fileID: 0}
   coins3: {fileID: 0}
-  world1: {fileID: 0}
-  world2: {fileID: 0}
-  world3: {fileID: 0}
+  moonRock3: {fileID: 0}
+  newGame1: {fileID: 0}
+  newGame2: {fileID: 0}
+  newGame3: {fileID: 0}
+  saveFlag1: 0
+  saveFlag2: 0
+  saveFlag3: 0
 --- !u!114 &757568530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83217,14 +83271,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health1: {fileID: 0}
+  heart1: {fileID: 0}
   coins1: {fileID: 0}
+  moonRock1: {fileID: 0}
   health2: {fileID: 0}
+  heart2: {fileID: 0}
   coins2: {fileID: 0}
+  moonRock2: {fileID: 0}
   health3: {fileID: 0}
+  heart3: {fileID: 0}
   coins3: {fileID: 0}
-  world1: {fileID: 0}
-  world2: {fileID: 0}
-  world3: {fileID: 0}
+  moonRock3: {fileID: 0}
+  newGame1: {fileID: 0}
+  newGame2: {fileID: 0}
+  newGame3: {fileID: 0}
+  saveFlag1: 0
+  saveFlag2: 0
+  saveFlag3: 0
 --- !u!114 &1724063235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83531,14 +83594,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health1: {fileID: 0}
+  heart1: {fileID: 0}
   coins1: {fileID: 0}
+  moonRock1: {fileID: 0}
   health2: {fileID: 0}
+  heart2: {fileID: 0}
   coins2: {fileID: 0}
+  moonRock2: {fileID: 0}
   health3: {fileID: 0}
+  heart3: {fileID: 0}
   coins3: {fileID: 0}
-  world1: {fileID: 0}
-  world2: {fileID: 0}
-  world3: {fileID: 0}
+  moonRock3: {fileID: 0}
+  newGame1: {fileID: 0}
+  newGame2: {fileID: 0}
+  newGame3: {fileID: 0}
+  saveFlag1: 0
+  saveFlag2: 0
+  saveFlag3: 0
 --- !u!114 &1860144233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83630,14 +83702,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health1: {fileID: 0}
+  heart1: {fileID: 0}
   coins1: {fileID: 0}
+  moonRock1: {fileID: 0}
   health2: {fileID: 0}
+  heart2: {fileID: 0}
   coins2: {fileID: 0}
+  moonRock2: {fileID: 0}
   health3: {fileID: 0}
+  heart3: {fileID: 0}
   coins3: {fileID: 0}
-  world1: {fileID: 0}
-  world2: {fileID: 0}
-  world3: {fileID: 0}
+  moonRock3: {fileID: 0}
+  newGame1: {fileID: 0}
+  newGame2: {fileID: 0}
+  newGame3: {fileID: 0}
+  saveFlag1: 0
+  saveFlag2: 0
+  saveFlag3: 0
 --- !u!114 &1880364194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85156,6 +85237,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 910052483}
     - target: {fileID: 1144568611750888844, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
+      propertyPath: gunActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1144568611750888844, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 739550157}
@@ -85249,11 +85334,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1144568611750888849, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 286.1
+      value: -6.24
       objectReference: {fileID: 0}
     - target: {fileID: 1144568611750888849, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 32
+      value: -5.87
       objectReference: {fileID: 0}
     - target: {fileID: 1144568611750888849, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -85290,6 +85375,10 @@ PrefabInstance:
     - target: {fileID: 1144568611750888850, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
       propertyPath: m_CollisionDetection
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1144568611862415742, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1144568612335237670, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
       propertyPath: m_IsActive

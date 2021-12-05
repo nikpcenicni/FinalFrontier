@@ -8,7 +8,6 @@ using TMPro;
 public class MainMenu : MonoBehaviour{
     public static int saveNumber;
     public TextMeshProUGUI health1;
-
     public Image heart1;
     public TextMeshProUGUI coins1;
     public Image moonRock1;
@@ -33,14 +32,20 @@ public class MainMenu : MonoBehaviour{
     public void playGame1() {
         if(saveFlag1 == 0)
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        else
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }
     public void playGame2() {
         if(saveFlag2 == 0)
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        else
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }
     public void playGame3() {
         if(saveFlag3 == 0)
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        else
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }
 
     public void quitGame() {
