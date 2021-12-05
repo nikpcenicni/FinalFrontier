@@ -486,7 +486,7 @@ public class Player : MonoBehaviour
             rb.transform.position = originalPos;
 
         }
-        else if (other.gameObject.CompareTag("Bird"))
+        else if (other.gameObject.CompareTag("Boss"))
         {
             TakeDamage(10);
             rb.transform.position = originalPos;
