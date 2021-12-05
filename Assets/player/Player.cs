@@ -3,18 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System;
-using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    public static string level = "";
+    public static int level = 0;
     public int coins = 5;
+    public int bank;
     public int maxHealth = 100;
     public int currentHealth;
     public bool[] weapons = new bool[3];
-    public int[] damage;
-    public int currentDamage;
-    public int[] potions = new int[3];
     public float highScore;
 
     public float upspeed; //trampoline jump
@@ -64,7 +61,6 @@ public class Player : MonoBehaviour
     public GameObject currentGun;
     public bool gunActive = false;
 
-    public AudioSource jumpSound;
     
     // Start is called before the first frame update
     void Start()
@@ -322,6 +318,7 @@ public class Player : MonoBehaviour
     void CheckIfFall() {
         if (rb.transform.position.y < -11) {
             fell = true;
+            bank = coins;
             TakeDamage(20);
             rb.transform.position = originalPos;
         }
@@ -484,10 +481,13 @@ public class Player : MonoBehaviour
     }
 
 
-
+    public void levelCompleted() {
+        bank = bank+coins;
+    }
 
     public void Restart(){
         rb.transform.position = originalPos;
+        bank = coins;
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
     }
@@ -501,16 +501,12 @@ public class Player : MonoBehaviour
 
         level = data.level;
         currentHealth = data.health;
-        coins = data.coins;
-        
+        bank = data.bank;
+        coins = bank;
         highScore = data.highScore;
         for (int i = 0; i < weapons.Length; i++)
         {
             weapons[i] = data.weapons[i];
-        }
-        for (int i = 0; i < potions.Length; i++)
-        {
-            potions[i] = data.potions[i];
         }
 
         for (int i = 0; i < achievementsUnlocked.Length; i++)
