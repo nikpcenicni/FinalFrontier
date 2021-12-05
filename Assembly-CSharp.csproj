@@ -97,7 +97,6 @@
      <Compile Include="Assets\Platform.cs" />
      <Compile Include="Assets\Boss\BirdBoss\BirdHealthBar.cs" />
      <Compile Include="Assets\Level3\Scripts\ShipGFX1.cs" />
-     <Compile Include="Assets\Scripts\Inventory.cs" />
      <Compile Include="Assets\player\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\ButtonInfo.cs" />
      <Compile Include="Assets\Level2\Scripts\ArrowTrap.cs" />

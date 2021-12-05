@@ -51,6 +51,8 @@ public class Player : MonoBehaviour
     public float achMoveSpeed = 2f;
     public bool achievementOn = false;
 
+    
+
     public GameObject pauseMenu;
     public GameObject deadMenu;
     public TextMeshProUGUI textCoins;
@@ -65,6 +67,9 @@ public class Player : MonoBehaviour
     public GameObject weaponHolder;
     public GameObject currentGun;
     public bool gunActive = false;
+
+
+    public AudioSource jumpSound;
 
     
     // Start is called before the first frame update
@@ -297,6 +302,7 @@ public class Player : MonoBehaviour
             }
             animator.SetBool("isJumping", true);
             hasJumped = true;
+            jumpSound.Play();
     	}
     }
     
