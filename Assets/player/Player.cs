@@ -184,20 +184,29 @@ public class Player : MonoBehaviour
                 if (currentWeaponIndex == 0){
                     currentGun = guns[currentWeaponIndex];
                     guns[currentWeaponIndex].SetActive(true);
+                    gunActive = false;
+                    currentDamage = 0;
                 }
                 else if (currentWeaponIndex == 1 && weapons[0]){
                     currentGun = guns[currentWeaponIndex];
                     guns[currentWeaponIndex].SetActive(true);
+                    gunActive = true;
+                    currentDamage = damage[0];
                 } else if (currentWeaponIndex == 2 && weapons[1]){
                     currentGun = guns[currentWeaponIndex];
                     guns[currentWeaponIndex].SetActive(true);
+                    gunActive = true;
+                    currentDamage = damage[1];
                 }
                 else if (currentWeaponIndex == 3 && weapons[2]){
                     currentGun = guns[currentWeaponIndex];
                     guns[currentWeaponIndex].SetActive(true);
+                    gunActive = true;
+                    currentDamage = damage[2];
                 } else {
                     currentWeaponIndex--;
                     guns[currentWeaponIndex].SetActive(true);
+                    gunActive = true;
                 }
                 // currentGun = guns[currentWeaponIndex];
                 // guns[currentWeaponIndex].SetActive(true);
@@ -211,17 +220,25 @@ public class Player : MonoBehaviour
                 if (currentWeaponIndex == 0){
                     currentGun = guns[currentWeaponIndex];
                     guns[currentWeaponIndex].SetActive(true);
+                    gunActive = false;
+                    currentDamage = 0;
                 }
                 else if (currentWeaponIndex == 1 && weapons[0]){
                     currentGun = guns[currentWeaponIndex];
                     guns[currentWeaponIndex].SetActive(true);
+                    gunActive = true;
+                    currentDamage = damage[0];
                 } else if (currentWeaponIndex == 2 && weapons[1]){
                     currentGun = guns[currentWeaponIndex];
                     guns[currentWeaponIndex].SetActive(true);
+                    gunActive = true;
+                    currentDamage = damage[1];
                 }
                 else if (currentWeaponIndex == 3 && weapons[2]){
                     currentGun = guns[currentWeaponIndex];
                     guns[currentWeaponIndex].SetActive(true);
+                    gunActive = true;
+                    currentDamage = damage[2];
                 } else {
                     currentWeaponIndex++;
                     guns[currentWeaponIndex].SetActive(true);
