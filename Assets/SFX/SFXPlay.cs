@@ -8,6 +8,7 @@ public class SFXPlay : MonoBehaviour
     public AudioSource Click;
     public AudioSource Buy;
     public AudioSource Jump;
+    public AudioSource Hover;
 
     public void PlayClick(){
         Click.Play();
@@ -17,5 +18,9 @@ public class SFXPlay : MonoBehaviour
     }
     public void PlayJump(){
         Jump.Play();
+    }
+    public void PlayHover()
+    {
+        Hover.Play();
     }
 }
