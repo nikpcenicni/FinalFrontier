@@ -56,7 +56,8 @@ public class Player : MonoBehaviour
     public TextMeshProUGUI textCoins;
     public Animator animator;
     private SpriteRenderer viewRender;
-    public Vector3 originalPos;    
+    public Vector3 originalPos;
+    public Vector3 RespawnPos;
 
     public Rigidbody2D rb;
 
@@ -72,7 +73,7 @@ public class Player : MonoBehaviour
     
     // Start is called before the first frame update
     void Start()
-    {
+    { 
         rb = GetComponent<Rigidbody2D>();
         viewRender = GetComponent<SpriteRenderer>();
         Time.timeScale = 1f;
@@ -105,7 +106,7 @@ public class Player : MonoBehaviour
         Heal();
         updateCoinText();
         CheckAchievementProgress();
-        
+        RespawnPos = new Vector3(rb.transform.position.x - 5, rb.transform.position.y, rb.transform.position.z);
         changeWeapon();
 
         if (currentGun.name == "Pistol")
@@ -119,6 +120,7 @@ public class Player : MonoBehaviour
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
+        rb.transform.position = RespawnPos;
         StartCoroutine(DamageAnimation());
     }
   
@@ -342,7 +344,7 @@ public class Player : MonoBehaviour
     }
 
     void CheckIfFall() {
-        if (rb.transform.position.y < -11) {
+        if (rb.transform.position.y < -30) {
             fell = true;
             TakeDamage(20);
             rb.transform.position = originalPos;
@@ -471,19 +473,20 @@ public class Player : MonoBehaviour
         else if (other.transform.tag == "Enemy")
         {
             TakeDamage(10);
-            rb.transform.position = originalPos;
+           // rb.transform.position = originalPos;
 
         }
         else if (other.gameObject.CompareTag("Spike"))
         {
-            TakeDamage(10);
+            currentHealth -= 10;
+            healthBar.SetHealth(currentHealth);
             rb.transform.position = originalPos;
 
         }
         else if (other.gameObject.CompareTag("Boss"))
         {
             TakeDamage(10);
-            rb.transform.position = originalPos;
+            //rb.transform.position = originalPos;
 
         }
         if (other.transform.tag == "Kill" ){
@@ -497,9 +500,9 @@ public class Player : MonoBehaviour
         if (collision.gameObject.tag == "Tramp" && isGrounded == false)
         {
             upspeed += 300f;
-            if( upspeed >= 1400f)
+            if( upspeed >= 1900f)
             {
-                upspeed = 1400f;
+                upspeed = 1900f;
             }
             rb.AddForce(new Vector2(0, upspeed));
         }
@@ -511,6 +514,7 @@ public class Player : MonoBehaviour
         rb.transform.position = originalPos;
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+        SavePlayer();
     }
 
     public void SavePlayer() {
