@@ -65,7 +65,7 @@ public class MainMenu : MonoBehaviour{
             saveFlag1 = 0;
         } else {
             health1.text = data.health.ToString();
-            coins1.text = data.bank.ToString();
+            coins1.text = data.coins.ToString();
             saveFlag1 = 1;
         }
         
@@ -78,7 +78,7 @@ public class MainMenu : MonoBehaviour{
             saveFlag2 = 0;
         } else{
             health2.text = data1.health.ToString();
-            coins2.text = data1.bank.ToString();
+            coins2.text = data1.coins.ToString();
             saveFlag2 = 1;
         }
 
@@ -91,7 +91,7 @@ public class MainMenu : MonoBehaviour{
             saveFlag3 = 0;
         } else {
             health3.text = data2.health.ToString();
-            coins3.text = data2.bank.ToString();
+            coins3.text = data2.coins.ToString();
             saveFlag3 = 1;
         }
     }
