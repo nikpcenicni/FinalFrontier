@@ -16,6 +16,8 @@ TagManager:
   - FireTrap
   - Arrow
   - BirdBoss
+  - enemyBullet
+  - Bird
   layers:
   - Default
   - TransparentFX
