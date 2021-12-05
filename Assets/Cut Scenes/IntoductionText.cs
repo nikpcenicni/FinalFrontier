@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
@@ -14,12 +15,31 @@ public class IntoductionText : MonoBehaviour
     void Start(){
         textBox.SetText(phrases[0]);
     }
-
     public void nextPhrase(){
         phraseCounter++;
         if (phraseCounter < phrases.Length)
             textBox.SetText(phrases[phraseCounter]);
         else
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+    public void loadMenu(){
+        if(phraseCounter == 8){
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+    }
+    public void loadBoss1(){
+        if(phraseCounter == 10){
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+    }
+    public void loadBoss2(){
+        if(phraseCounter == 8){
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+    }
+     public void loadLevel2(){
+        if(phraseCounter == 8){
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 }
