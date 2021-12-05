@@ -282,6 +282,7 @@ public class Player : MonoBehaviour
             }
             animator.SetBool("isJumping", true);
             hasJumped = true;
+            jumpSound.Play();
     	}
     }
     
