@@ -11,7 +11,7 @@ public class LevelGenerator : MonoBehaviour{
     [SerializeField] private List<Transform> LevelPartList;
     [SerializeField] private Transform BossLevel;
     [SerializeField] private Player player;
-    [SerializeField] private int EndPlatformsX;
+    [SerializeField] public float EndPlatformsX;
 
     int playerHealth;
 

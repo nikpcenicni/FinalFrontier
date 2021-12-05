@@ -20,16 +20,17 @@ public class CameraFixed : MonoBehaviour
     bool higher;
     public GameObject scoreUI;
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
         transform.parent = null;
+        score = 0f;
         step = 3f;
         originalStep = step;
+        GameObject.Find("Player").GetComponent<Player>().speed = 6f;
         originalSpeed = GameObject.Find("Player").GetComponent<Player>().speed;
         originalPosition = new Vector3(transform.position.x, transform.position.y, transform.position.z);
         originalPos = new Vector3(GameObject.Find("Player").GetComponent<Player>().rb.transform.position.x, GameObject.Find("Player").GetComponent<Player>().rb.transform.position.y, GameObject.Find("Player").GetComponent<Player>().rb.transform.position.z);
         playerHealth = GameObject.Find("Player").GetComponent<Player>().currentHealth;
-        scoreUI.SetActive(true);
         distance = (GameObject.Find("Player").GetComponent<Player>().highScore / 6f) * 1.4f;
         scoreUI.transform.GetChild(4).gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = Math.Round(distance, 3).ToString() + "m";
         higher = false;
