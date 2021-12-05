@@ -109,6 +109,7 @@
      <Compile Include="Assets\player\PlayerData.cs" />
      <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
      <Compile Include="Assets\Scripts\EnemyWeapon.cs" />
+     <Compile Include="Assets\Level2\Scripts\shootUp.cs" />
      <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
      <Compile Include="Assets\Combat\Enemy\ShootingEnemyBehaviour.cs" />
      <Compile Include="Assets\Combat\Enemy\ShootingEnemyPivot.cs" />

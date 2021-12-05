@@ -32,10 +32,7 @@ public class ShopManager : MonoBehaviour{
         shopItems[1 , 4] = 30;
         shopItems[1 , 5] = 100;
 
-        //damge
-        shopItems[2 , 0] = 5;
-        shopItems[2 , 1] = 20;
-        shopItems[2 , 2] = 50;
+
     }
 
     // Update is called once per frame

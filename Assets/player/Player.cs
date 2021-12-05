@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -12,14 +13,15 @@ public class Player : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth;
     public bool[] weapons = new bool[3];
+    public int[] damage = new int[3];
+    public int currentDamage;
     public int[] potions = new int[3];
     public float highScore;
 
     public float upspeed; //trampoline jump
 
     public healthBar healthBar;
-    public int[] damage;
-    public int currentDamage;
+
 
     public float speed;
     public float jumpforce;
@@ -91,6 +93,9 @@ public class Player : MonoBehaviour
         }
         CheckDirection();
         if (pauseMenu.activeSelf || deadMenu.activeSelf) {
+            SavePlayer();
+        }
+        if (SceneManager.GetActiveScene().name == "SpaceShip"){
             SavePlayer();
         }
         CheckIfFall();
