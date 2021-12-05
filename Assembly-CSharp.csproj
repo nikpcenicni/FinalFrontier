@@ -115,6 +115,7 @@
     <Compile Include="Assets\player\PlayerData.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
     <Compile Include="Assets\Scripts\EnemyWeapon.cs" />
+    <Compile Include="Assets\Level2\Scripts\shootUp.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\Combat\Enemy\ShootingEnemyBehaviour.cs" />
     <Compile Include="Assets\Combat\Enemy\ShootingEnemyPivot.cs" />
@@ -153,7 +154,6 @@
     <Compile Include="Assets\Scripts\GameAssets.cs" />
     <Compile Include="Assets\Boss\KnightBoss\Assets\Low_Swordman\Demo\Scripts\Demo_GM.cs" />
     <Compile Include="Assets\Downloaded Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
-    <Compile Include="Assets\Level2\Scripts\shootUp.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Downloaded Assets\TextMesh Pro\Shaders\TMPro.cginc" />
