@@ -10,10 +10,21 @@ public class Enemy : MonoBehaviour
     public GameObject deathEffect;
     public GameObject moonRock;
     public GameObject confirmKill;
+    int playerHealth;
 
     private void Start()
     {
         curr_enemyHealth = max_enemyhealth;
+        playerHealth = GameObject.Find("Player").GetComponent<Player>().currentHealth;
+    }
+
+    void Update()
+    {
+        if (GameObject.Find("Player").GetComponent<Player>().currentHealth < playerHealth)
+        {
+            Destroy(gameObject);
+        }
+        playerHealth = GameObject.Find("Player").GetComponent<Player>().currentHealth;
     }
 
     public void TakeDamage (int damage) {

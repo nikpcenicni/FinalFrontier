@@ -54,7 +54,7 @@ public class Player : MonoBehaviour
     public TextMeshProUGUI textCoins;
     public Animator animator;
     private SpriteRenderer viewRender;
-    private Vector3 originalPos;    
+    public Vector3 originalPos;    
 
     public Rigidbody2D rb;
 
