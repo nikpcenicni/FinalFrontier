@@ -26,9 +26,15 @@ public class MainMenu : MonoBehaviour{
     public int saveFlag2;
     public int saveFlag3;
 
-
-    
-    
+    public void redPlanet(){
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
+    }
+    public void forestPlanet(){
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 7);
+    }
+    public void endless(){
+        
+    }
     public void playGame1() {
         if(saveFlag1 == 0)
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
