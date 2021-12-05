@@ -162,15 +162,9 @@ public class Player : MonoBehaviour
     }
 
     void initalizeWeapons(){
-        //int totalWeapons = 4;
-        // guns = new GameObject[totalWeapons];
-        // for (int i = 0; i < totalWeapons; i++) {
-        //     guns[i] = weaponHolder.transform.GetChild(i).gameObject;
-        //     guns[i].SetActive(false);
-        // }
         
         currentWeaponIndex = 0;
-        //currentGun = guns[currentWeaponIndex];
+        currentGun = guns[currentWeaponIndex];
         guns[currentWeaponIndex].SetActive(true);
     }
 
