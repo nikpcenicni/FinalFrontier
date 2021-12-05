@@ -26,9 +26,15 @@ public class MainMenu : MonoBehaviour{
     public int saveFlag2;
     public int saveFlag3;
 
-
-    
-    
+    public void redPlanet(){
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
+    }
+    public void forestPlanet(){
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 7);
+    }
+    public void endless(){
+        
+    }
     public void playGame1() {
         if(saveFlag1 == 0)
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -65,7 +71,7 @@ public class MainMenu : MonoBehaviour{
             saveFlag1 = 0;
         } else {
             health1.text = data.health.ToString();
-            coins1.text = data.coins.ToString();
+            coins1.text = data.bank.ToString();
             saveFlag1 = 1;
         }
         
@@ -78,7 +84,7 @@ public class MainMenu : MonoBehaviour{
             saveFlag2 = 0;
         } else{
             health2.text = data1.health.ToString();
-            coins2.text = data1.coins.ToString();
+            coins2.text = data1.bank.ToString();
             saveFlag2 = 1;
         }
 
@@ -91,7 +97,7 @@ public class MainMenu : MonoBehaviour{
             saveFlag3 = 0;
         } else {
             health3.text = data2.health.ToString();
-            coins3.text = data2.coins.ToString();
+            coins3.text = data2.bank.ToString();
             saveFlag3 = 1;
         }
     }
