@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 using TMPro;
 
 public class IntoductionText : MonoBehaviour
@@ -18,9 +17,7 @@ public class IntoductionText : MonoBehaviour
     public void nextPhrase(){
         phraseCounter++;
         if (phraseCounter < phrases.Length)
-            textBox.SetText(phrases[phraseCounter]);
-        else
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            textBox.SetText(phrases[phraseCounter]);  
     }
     public void loadMenu(){
         if(phraseCounter == 8){

@@ -45,7 +45,7 @@ public class PauseMenu : MonoBehaviour
 
     public void LevelSelect() {
         GameObject.Find("Player").GetComponent<Player>().Restart();
-        SceneManager.LoadScene("SpaceShip");
+        SceneManager.LoadScene(1);
         GameIsPaused = false;
     }
 
