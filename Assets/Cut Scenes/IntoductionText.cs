@@ -14,6 +14,11 @@ public class IntoductionText : MonoBehaviour
     void Start(){
         textBox.SetText(phrases[0]);
     }
+    public void nextPhrase(){
+        phraseCounter++;
+        if (phraseCounter < phrases.Length)
+            textBox.SetText(phrases[phraseCounter]);  
+    }
     public void loadMenu(){
         if(phraseCounter == 8){
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -33,10 +38,5 @@ public class IntoductionText : MonoBehaviour
         if(phraseCounter == 8){
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
-    }
-    public void nextPhrase(){
-        phraseCounter++;
-        if (phraseCounter < phrases.Length)
-            textBox.SetText(phrases[phraseCounter]);  
     }
 }

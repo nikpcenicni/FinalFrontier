@@ -8,14 +8,21 @@ using TMPro;
 public class MainMenu : MonoBehaviour{
     public static int saveNumber;
     public TextMeshProUGUI health1;
+
+    public Image heart1;
     public TextMeshProUGUI coins1;
+    public Image moonRock1;
     public TextMeshProUGUI health2;
+    public Image heart2;
     public TextMeshProUGUI coins2;
+    public Image moonRock2;
     public TextMeshProUGUI health3;
+    public Image heart3;
     public TextMeshProUGUI coins3;
-    public TextMeshProUGUI world1;
-    public TextMeshProUGUI world2;
-    public TextMeshProUGUI world3;
+    public Image moonRock3;
+    public TextMeshProUGUI newGame1;
+    public TextMeshProUGUI newGame2;
+    public TextMeshProUGUI newGame3;
 
 
     
@@ -28,19 +35,42 @@ public class MainMenu : MonoBehaviour{
         Application.Quit();
     }
     public void load() {
+        newGame1.enabled = false;
+        newGame2.enabled = false;
+        newGame3.enabled = false;
+        
         MainMenu.saveNumber = 0;
         PlayerData data = SaveSystem.loadPlayer();
-        health1.text = data.health.ToString();
-        coins1.text = data.bank.ToString();
+        if(data == null){
+            newGame1.enabled = true;
+            moonRock1.enabled = false;
+            heart1.enabled = false;
+        } else {
+            health1.text = data.health.ToString();
+            coins1.text = data.bank.ToString();
+        }
+        
         MainMenu.saveNumber = 1;
-        data = SaveSystem.loadPlayer();
-        health2.text = data.health.ToString();
-        coins2.text = data.bank.ToString();
-        MainMenu.saveNumber = 2;
-        data = SaveSystem.loadPlayer();
-        health3.text = data.health.ToString();
-        coins3.text = data.bank.ToString();
+        PlayerData data1 = SaveSystem.loadPlayer();
+        if(data1 == null){
+            newGame2.enabled = true;
+            moonRock2.enabled = false;
+            heart2.enabled = false;
+        } else{
+            health2.text = data1.health.ToString();
+            coins2.text = data1.bank.ToString();
+        }
 
+        MainMenu.saveNumber = 2;
+        PlayerData data2 = SaveSystem.loadPlayer();
+        if(data2 == null){
+            newGame3.enabled = true;
+            moonRock3.enabled = false;
+            heart3.enabled = false;
+        } else {
+            health3.text = data2.health.ToString();
+            coins3.text = data2.bank.ToString();
+        }
     }
     public void firstSave() {
         MainMenu.saveNumber = 0;
