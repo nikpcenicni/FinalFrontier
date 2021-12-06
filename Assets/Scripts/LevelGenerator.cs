@@ -44,7 +44,7 @@ public class LevelGenerator : MonoBehaviour{
 
         if (Vector3.Distance(player.GetPosition(), lastEndPosition)  < PLAYER_DISTANCE_SPAWN_LEVEL_PART && EndPlatformsX != player.transform.position.x && !Spawned){
             SpawnLevelPart();
-        } else if (EndPlatformsX <= PLAYER_DISTANCE_SPAWN_LEVEL_PART  && !Spawned) {
+        } else if (EndPlatformsX <= player.transform.position.x - PLAYER_DISTANCE_SPAWN_LEVEL_PART && !Spawned) {
             SpawnBossLevel();
         } else 
             return;

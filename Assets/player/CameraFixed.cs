@@ -26,12 +26,12 @@ public class CameraFixed : MonoBehaviour
         score = 0f;
         step = 3f;
         originalStep = step;
-        GameObject.Find("Player").GetComponent<Player>().speed = 6f;
+        GameObject.Find("Player").GetComponent<Player>().speed = 8f;
         originalSpeed = GameObject.Find("Player").GetComponent<Player>().speed;
         originalPosition = new Vector3(transform.position.x, transform.position.y, transform.position.z);
         originalPos = new Vector3(GameObject.Find("Player").GetComponent<Player>().rb.transform.position.x, GameObject.Find("Player").GetComponent<Player>().rb.transform.position.y, GameObject.Find("Player").GetComponent<Player>().rb.transform.position.z);
         playerHealth = GameObject.Find("Player").GetComponent<Player>().currentHealth;
-        distance = (GameObject.Find("Player").GetComponent<Player>().highScore / 6f) * 1.4f;
+        distance = (GameObject.Find("Player").GetComponent<Player>().highScore / 8f) * 1.4f;
         scoreUI.transform.GetChild(4).gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = Math.Round(distance, 3).ToString() + "m";
         higher = false;
         resetting = false;
@@ -52,7 +52,7 @@ public class CameraFixed : MonoBehaviour
             if (higher)
             {
                 GameObject.Find("Player").GetComponent<Player>().highScore = score;
-                distance = (score / 6f) * 1.4f;
+                distance = (score / 8f) * 1.4f;
                 scoreUI.transform.GetChild(4).gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = Math.Round(distance, 3).ToString() + "m";
             }
             score = 0f;
@@ -72,7 +72,7 @@ public class CameraFixed : MonoBehaviour
             if (higher)
             {
                 GameObject.Find("Player").GetComponent<Player>().highScore = score;
-                distance = (score / 6f) * 1.4f;
+                distance = (score / 8f) * 1.4f;
                 scoreUI.transform.GetChild(4).gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = Math.Round(distance, 3).ToString() + "m";
             }
             score = 0f;
@@ -87,7 +87,7 @@ public class CameraFixed : MonoBehaviour
         cameraPosition.x += step * Time.deltaTime;
         transform.position = cameraPosition;
         score = score + (step * Time.deltaTime);
-        distance = (score / 6f) * 1.4f;
+        distance = (score / 8f) * 1.4f;
         scoreUI.transform.GetChild(1).gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = Math.Round(distance, 3).ToString() + "m";
         if (score > GameObject.Find("Player").GetComponent<Player>().highScore && !higher) {
             scoreUI.transform.GetChild(2).gameObject.SetActive(true);

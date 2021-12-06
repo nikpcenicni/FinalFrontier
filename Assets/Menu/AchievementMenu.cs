@@ -78,7 +78,7 @@ public class AchievementMenu : MonoBehaviour
         */
 
         float distance;
-        distance = ((achievementsProgress[6] / 6f) * 1.4f) / 1000f;
+        distance = ((achievementsProgress[6] / 8f) * 1.4f) / 1000f;
         m_Text = transform.GetChild(1).gameObject.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.transform.GetChild(6).gameObject.transform.GetChild(1).gameObject.GetComponent<Text>();
         m_Text.text = Math.Round(distance, 3).ToString() + "km / 42.195km";
 
@@ -87,7 +87,7 @@ public class AchievementMenu : MonoBehaviour
         m_Text = transform.GetChild(1).gameObject.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.transform.GetChild(7).gameObject.transform.GetChild(1).gameObject.GetComponent<Text>();
         m_Text.text = jumps.ToString() + " / 1000";
 
-        distance = (achievementsProgress[9] / 6f) * 1.4f;
+        distance = (achievementsProgress[9] / 8f) * 1.4f;
         m_Text = transform.GetChild(1).gameObject.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.transform.GetChild(9).gameObject.transform.GetChild(1).gameObject.GetComponent<Text>();
         m_Text.text = Math.Round(distance, 3).ToString() + "m / 100m";
     }

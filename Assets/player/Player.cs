@@ -100,6 +100,9 @@ public class Player : MonoBehaviour
             upspeed = 500f;
         }
         CheckDirection();
+        if (pauseMenu.activeSelf || deadMenu.activeSelf) {
+            SavePlayer();
+        }
         if (SceneManager.GetActiveScene().name == "RedPlanet-Boss_Transition") {
             SavePlayer();
         }
@@ -357,7 +360,7 @@ public class Player : MonoBehaviour
 
     void CheckIfFall() {
         if (rb.transform.position.y < -30) {
-            fell = true;
+            //fell = true;
             TakeDamage(20);
             rb.transform.position = originalPos;
         }

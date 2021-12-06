@@ -25,10 +25,10 @@ public class Endless : MonoBehaviour
         EndEndless.SetActive(false);
         StartEndless.SetActive(true);
         GameObject.Find("Player").GetComponent<Player>().rb.transform.position = GameObject.Find("Player").GetComponent<Player>().originalPos;
-        GameObject.Find("LevelGenerator").GetComponent<LevelGenerator>().EndPlatformsX = 10000;
+        GameObject.Find("LevelGenerator").GetComponent<LevelGenerator>().EndPlatformsX = 50;
         MainCamera.GetComponent<CameraFixed>().enabled = false;
         MainCamera.GetComponent<CameraFollow>().enabled = true;
-        GameObject.Find("Player").GetComponent<Player>().speed = 6f;
+        GameObject.Find("Player").GetComponent<Player>().speed = 8f;
         scoreUI.SetActive(false);
     }
 }
