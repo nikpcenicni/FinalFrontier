@@ -26,8 +26,6 @@ public class MainMenu : MonoBehaviour{
     public TextMeshProUGUI newGame2;
     public TextMeshProUGUI newGame3;
 
-    private string loadLevel = "";
-
 
 
     public void playGame() {
