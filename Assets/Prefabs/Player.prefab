@@ -472,6 +472,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41f8140b0b4f3fc10a69685299427665, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  level: 
   coins: 5
   maxHealth: 100
   currentHealth: 100
@@ -480,6 +481,9 @@ MonoBehaviour:
   currentDamage: 0
   potions: 000000000000000000000000
   highScore: 0
+  gameEnded: 0
+  hasDied: 0
+  hasKilled: 0
   upspeed: 0
   healthBar: {fileID: 0}
   speed: 8
@@ -519,6 +523,7 @@ MonoBehaviour:
   textCoins: {fileID: 0}
   animator: {fileID: 1144568611750888851}
   originalPos: {x: 0, y: 0, z: 0}
+  RespawnPos: {x: 0, y: 0, z: 0}
   rb: {fileID: 0}
   currentWeaponIndex: 0
   guns:

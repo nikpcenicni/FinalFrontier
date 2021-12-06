@@ -167,8 +167,8 @@ MonoBehaviour:
   max_enemyhealth: 10
   curr_enemyHealth: 10
   deathEffect: {fileID: 1755349173569476, guid: a8fd0a18ff2983a48b1180dde853f1fe, type: 3}
-  moonRock: {fileID: 0}
-  confirmKill: {fileID: 0}
+  moonRock: {fileID: 6976353543508891349, guid: 6c3e897022f16e64d80776d556ee40b5, type: 3}
+  confirmKill: {fileID: 7376310981371033223, guid: 9a8d8ddeec9de6947b17bb23916c1809, type: 3}
 --- !u!50 &7028310832666105585
 Rigidbody2D:
   serializedVersion: 4

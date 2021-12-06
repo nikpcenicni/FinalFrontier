@@ -11643,6 +11643,14 @@ PrefabInstance:
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1144568611750888844, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
+      propertyPath: weapons.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1144568611750888844, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
+      propertyPath: weapons.Array.data[2]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1144568611750888844, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
       propertyPath: achievementDescription
       value: 
       objectReference: {fileID: 1684462965}
@@ -11736,7 +11744,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1144568611862415742, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1144568612233528522, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
       propertyPath: m_Layer
