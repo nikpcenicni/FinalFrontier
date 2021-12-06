@@ -3040,7 +3040,7 @@ GameObject:
   - component: {fileID: 500845657}
   - component: {fileID: 500845656}
   m_Layer: 5
-  m_Name: AllItems
+  m_Name: AllWeapons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3085,7 +3085,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Purchase All Items
+  m_text: Purchase All Weapons
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6087,6 +6087,7 @@ MonoBehaviour:
   pauseMenuUI: {fileID: 747438114}
   achievementMenu: {fileID: 2056310390}
   deadUI: {fileID: 910052483}
+  ControlsUI: {fileID: 1688770877}
 --- !u!114 &838659120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13335,6 +13336,7 @@ MonoBehaviour:
   m_MyColor: {r: 0, g: 0, b: 0, a: 0}
   m_Text: {fileID: 0}
   m_TMProText: {fileID: 0}
+  weapons: 000000
   achievementsUnlocked: 00000000000000000000
   achievementsProgress:
   - 0

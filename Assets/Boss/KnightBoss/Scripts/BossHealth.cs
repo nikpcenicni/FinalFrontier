@@ -33,6 +33,7 @@ public class BossHealth : MonoBehaviour
 	{
 		Instantiate(deathEffect, transform.position, Quaternion.identity);
 		Destroy(gameObject);
+		GameObject.Find("Player").GetComponent<Player>().gameEnded = true;
 	}
 
 }

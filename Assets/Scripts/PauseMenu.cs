@@ -9,6 +9,7 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenuUI;
     public GameObject achievementMenu;
     public GameObject deadUI;
+    public GameObject ControlsUI;
 
     // Update is called once per frame
     void Update() {
@@ -27,6 +28,7 @@ public class PauseMenu : MonoBehaviour
     public void Resume() {
         pauseMenuUI.SetActive(false);
         achievementMenu.SetActive(false);
+        ControlsUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
     }

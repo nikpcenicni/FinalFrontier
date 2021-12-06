@@ -11,6 +11,7 @@ public class AchievementMenu : MonoBehaviour
     public Color m_MyColor;
     public Text m_Text;
     public TMPro.TextMeshProUGUI m_TMProText;
+    public bool[] weapons = new bool[3];
     public bool[] achievementsUnlocked = new bool[10];
     public float[] achievementsProgress = new float[10];
     public GameObject pauseMenu;
@@ -36,6 +37,10 @@ public class AchievementMenu : MonoBehaviour
     {
         PlayerData data = SaveSystem.loadPlayer();
 
+        for (int i = 0; i < weapons.Length; i++)
+        {
+            weapons[i] = data.weapons[i];
+        }
         for (int i = 0; i < achievementsUnlocked.Length; i++)
         {
             achievementsUnlocked[i] = data.achievementsUnlocked[i];
@@ -47,18 +52,21 @@ public class AchievementMenu : MonoBehaviour
     }
 
     public void setAchievementProgress() {
-        /*
+
+        int weaponsOwned = 0;
+        for (int i = 0; i < weapons.Length; i++)
+        {
+            if (weapons[i]) {
+                weaponsOwned++;
+            }
+        }
         m_Text = transform.GetChild(1).gameObject.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.transform.GetChild(1).gameObject.GetComponent<Text>();
-        m_Text.text = achievementsProgress[0].ToString() + " / ?";
-        */
+        m_Text.text = weaponsOwned.ToString() + " / 3";
 
         m_Text = transform.GetChild(1).gameObject.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.transform.GetChild(1).gameObject.transform.GetChild(1).gameObject.GetComponent<Text>();
         m_Text.text = achievementsProgress[1].ToString() + " / 100";
 
         /*
-        m_Text = transform.GetChild(1).gameObject.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.transform.GetChild(2).gameObject.transform.GetChild(1).gameObject.GetComponent<Text>();
-        m_Text.text = achievementsProgress[2].ToString() + " / ?";
-
         m_Text = transform.GetChild(1).gameObject.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.transform.GetChild(3).gameObject.transform.GetChild(1).gameObject.GetComponent<Text>();
         m_Text.text = achievementsProgress[3].ToString() + " / ?";
 

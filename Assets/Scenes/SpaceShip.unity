@@ -2452,7 +2452,7 @@ GameObject:
   - component: {fileID: 292944708}
   - component: {fileID: 292944707}
   m_Layer: 5
-  m_Name: AllItems
+  m_Name: AllWeapons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2497,7 +2497,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Purchase All Items
+  m_text: Purchase All Weapons
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -12824,6 +12824,7 @@ MonoBehaviour:
   pauseMenuUI: {fileID: 343790670}
   achievementMenu: {fileID: 1910565221}
   deadUI: {fileID: 0}
+  ControlsUI: {fileID: 445183986}
 --- !u!114 &1400766928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13226,6 +13227,9 @@ MonoBehaviour:
   currentDamage: 0
   potions: 000000000000000000000000
   highScore: 0
+  gameEnded: 0
+  hasDied: 0
+  hasKilled: 0
   upspeed: 0
   healthBar: {fileID: 1317775494}
   speed: 4
@@ -13261,11 +13265,12 @@ MonoBehaviour:
   achievementDescription: {fileID: 302031302}
   achMoveSpeed: 2
   achievementOn: 0
-  pauseMenu: {fileID: 0}
+  pauseMenu: {fileID: 343790670}
   deadMenu: {fileID: 1188425380}
   textCoins: {fileID: 2049747019}
   animator: {fileID: 1438336577}
   originalPos: {x: 0, y: 0, z: 0}
+  RespawnPos: {x: 0, y: 0, z: 0}
   rb: {fileID: 0}
   currentWeaponIndex: 0
   guns:
@@ -16447,6 +16452,7 @@ MonoBehaviour:
   m_MyColor: {r: 0, g: 0, b: 0, a: 0}
   m_Text: {fileID: 0}
   m_TMProText: {fileID: 0}
+  weapons: 000000
   achievementsUnlocked: 00000000000000000000
   achievementsProgress:
   - 0

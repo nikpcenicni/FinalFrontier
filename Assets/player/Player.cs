@@ -16,6 +16,9 @@ public class Player : MonoBehaviour
     public int currentDamage;
     public int[] potions = new int[3];
     public float highScore;
+    public bool gameEnded;
+    public bool hasDied;
+    public bool hasKilled;
 
     public float upspeed; //trampoline jump
 
@@ -73,7 +76,8 @@ public class Player : MonoBehaviour
     
     // Start is called before the first frame update
     void Start()
-    { 
+    {
+        gameEnded = false;
         rb = GetComponent<Rigidbody2D>();
         viewRender = GetComponent<SpriteRenderer>();
         Time.timeScale = 1f;
@@ -353,12 +357,19 @@ public class Player : MonoBehaviour
 
     public void addKill() {
         achievementsProgress[1] += 1;
+        hasKilled = true;
     }
 
     void CheckAchievementProgress() {
         if (deadMenu.activeSelf)
         {
             achievementsProgress[1] = 0;
+        }
+        if (currentHealth <= 0) {
+            hasDied = true;
+        }
+        if (!pauseMenu.activeSelf && !deadMenu.activeSelf && !gameEnded) {
+            achievementsProgress[5] += Time.deltaTime;
         }
         if (!pauseMenu.activeSelf && !deadMenu.activeSelf)
         {
@@ -367,30 +378,35 @@ public class Player : MonoBehaviour
         achievementsProgress[9] = highScore;
         if (!achievementOn)
         {
-            if (!achievementsUnlocked[0])
+            if (weapons[0] && weapons[1] && weapons[2] && !achievementsUnlocked[0])
             {
-                //Not Implementing Yet
+                achievementsUnlocked[0] = true;
+                StartCoroutine(TriggerAchievement("Purchase All Weapons"));
             }
             if (achievementsProgress[1] >= 100 && !achievementsUnlocked[1])
             {
                 achievementsUnlocked[1] = true;
                 StartCoroutine(TriggerAchievement("Confirm 100 Kills Without Dying"));
             }
-            if (!achievementsUnlocked[2])
+            if (gameEnded && !hasDied && !achievementsUnlocked[2])
             {
-                //Not Implementing Yet
+                achievementsUnlocked[2] = true;
+                StartCoroutine(TriggerAchievement("Complete the Game Without Dying"));
             }
-            if (!achievementsUnlocked[3])
+            if (gameEnded && !hasKilled && !achievementsUnlocked[3])
             {
-                //Not Implementing Yet
+                achievementsUnlocked[3] = true;
+                StartCoroutine(TriggerAchievement("Complete the Game Without Killing Anything"));
             }
-            if (!achievementsUnlocked[4])
+            if (gameEnded && achievementsProgress[4] < 600 && !achievementsUnlocked[4])
             {
-                //Not Implementing Yet
+                achievementsUnlocked[4] = true;
+                StartCoroutine(TriggerAchievement("Complete the Game In Under 10 Minutes"));
             }
-            if (!achievementsUnlocked[5])
+            if (gameEnded && !weapons[0] && !weapons[1] && !weapons[2] && !achievementsUnlocked[5])
             {
-                //Not Implementing Yet
+                achievementsUnlocked[5] = true;
+                StartCoroutine(TriggerAchievement("Complete the Game Without Purchasing Any Items"));
             }
             if (achievementsProgress[6] > 180836 && !achievementsUnlocked[6])
             {
