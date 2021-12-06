@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BirdHealth : MonoBehaviour
 {
@@ -28,5 +29,7 @@ public class BirdHealth : MonoBehaviour
 	{
 		Instantiate(deathEffect, transform.position, Quaternion.identity);
 		Destroy(gameObject);
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 	}
+
 }
