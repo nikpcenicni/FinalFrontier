@@ -100,7 +100,7 @@ public class Player : MonoBehaviour
             upspeed = 500f;
         }
         CheckDirection();
-        if (pauseMenu.activeSelf || deadMenu.activeSelf) {
+        if (SceneManager.GetActiveScene().name == "RedPlanet-Boss_Transition") {
             SavePlayer();
         }
         if (SceneManager.GetActiveScene().name == "SpaceShip"){
@@ -121,6 +121,8 @@ public class Player : MonoBehaviour
     void CheckLevel(){
         if (SceneManager.GetActiveScene().name == "RedPlanet")
             level = "Red Planet";
+        if (SceneManager.GetActiveScene().name == "ForestPlanet")
+            level = "Forest Planet";
     }
 
 

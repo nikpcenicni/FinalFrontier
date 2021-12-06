@@ -26,18 +26,20 @@ public class MainMenu : MonoBehaviour{
     public TextMeshProUGUI newGame2;
     public TextMeshProUGUI newGame3;
 
+    private string loadLevel = "";
+
 
 
     public void playGame() {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("SpaceShip");
     }
 
     public void redPlanet(){
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+        SceneManager.LoadScene("RedPlanet");
     }
     public void forestPlanet(){
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("ForestPlanet");
     }
     public void quitGame() {
         Application.Quit();

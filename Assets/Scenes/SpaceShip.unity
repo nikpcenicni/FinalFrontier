@@ -2998,14 +2998,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health1: {fileID: 0}
   coins1: {fileID: 0}
+  level1: {fileID: 0}
   heart1: {fileID: 0}
   moonrock1: {fileID: 0}
   health2: {fileID: 0}
   coins2: {fileID: 0}
+  level2: {fileID: 0}
   heart2: {fileID: 0}
   moonrock2: {fileID: 0}
   health3: {fileID: 0}
   coins3: {fileID: 0}
+  level3: {fileID: 0}
   heart3: {fileID: 0}
   moonrock3: {fileID: 0}
   newGame1: {fileID: 0}
@@ -3103,14 +3106,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health1: {fileID: 0}
   coins1: {fileID: 0}
+  level1: {fileID: 0}
   heart1: {fileID: 0}
   moonrock1: {fileID: 0}
   health2: {fileID: 0}
   coins2: {fileID: 0}
+  level2: {fileID: 0}
   heart2: {fileID: 0}
   moonrock2: {fileID: 0}
   health3: {fileID: 0}
   coins3: {fileID: 0}
+  level3: {fileID: 0}
   heart3: {fileID: 0}
   moonrock3: {fileID: 0}
   newGame1: {fileID: 0}
@@ -5263,14 +5269,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health1: {fileID: 0}
   coins1: {fileID: 0}
+  level1: {fileID: 0}
   heart1: {fileID: 0}
   moonrock1: {fileID: 0}
   health2: {fileID: 0}
   coins2: {fileID: 0}
+  level2: {fileID: 0}
   heart2: {fileID: 0}
   moonrock2: {fileID: 0}
   health3: {fileID: 0}
   coins3: {fileID: 0}
+  level3: {fileID: 0}
   heart3: {fileID: 0}
   moonrock3: {fileID: 0}
   newGame1: {fileID: 0}
@@ -5577,14 +5586,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health1: {fileID: 0}
   coins1: {fileID: 0}
+  level1: {fileID: 0}
   heart1: {fileID: 0}
   moonrock1: {fileID: 0}
   health2: {fileID: 0}
   coins2: {fileID: 0}
+  level2: {fileID: 0}
   heart2: {fileID: 0}
   moonrock2: {fileID: 0}
   health3: {fileID: 0}
   coins3: {fileID: 0}
+  level3: {fileID: 0}
   heart3: {fileID: 0}
   moonrock3: {fileID: 0}
   newGame1: {fileID: 0}
@@ -6043,14 +6055,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health1: {fileID: 0}
   coins1: {fileID: 0}
+  level1: {fileID: 0}
   heart1: {fileID: 0}
   moonrock1: {fileID: 0}
   health2: {fileID: 0}
   coins2: {fileID: 0}
+  level2: {fileID: 0}
   heart2: {fileID: 0}
   moonrock2: {fileID: 0}
   health3: {fileID: 0}
   coins3: {fileID: 0}
+  level3: {fileID: 0}
   heart3: {fileID: 0}
   moonrock3: {fileID: 0}
   newGame1: {fileID: 0}
@@ -7013,6 +7028,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b179713133c94df47b514146e947079d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1438336574}
 --- !u!1 &780727187
 GameObject:
   m_ObjectHideFlags: 0
@@ -8337,14 +8353,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health1: {fileID: 0}
   coins1: {fileID: 0}
+  level1: {fileID: 0}
   heart1: {fileID: 0}
   moonrock1: {fileID: 0}
   health2: {fileID: 0}
   coins2: {fileID: 0}
+  level2: {fileID: 0}
   heart2: {fileID: 0}
   moonrock2: {fileID: 0}
   health3: {fileID: 0}
   coins3: {fileID: 0}
+  level3: {fileID: 0}
   heart3: {fileID: 0}
   moonrock3: {fileID: 0}
   newGame1: {fileID: 0}
@@ -8442,14 +8461,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health1: {fileID: 0}
   coins1: {fileID: 0}
+  level1: {fileID: 0}
   heart1: {fileID: 0}
   moonrock1: {fileID: 0}
   health2: {fileID: 0}
   coins2: {fileID: 0}
+  level2: {fileID: 0}
   heart2: {fileID: 0}
   moonrock2: {fileID: 0}
   health3: {fileID: 0}
   coins3: {fileID: 0}
+  level3: {fileID: 0}
   heart3: {fileID: 0}
   moonrock3: {fileID: 0}
   newGame1: {fileID: 0}
@@ -8547,14 +8569,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health1: {fileID: 0}
   coins1: {fileID: 0}
+  level1: {fileID: 0}
   heart1: {fileID: 0}
   moonrock1: {fileID: 0}
   health2: {fileID: 0}
   coins2: {fileID: 0}
+  level2: {fileID: 0}
   heart2: {fileID: 0}
   moonrock2: {fileID: 0}
   health3: {fileID: 0}
   coins3: {fileID: 0}
+  level3: {fileID: 0}
   heart3: {fileID: 0}
   moonrock3: {fileID: 0}
   newGame1: {fileID: 0}
@@ -13267,6 +13292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41f8140b0b4f3fc10a69685299427665, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  level: 
   coins: 0
   maxHealth: 5
   currentHealth: 0
@@ -16258,14 +16284,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health1: {fileID: 0}
   coins1: {fileID: 0}
+  level1: {fileID: 0}
   heart1: {fileID: 0}
   moonrock1: {fileID: 0}
   health2: {fileID: 0}
   coins2: {fileID: 0}
+  level2: {fileID: 0}
   heart2: {fileID: 0}
   moonrock2: {fileID: 0}
   health3: {fileID: 0}
   coins3: {fileID: 0}
+  level3: {fileID: 0}
   heart3: {fileID: 0}
   moonrock3: {fileID: 0}
   newGame1: {fileID: 0}
@@ -16919,14 +16948,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health1: {fileID: 0}
   coins1: {fileID: 0}
+  level1: {fileID: 0}
   heart1: {fileID: 0}
   moonrock1: {fileID: 0}
   health2: {fileID: 0}
   coins2: {fileID: 0}
+  level2: {fileID: 0}
   heart2: {fileID: 0}
   moonrock2: {fileID: 0}
   health3: {fileID: 0}
   coins3: {fileID: 0}
+  level3: {fileID: 0}
   heart3: {fileID: 0}
   moonrock3: {fileID: 0}
   newGame1: {fileID: 0}
