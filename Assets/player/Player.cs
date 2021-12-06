@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    public static int level = 0;
+    public string level = "";
     public int coins = 5;
     public int maxHealth = 100;
     public int currentHealth;
@@ -112,9 +112,15 @@ public class Player : MonoBehaviour
         CheckAchievementProgress();
         RespawnPos = new Vector3(rb.transform.position.x - 5, rb.transform.position.y, rb.transform.position.z);
         changeWeapon();
+        CheckLevel();
 
         if (currentGun.name == "Pistol")
             Debug.Log(currentGun);
+    }
+
+    void CheckLevel(){
+        if (SceneManager.GetActiveScene().name == "RedPlanet")
+            level = "Red Planet";
     }
 
 
