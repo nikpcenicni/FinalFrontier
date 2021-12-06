@@ -13,6 +13,8 @@ public class LevelGenerator : MonoBehaviour{
     [SerializeField] private Player player;
     [SerializeField] public float EndPlatformsX;
 
+    private bool Spawned;
+
     int playerHealth;
 
     private Vector3 lastEndPosition;
@@ -34,16 +36,18 @@ public class LevelGenerator : MonoBehaviour{
     }
 
     private void Update() {
-        if (Vector3.Distance(player.GetPosition(), lastEndPosition)  < PLAYER_DISTANCE_SPAWN_LEVEL_PART && EndPlatformsX != player.transform.position.x){
-            SpawnLevelPart();
-        } else {
-            SpawnBossLevel();
-        }
         if (GameObject.Find("Player").GetComponent<Player>().currentHealth < playerHealth)
         {
             Awake();
         }
         playerHealth = GameObject.Find("Player").GetComponent<Player>().currentHealth;
+
+        if (Vector3.Distance(player.GetPosition(), lastEndPosition)  < PLAYER_DISTANCE_SPAWN_LEVEL_PART && EndPlatformsX != player.transform.position.x && !Spawned){
+            SpawnLevelPart();
+        } else if (EndPlatformsX <= PLAYER_DISTANCE_SPAWN_LEVEL_PART  && !Spawned) {
+            SpawnBossLevel();
+        } else 
+            return;
     }
   
     private void SpawnLevelPart() {
@@ -60,6 +64,8 @@ public class LevelGenerator : MonoBehaviour{
     }
 
     private void SpawnBossLevel() {
-
+        Transform chosenLevelPart = BossLevel;
+        Transform lastLevelPartTransform  = SpawnLevelPart(chosenLevelPart, lastEndPosition);
+        Spawned = true;
     }
 }
