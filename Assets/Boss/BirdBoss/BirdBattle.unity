@@ -182,13 +182,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health1: {fileID: 0}
   coins1: {fileID: 0}
+  level1: {fileID: 0}
+  heart1: {fileID: 0}
+  moonrock1: {fileID: 0}
   health2: {fileID: 0}
   coins2: {fileID: 0}
+  level2: {fileID: 0}
+  heart2: {fileID: 0}
+  moonrock2: {fileID: 0}
   health3: {fileID: 0}
   coins3: {fileID: 0}
-  world1: {fileID: 0}
-  world2: {fileID: 0}
-  world3: {fileID: 0}
+  level3: {fileID: 0}
+  heart3: {fileID: 0}
+  moonrock3: {fileID: 0}
+  newGame1: {fileID: 0}
+  newGame2: {fileID: 0}
+  newGame3: {fileID: 0}
 --- !u!114 &64943283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2918,13 +2927,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health1: {fileID: 0}
   coins1: {fileID: 0}
+  level1: {fileID: 0}
+  heart1: {fileID: 0}
+  moonrock1: {fileID: 0}
   health2: {fileID: 0}
   coins2: {fileID: 0}
+  level2: {fileID: 0}
+  heart2: {fileID: 0}
+  moonrock2: {fileID: 0}
   health3: {fileID: 0}
   coins3: {fileID: 0}
-  world1: {fileID: 0}
-  world2: {fileID: 0}
-  world3: {fileID: 0}
+  level3: {fileID: 0}
+  heart3: {fileID: 0}
+  moonrock3: {fileID: 0}
+  newGame1: {fileID: 0}
+  newGame2: {fileID: 0}
+  newGame3: {fileID: 0}
 --- !u!114 &448071717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3600,13 +3618,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health1: {fileID: 0}
   coins1: {fileID: 0}
+  level1: {fileID: 0}
+  heart1: {fileID: 0}
+  moonrock1: {fileID: 0}
   health2: {fileID: 0}
   coins2: {fileID: 0}
+  level2: {fileID: 0}
+  heart2: {fileID: 0}
+  moonrock2: {fileID: 0}
   health3: {fileID: 0}
   coins3: {fileID: 0}
-  world1: {fileID: 0}
-  world2: {fileID: 0}
-  world3: {fileID: 0}
+  level3: {fileID: 0}
+  heart3: {fileID: 0}
+  moonrock3: {fileID: 0}
+  newGame1: {fileID: 0}
+  newGame2: {fileID: 0}
+  newGame3: {fileID: 0}
 --- !u!114 &542310845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4066,13 +4093,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health1: {fileID: 0}
   coins1: {fileID: 0}
+  level1: {fileID: 0}
+  heart1: {fileID: 0}
+  moonrock1: {fileID: 0}
   health2: {fileID: 0}
   coins2: {fileID: 0}
+  level2: {fileID: 0}
+  heart2: {fileID: 0}
+  moonrock2: {fileID: 0}
   health3: {fileID: 0}
   coins3: {fileID: 0}
-  world1: {fileID: 0}
-  world2: {fileID: 0}
-  world3: {fileID: 0}
+  level3: {fileID: 0}
+  heart3: {fileID: 0}
+  moonrock3: {fileID: 0}
+  newGame1: {fileID: 0}
+  newGame2: {fileID: 0}
+  newGame3: {fileID: 0}
 --- !u!114 &580344022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4318,13 +4354,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health1: {fileID: 0}
   coins1: {fileID: 0}
+  level1: {fileID: 0}
+  heart1: {fileID: 0}
+  moonrock1: {fileID: 0}
   health2: {fileID: 0}
   coins2: {fileID: 0}
+  level2: {fileID: 0}
+  heart2: {fileID: 0}
+  moonrock2: {fileID: 0}
   health3: {fileID: 0}
   coins3: {fileID: 0}
-  world1: {fileID: 0}
-  world2: {fileID: 0}
-  world3: {fileID: 0}
+  level3: {fileID: 0}
+  heart3: {fileID: 0}
+  moonrock3: {fileID: 0}
+  newGame1: {fileID: 0}
+  newGame2: {fileID: 0}
+  newGame3: {fileID: 0}
 --- !u!114 &659259777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5137,13 +5182,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health1: {fileID: 0}
   coins1: {fileID: 0}
+  level1: {fileID: 0}
+  heart1: {fileID: 0}
+  moonrock1: {fileID: 0}
   health2: {fileID: 0}
   coins2: {fileID: 0}
+  level2: {fileID: 0}
+  heart2: {fileID: 0}
+  moonrock2: {fileID: 0}
   health3: {fileID: 0}
   coins3: {fileID: 0}
-  world1: {fileID: 0}
-  world2: {fileID: 0}
-  world3: {fileID: 0}
+  level3: {fileID: 0}
+  heart3: {fileID: 0}
+  moonrock3: {fileID: 0}
+  newGame1: {fileID: 0}
+  newGame2: {fileID: 0}
+  newGame3: {fileID: 0}
 --- !u!114 &757568530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5757,6 +5811,7 @@ MonoBehaviour:
   pauseMenuUI: {fileID: 747438114}
   achievementMenu: {fileID: 2056310390}
   deadUI: {fileID: 910052483}
+  ControlsUI: {fileID: 0}
 --- !u!114 &838659120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9766,13 +9821,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health1: {fileID: 0}
   coins1: {fileID: 0}
+  level1: {fileID: 0}
+  heart1: {fileID: 0}
+  moonrock1: {fileID: 0}
   health2: {fileID: 0}
   coins2: {fileID: 0}
+  level2: {fileID: 0}
+  heart2: {fileID: 0}
+  moonrock2: {fileID: 0}
   health3: {fileID: 0}
   coins3: {fileID: 0}
-  world1: {fileID: 0}
-  world2: {fileID: 0}
-  world3: {fileID: 0}
+  level3: {fileID: 0}
+  heart3: {fileID: 0}
+  moonrock3: {fileID: 0}
+  newGame1: {fileID: 0}
+  newGame2: {fileID: 0}
+  newGame3: {fileID: 0}
 --- !u!114 &1724063235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10018,13 +10082,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health1: {fileID: 0}
   coins1: {fileID: 0}
+  level1: {fileID: 0}
+  heart1: {fileID: 0}
+  moonrock1: {fileID: 0}
   health2: {fileID: 0}
   coins2: {fileID: 0}
+  level2: {fileID: 0}
+  heart2: {fileID: 0}
+  moonrock2: {fileID: 0}
   health3: {fileID: 0}
   coins3: {fileID: 0}
-  world1: {fileID: 0}
-  world2: {fileID: 0}
-  world3: {fileID: 0}
+  level3: {fileID: 0}
+  heart3: {fileID: 0}
+  moonrock3: {fileID: 0}
+  newGame1: {fileID: 0}
+  newGame2: {fileID: 0}
+  newGame3: {fileID: 0}
 --- !u!114 &1860144233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10122,13 +10195,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health1: {fileID: 0}
   coins1: {fileID: 0}
+  level1: {fileID: 0}
+  heart1: {fileID: 0}
+  moonrock1: {fileID: 0}
   health2: {fileID: 0}
   coins2: {fileID: 0}
+  level2: {fileID: 0}
+  heart2: {fileID: 0}
+  moonrock2: {fileID: 0}
   health3: {fileID: 0}
   coins3: {fileID: 0}
-  world1: {fileID: 0}
-  world2: {fileID: 0}
-  world3: {fileID: 0}
+  level3: {fileID: 0}
+  heart3: {fileID: 0}
+  moonrock3: {fileID: 0}
+  newGame1: {fileID: 0}
+  newGame2: {fileID: 0}
+  newGame3: {fileID: 0}
 --- !u!114 &1880364194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11159,6 +11241,7 @@ MonoBehaviour:
   m_MyColor: {r: 0, g: 0, b: 0, a: 0}
   m_Text: {fileID: 0}
   m_TMProText: {fileID: 0}
+  weapons: 000000
   achievementsUnlocked: 00000000000000000000
   achievementsProgress:
   - 0
@@ -11402,6 +11485,14 @@ PrefabInstance:
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1144568611750888844, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
+      propertyPath: weapons.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1144568611750888844, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
+      propertyPath: weapons.Array.data[2]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1144568611750888844, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
       propertyPath: achievementDescription
       value: 
       objectReference: {fileID: 1684462965}
@@ -11495,7 +11586,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1144568611862415742, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1144568612233528522, guid: 55ddf8babd4c3bd47b2b719483c1b9b9, type: 3}
       propertyPath: m_Layer
